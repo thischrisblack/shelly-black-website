@@ -1,7 +1,7 @@
 ---
 title: 'Hello, world!'
 author: Cassidy
-date: ''
+date: 'December 12, 2020 12:00 AM'
 ---
 
 So blah blah blah okay.
