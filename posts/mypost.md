@@ -3,14 +3,13 @@ title: 'Hello, world!'
 author: Cassidy
 date: 'December 12, 2020 12:00 AM'
 ---
+
 So blah blah blah okay.
 
 Yes **indeed**.
 
-![Wah wah wah](/images/maul.gif)
-
 Ah haaaaa!
 
-* Look at me
-* I am in a list
-* Woo hoo
+-   Look at me
+-   I am in a list
+-   Woo hoo
