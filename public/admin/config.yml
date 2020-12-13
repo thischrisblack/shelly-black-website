@@ -1,6 +1,6 @@
 backend:
-    name: git-gateway
-    branch: main
+  name: git-gateway
+  branch: main
 media_folder: public/images
 public_folder: images
 collections:
@@ -9,7 +9,29 @@ collections:
     folder: "posts"
     create: true
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Author", name: "author", widget: "string"}
-      - {label: "Published Date", name: "date", widget: "datetime", default: "", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - {
+          label: "Published Date",
+          name: "date",
+          widget: "datetime",
+          default: "",
+          date_format: "DD.MM.YYYY",
+          time_format: "HH:mm",
+          format: "LLL",
+          picker_utc: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Gallery"
+    name: "gallery"
+    folder: "galleries"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Images",
+          name: "images",
+          widget: "list",
+          summary: "{{fields.image}}",
+          field: { label: Image, name: image, widget: image },
+        }
