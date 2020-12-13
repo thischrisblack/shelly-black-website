@@ -1,9 +1,2 @@
 [lfs]
 	url = https://a56d6ff0-453d-4737-afc3-590f791faf7d.netlify.app/.netlify/large-media
-
-# The first line resets the list of helpers so we can check Netlify's first.
-[credential]
-    helper = ""
-
-[credential]
-    helper = netlify
