@@ -11,5 +11,5 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
-      - {label: "Published Date", name: "date", widget: "datetime"}
+      - {label: "Published Date", name: "date", widget: "datetime", default: "", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: false}
       - {label: "Body", name: "body", widget: "markdown"}
