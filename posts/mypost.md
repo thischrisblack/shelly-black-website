@@ -1,11 +1,16 @@
 ---
 title: 'Hello, world!'
-author: 'Cassidy'
-dateTime: ''
+author: Cassidy
+date: 2020-12-15T01:11:30.756Z
 ---
+So blah blah blah okay.
 
-Humblebrag sartorial man braid ad vice, wolf ramps in cronut proident cold-pressed occupy organic normcore. Four loko tbh tousled reprehenderit ex enim qui banjo organic aute gentrify church-key. Man braid ramps in, 3 wolf moon laborum iPhone venmo sunt yr elit laboris poke succulents intelligentsia activated charcoal. Gentrify messenger bag hot chicken brooklyn. Seitan four loko art party, ut 8-bit live-edge heirloom. Cornhole post-ironic glossier officia, man braid raclette est organic knausgaard chillwave.
+Yes **indeed**.
 
--   Look at me
--   I am in a list
--   Woo hoo
+![Wah wah wah](/images/maul.gif "Here is an image.")
+
+Ah haaaaa!
+
+* Look at me
+* I am in a list
+* Woo hoo
