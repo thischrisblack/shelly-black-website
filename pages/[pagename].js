@@ -4,7 +4,11 @@ import ReactMarkdown from 'react-markdown';
 
 import Layout from '@components/Layout';
 
-export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
+export default function PageContainer({
+    siteTitle,
+    frontmatter,
+    markdownBody,
+}) {
     if (!frontmatter) return <></>;
 
     return (
@@ -24,10 +28,10 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
 }
 
 export async function getStaticProps({ ...ctx }) {
-    const { postname } = ctx.params;
+    const { pagename } = ctx.params;
 
-    const content = await import(`../../content/posts/${postname}.md`);
-    const config = await import(`../../siteconfig.json`);
+    const content = await import(`../content/pages/${pagename}.md`);
+    const config = await import(`../siteconfig.json`);
     const data = matter(content.default);
 
     return {
@@ -40,7 +44,7 @@ export async function getStaticProps({ ...ctx }) {
 }
 
 export async function getStaticPaths() {
-    const blogSlugs = ((context) => {
+    const pageSlugs = ((context) => {
         const keys = context.keys();
         const data = keys.map((key, index) => {
             let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3);
@@ -48,9 +52,9 @@ export async function getStaticPaths() {
             return slug;
         });
         return data;
-    })(require.context('../../content/posts', true, /\.md$/));
+    })(require.context('../content/pages', true, /\.md$/));
 
-    const paths = blogSlugs.map((slug) => `/post/${slug}`);
+    const paths = pageSlugs.map((slug) => `/${slug}`);
 
     return {
         paths,
