@@ -10,7 +10,6 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
       - {
           label: "Published Date",
           name: "date",
@@ -34,3 +33,4 @@ collections:
           summary: "{{fields.image}}",
           field: { label: Image, name: image, widget: image },
         }
+      - { label: "Body", name: "body", widget: "markdown" }

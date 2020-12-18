@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 
 import Layout from '@components/Layout';
 
-export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
+export default function Gallery({ siteTitle, frontmatter, markdownBody }) {
     if (!frontmatter) return <></>;
 
     return (
@@ -17,15 +17,20 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
                 <div>
                     <ReactMarkdown source={markdownBody} />
                 </div>
+                <div>
+                    {frontmatter.images.map((image) => (
+                        <img src={image} key={image} />
+                    ))}
+                </div>
             </article>
         </Layout>
     );
 }
 
 export async function getStaticProps({ ...ctx }) {
-    const { postname } = ctx.params;
+    const { galleryname } = ctx.params;
 
-    const content = await import(`../../content/posts/${postname}.md`);
+    const content = await import(`../../content/galleries/${galleryname}.md`);
     const config = await import(`../../siteconfig.json`);
     const data = matter(content.default);
 
@@ -47,9 +52,9 @@ export async function getStaticPaths() {
             return slug;
         });
         return data;
-    })(require.context('../../content/posts', true, /\.md$/));
+    })(require.context('../../content/galleries', true, /\.md$/));
 
-    const paths = blogSlugs.map((slug) => `/post/${slug}`);
+    const paths = blogSlugs.map((slug) => `/gallery/${slug}`);
 
     return {
         paths,
