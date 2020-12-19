@@ -1,10 +1,20 @@
 import Link from 'next/link';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
+import { GetStaticPaths, GetStaticProps } from 'next';
 
-import Layout from '@components/Layout';
+import Layout from '../../components/Layout';
+import { galleriesDirectory, getAllIds } from '../../lib/util';
 
-export default function Gallery({ siteTitle, frontmatter, markdownBody }) {
+export default function Gallery({
+    siteTitle,
+    frontmatter,
+    markdownBody,
+}: {
+    siteTitle: string;
+    frontmatter: any;
+    markdownBody: string;
+}) {
     if (!frontmatter) return <></>;
 
     return (
@@ -18,7 +28,7 @@ export default function Gallery({ siteTitle, frontmatter, markdownBody }) {
                     <ReactMarkdown source={markdownBody} />
                 </div>
                 <div>
-                    {frontmatter.images.map((image) => (
+                    {frontmatter.galleryImages.map((image) => (
                         <img src={image} key={image} />
                     ))}
                 </div>
@@ -27,7 +37,7 @@ export default function Gallery({ siteTitle, frontmatter, markdownBody }) {
     );
 }
 
-export async function getStaticProps({ ...ctx }) {
+export const getStaticProps: GetStaticProps = async (ctx) => {
     const { galleryname } = ctx.params;
 
     const content = await import(`../../content/galleries/${galleryname}.md`);
@@ -41,23 +51,12 @@ export async function getStaticProps({ ...ctx }) {
             markdownBody: data.content,
         },
     };
-}
+};
 
-export async function getStaticPaths() {
-    const blogSlugs = ((context) => {
-        const keys = context.keys();
-        const data = keys.map((key, index) => {
-            let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3);
-
-            return slug;
-        });
-        return data;
-    })(require.context('../../content/galleries', true, /\.md$/));
-
-    const paths = blogSlugs.map((slug) => `/gallery/${slug}`);
-
+export const getStaticPaths: GetStaticPaths = async () => {
+    const paths = getAllIds(galleriesDirectory).map((id) => `/gallery/${id}`);
     return {
         paths,
         fallback: false,
     };
-}
+};

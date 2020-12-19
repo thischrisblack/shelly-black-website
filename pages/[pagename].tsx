@@ -1,10 +1,20 @@
 import Link from 'next/link';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
+import { GetStaticProps, GetStaticPaths } from 'next';
 
-import Layout from '@components/Layout';
+import Layout from '../components/Layout';
+import { getAllIds, pagesDirectory } from '../lib/util';
 
-export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
+export default function PageContainer({
+    siteTitle,
+    frontmatter,
+    markdownBody,
+}: {
+    siteTitle: string;
+    frontmatter: any;
+    markdownBody: string;
+}) {
     if (!frontmatter) return <></>;
 
     return (
@@ -22,11 +32,11 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
     );
 }
 
-export async function getStaticProps({ ...ctx }) {
-    const { postname } = ctx.params;
+export const getStaticProps: GetStaticProps = async (ctx) => {
+    const { pagename } = ctx.params;
 
-    const content = await import(`../../content/posts/${postname}.md`);
-    const config = await import(`../../siteconfig.json`);
+    const content = await import(`../content/pages/${pagename}.md`);
+    const config = await import(`../siteconfig.json`);
     const data = matter(content.default);
 
     return {
@@ -36,23 +46,12 @@ export async function getStaticProps({ ...ctx }) {
             markdownBody: data.content,
         },
     };
-}
+};
 
-export async function getStaticPaths() {
-    const blogSlugs = ((context) => {
-        const keys = context.keys();
-        const data = keys.map((key, index) => {
-            let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3);
-
-            return slug;
-        });
-        return data;
-    })(require.context('../../content/posts', true, /\.md$/));
-
-    const paths = blogSlugs.map((slug) => `/post/${slug}`);
-
+export const getStaticPaths: GetStaticPaths = async () => {
+    const paths = getAllIds(pagesDirectory).map((id) => `/${id}`);
     return {
         paths,
         fallback: false,
     };
-}
+};

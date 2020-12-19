@@ -1,6 +1,6 @@
 ---
 title: Wilderness and Wires.
-images:
+galleryImages:
     - /images/wilderness.jpg
     - /images/wires.jpg
 ---

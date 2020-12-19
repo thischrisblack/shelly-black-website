@@ -20,6 +20,7 @@ collections:
           picker_utc: false,
         }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image" }
   - label: "Gallery"
     name: "gallery"
     folder: "content/galleries"
