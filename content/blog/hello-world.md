@@ -1,6 +1,6 @@
 ---
 title: 'Hello, world!'
-date: 'December 12, 2020 12:00 AM'
+date: '2020-12-12'
 image: /images/wilderness.jpg
 category: Photography
 ---
