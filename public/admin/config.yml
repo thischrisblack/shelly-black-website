@@ -58,11 +58,12 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Cover Image", name: "coverImage", widget: "image" }
       - {
           label: "Gallery Images",
           name: "galleryImages",
           widget: "list",
-          summary: "{{fields.image}}",
+          summary: "{{fields.galleryImages}}",
           field: { label: Image, name: image, widget: image },
         }
       - { label: "Body", name: "body", widget: "markdown" }
