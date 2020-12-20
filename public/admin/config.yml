@@ -18,7 +18,7 @@ collections:
           date_format: "YYYY-MM-DD",
           time_format: false,
           format: "LLL",
-          picker_utc: false,
+          picker_utc: true,
         }
       - { label: "Image", name: "image", widget: "image" }
       - {
@@ -42,7 +42,7 @@ collections:
           date_format: "YYYY-MM-DD",
           time_format: false,
           format: "LLL",
-          picker_utc: false,
+          picker_utc: true,
         }
       - { label: "Image", name: "image", widget: "image" }
       - {
