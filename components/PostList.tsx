@@ -1,7 +1,11 @@
 import Link from 'next/link';
-import { IPost } from '../utils/content-retrieval';
+import { IPostFrontmatter } from '../utils/content-retrieval';
 
-export default function PostList({ posts }: { posts: Array<IPost> }) {
+export default function PostList({
+    posts,
+}: {
+    posts: Array<IPostFrontmatter>;
+}) {
     if (posts === []) return null;
 
     return (

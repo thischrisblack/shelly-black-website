@@ -34,7 +34,7 @@ export default function PageContainer({
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { pagename } = ctx.params;
-
+    // TODO: Use getSinglePost here like in [postname].tsx
     const content = await import(`../content/pages/${pagename}.md`);
     const config = await import(`../siteconfig.json`);
     const data = matter(content.default);

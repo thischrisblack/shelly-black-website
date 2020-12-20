@@ -39,7 +39,7 @@ export default function Gallery({
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { galleryname } = ctx.params;
-
+    // TODO: Use getSinglePost here like in [postname].tsx
     const content = await import(`../../content/galleries/${galleryname}.md`);
     const config = await import(`../../siteconfig.json`);
     const data = matter(content.default);

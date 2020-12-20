@@ -4,16 +4,20 @@ import ReactMarkdown from 'react-markdown';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
 import Layout from '../../components/Layout';
-import { getAllIds, blogDirectory } from '../../utils/content-retrieval';
+import {
+    getAllIds,
+    blogDirectory,
+    getSinglePost,
+} from '../../utils/content-retrieval';
 
 export default function BlogPost({
     siteTitle,
     frontmatter,
-    markdownBody,
+    content,
 }: {
     siteTitle: string;
     frontmatter: any;
-    markdownBody: string;
+    content: string;
 }) {
     if (!frontmatter) return <></>;
 
@@ -25,7 +29,7 @@ export default function BlogPost({
             <article>
                 <h1>{frontmatter.title}</h1>
                 <div>
-                    <ReactMarkdown source={markdownBody} />
+                    <ReactMarkdown source={content} />
                 </div>
             </article>
         </Layout>
@@ -35,15 +39,13 @@ export default function BlogPost({
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { postname } = ctx.params;
 
-    const content = await import(`../../content/blog/${postname}.md`);
+    const postData = getSinglePost(postname as string, blogDirectory);
     const config = await import(`../../siteconfig.json`);
-    const data = matter(content.default);
 
     return {
         props: {
             siteTitle: config.title,
-            frontmatter: data.data,
-            markdownBody: data.content,
+            ...postData,
         },
     };
 };

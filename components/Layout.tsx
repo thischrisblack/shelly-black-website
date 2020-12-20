@@ -1,7 +1,13 @@
 import Head from 'next/head';
-import Header from './Header';
+import Navigation from './Navigation';
 
-export default function Layout({ children, ...props }) {
+export default function Layout({
+    pageTitle,
+    children,
+}: {
+    pageTitle: string;
+    children: React.ReactNode;
+}) {
     return (
         <>
             <Head>
@@ -11,7 +17,7 @@ export default function Layout({ children, ...props }) {
                 />
                 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
             </Head>
-            <Header />
+            <Navigation />
             <section className="layout">
                 <div className="content">{children}</div>
             </section>
