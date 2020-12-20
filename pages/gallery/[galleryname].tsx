@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
 import Layout from '../../components/Layout';
-import { galleriesDirectory, getAllIds } from '../../lib/util';
+import { galleriesDirectory, getAllIds } from '../../utils/content-retrieval';
 
 export default function Gallery({
     siteTitle,

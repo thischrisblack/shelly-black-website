@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
 import Layout from '../../components/Layout';
-import { getAllIds, blogDirectory } from '../../lib/util';
+import { getAllIds, blogDirectory } from '../../utils/content-retrieval';
 
 export default function BlogPost({
     siteTitle,
@@ -33,10 +33,9 @@ export default function BlogPost({
 }
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-    console.log('WOOOO', ctx.params);
-    const { id } = ctx.params;
+    const { postname } = ctx.params;
 
-    const content = await import(`../../content/blog/${id}.md`);
+    const content = await import(`../../content/blog/${postname}.md`);
     const config = await import(`../../siteconfig.json`);
     const data = matter(content.default);
 
@@ -51,7 +50,6 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getAllIds(blogDirectory).map((id) => `/post/${id}`);
-    console.log(paths);
     return {
         paths,
         fallback: false,

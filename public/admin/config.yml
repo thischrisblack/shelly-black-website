@@ -4,10 +4,11 @@ backend:
 media_folder: public/images
 public_folder: images
 collections:
-  - label: "Blog"
-    name: "blog"
-    folder: "content/posts"
+  - label: "Photography Blog"
+    name: "photo-blog"
+    folder: "content/blog"
     create: true
+    filter: { field: "category", value: "Photography" }
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {
@@ -19,8 +20,38 @@ collections:
           format: "LLL",
           picker_utc: false,
         }
-      - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Image", name: "image", widget: "image" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["Photography", "Library"],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Library Blog"
+    name: "library-blog"
+    folder: "content/blog"
+    create: true
+    filter: { field: "category", value: "Library" }
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Published Date",
+          name: "date",
+          widget: "datetime",
+          date_format: "DD.MM.YYYY",
+          time_format: "HH:mm",
+          format: "LLL",
+          picker_utc: false,
+        }
+      - { label: "Image", name: "image", widget: "image" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["Photography", "Library"],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
   - label: "Gallery"
     name: "gallery"
     folder: "content/galleries"

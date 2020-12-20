@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { GetStaticProps, GetStaticPaths } from 'next';
 
 import Layout from '../components/Layout';
-import { getAllIds, pagesDirectory } from '../lib/util';
+import { getAllIds, pagesDirectory } from '../utils/content-retrieval';
 
 export default function PageContainer({
     siteTitle,

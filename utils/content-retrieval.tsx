@@ -14,28 +14,27 @@ export const blogDirectory = path.join(process.cwd(), 'content/blog');
 export const pagesDirectory = path.join(process.cwd(), 'content/pages');
 export const galleriesDirectory = path.join(process.cwd(), 'content/galleries');
 
-export function getAllIds(directory) {
+export const getAllIds = (directory: string): Array<string> => {
     const fileNames = fs.readdirSync(directory);
     return fileNames.map((fileName) => {
         return fileName.replace(/\.md$/, '');
     });
-}
+};
 
-export function getSortedPostsData(directory: string) {
+export const getSortedPostData = (directory: string): Array<IPost> => {
     // Get file names under /posts
     const fileNames = fs.readdirSync(directory);
-    console.log('filenames', fileNames);
+
     const allPostsData: Array<IPost> = fileNames.map((fileName) => {
         // Remove ".md" from file name to get id
         const id = fileName.replace(/\.md$/, '');
-        console.log(id);
         // Read markdown file as string
         const fullPath = path.join(blogDirectory, fileName);
         const fileContents = fs.readFileSync(fullPath, 'utf8');
-        // Use gray-matter to parse the post metadata section
+        // Use gray-matter to parse the metadata section
         const matterResult = matter(fileContents);
-        console.log('matterResult', matterResult);
-        // Combine the data with the id
+
+        // Return the post
         return {
             id,
             ...(matterResult.data as {
@@ -46,7 +45,8 @@ export function getSortedPostsData(directory: string) {
             body: matterResult.content,
         };
     });
-    // Sort posts by date
+
+    // Sort posts by date or title
     return allPostsData.sort((a, b) => {
         if ((a.date || a.title) < (b.date || b.title)) {
             return 1;
@@ -54,7 +54,7 @@ export function getSortedPostsData(directory: string) {
             return -1;
         }
     });
-}
+};
 
 // export async function getPostData(id) {
 //   const fullPath = path.join(postsDirectory, `${id}.md`)

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Header from './Header';
 
-export default function Layout({ children, pageTitle, ...props }) {
+export default function Layout({ children, ...props }) {
     return (
         <>
             <Head>

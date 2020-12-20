@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { IPost } from '../lib/util';
+import { IPost } from '../utils/content-retrieval';
 
 export default function PostList({ posts }: { posts: Array<IPost> }) {
     if (posts === []) return null;
