@@ -25,7 +25,7 @@ title: Professional Portfolio
 
 [University of Arizona Libraries Social Media Guidelines and Best Practices](http://shelly-black.com/wp-content/uploads/2019/08/UA_Libraries_Social_Media_Guidelines.pdf)
 
-## Graduate Coursework
+### Graduate Coursework
 
 [LIS 540 Introduction to Archives research poster: “Community Archives Policing the Police”](http://shelly-black.com/wp-content/uploads/2019/12/LIS_540_Poster_Black_Shelly.pdf)
 
