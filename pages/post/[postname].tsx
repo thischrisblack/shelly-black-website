@@ -5,8 +5,8 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 
 import Layout from '../../components/Layout';
 import {
+    contentPaths,
     getAllIds,
-    blogDirectory,
     getSinglePost,
 } from '../../utils/content-retrieval';
 
@@ -39,7 +39,7 @@ export default function BlogPost({
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { postname } = ctx.params;
 
-    const postData = getSinglePost(postname as string, blogDirectory);
+    const postData = getSinglePost(postname as string, contentPaths.blog);
     const config = await import(`../../siteconfig.json`);
 
     return {
@@ -51,7 +51,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const paths = getAllIds(blogDirectory).map((id) => `/post/${id}`);
+    const paths = getAllIds(contentPaths.blog).map((id) => `/post/${id}`);
     return {
         paths,
         fallback: false,

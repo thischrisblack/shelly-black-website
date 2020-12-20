@@ -2,6 +2,18 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
+enum ContentDirectories {
+    Blog = 'content/blog',
+    Galleries = 'content/galleries',
+    Pages = 'content/pages',
+}
+
+export const contentPaths = {
+    blog: path.join(process.cwd(), ContentDirectories.Blog),
+    pages: path.join(process.cwd(), ContentDirectories.Pages),
+    galleries: path.join(process.cwd(), ContentDirectories.Galleries),
+};
+
 export enum BlogCategories {
     Photography = 'Photography',
     Library = 'Library',
@@ -21,35 +33,32 @@ export interface IPostFrontmatter {
     category?: string;
 }
 
-export const blogDirectory = path.join(process.cwd(), 'content/blog');
-export const pagesDirectory = path.join(process.cwd(), 'content/pages');
-export const galleriesDirectory = path.join(process.cwd(), 'content/galleries');
-
-export const getAllIds = (directory: string): Array<string> => {
-    const fileNames = fs.readdirSync(directory);
+export const getAllIds = (directoryPath: string): Array<string> => {
+    const fileNames = fs.readdirSync(directoryPath);
     return fileNames.map((fileName) => {
         return fileName.replace(/\.md$/, '');
     });
 };
 
-export const getPostFrontmatterList = (
-    directory: string,
+export const getAllPostFrontmatter = (
+    directoryPath: string,
     categoryFilter?: BlogCategories
 ): Array<IPostFrontmatter> => {
-    const fileNames = fs.readdirSync(directory);
+    const fileNames = fs.readdirSync(directoryPath);
 
     const allPostFrontmatter: Array<IPostFrontmatter> = fileNames.map(
-        (fileName) => {
+        (fileName): IPostFrontmatter => {
             const id = fileName.replace(/\.md$/, '');
-            const postData: IPost = getSinglePost(id, directory);
+            const { frontmatter }: IPost = getSinglePost(id, directoryPath);
 
             return {
                 id,
-                ...postData.frontmatter,
+                ...frontmatter,
             };
         }
     );
 
+    // Return post frontmatter array filtered by category and sorted by date or title
     return allPostFrontmatter
         .filter((post) => {
             return (
@@ -67,8 +76,8 @@ export const getPostFrontmatterList = (
         });
 };
 
-export const getSinglePost = (id: string, directory: string): IPost => {
-    const fullPath = path.join(directory, `${id}.md`);
+export const getSinglePost = (id: string, directoryPath: string): IPost => {
+    const fullPath = path.join(directoryPath, `${id}.md`);
     const fileContent = fs.readFileSync(fullPath, 'utf8');
     const { data, content } = matter(fileContent);
 

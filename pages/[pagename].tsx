@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { GetStaticProps, GetStaticPaths } from 'next';
 
 import Layout from '../components/Layout';
-import { getAllIds, pagesDirectory } from '../utils/content-retrieval';
+import { contentPaths, getAllIds } from '../utils/content-retrieval';
 
 export default function PageContainer({
     siteTitle,
@@ -49,7 +49,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const paths = getAllIds(pagesDirectory).map((id) => `/${id}`);
+    const paths = getAllIds(contentPaths.pages).map((id) => `/${id}`);
     return {
         paths,
         fallback: false,

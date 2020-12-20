@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
 import Layout from '../../components/Layout';
-import { galleriesDirectory, getAllIds } from '../../utils/content-retrieval';
+import { contentPaths, getAllIds } from '../../utils/content-retrieval';
 
 export default function Gallery({
     siteTitle,
@@ -54,7 +54,9 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const paths = getAllIds(galleriesDirectory).map((id) => `/gallery/${id}`);
+    const paths = getAllIds(contentPaths.galleries).map(
+        (id) => `/gallery/${id}`
+    );
     return {
         paths,
         fallback: false,

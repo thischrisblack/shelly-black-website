@@ -3,10 +3,9 @@ import { GetStaticProps } from 'next';
 import Layout from '../components/Layout';
 import PostList from '../components/PostList';
 import {
-    getPostFrontmatterList,
-    blogDirectory,
+    contentPaths,
+    getAllPostFrontmatter,
     IPostFrontmatter,
-    BlogCategories,
 } from '../utils/content-retrieval';
 
 const Index = ({
@@ -31,9 +30,10 @@ const Index = ({
 
 export default Index;
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async (ctx) => {
+    console.log(ctx);
     const configData = await import(`../siteconfig.json`);
-    const allPostsFrontmatter = getPostFrontmatterList(blogDirectory) || [];
+    const allPostsFrontmatter = getAllPostFrontmatter(contentPaths.blog) || [];
     return {
         props: {
             posts: allPostsFrontmatter,
