@@ -59,8 +59,8 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {
-          label: "Images",
-          name: "images",
+          label: "Gallery Images",
+          name: "galleryImages",
           widget: "list",
           summary: "{{fields.image}}",
           field: { label: Image, name: image, widget: image },
