@@ -1,7 +1,8 @@
 ---
 title: Test Photo Blog
-date: December 20, 2020 5:38 PM
+date: 2020-12-20
 image: images/ccp.jpg
 category: Photography
 ---
+
 Woooooooo!

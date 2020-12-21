@@ -1,7 +1,8 @@
 ---
 title: New test
-date: December 20, 2020 5:46 PM
+date: 2020-12-20
 image: images/wires.jpg
 category: Library
 ---
+
 Okay!
