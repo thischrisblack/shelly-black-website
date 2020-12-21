@@ -1,6 +1,8 @@
 ---
-title: "Robert Capa & WWII"
-date: "2015-02-22"
+title: 'Robert Capa & WWII'
+date: '2015-02-22'
+image: images/capa-excerpt.jpg
+category: Photography
 ---
 
 _Slightly Out of Focus_, Robert Capa's memoir of photographing World War II, was nothing less than riveting. It was particularly harrowing. Despite the bravado--he schmoozed with Ernest Hemingway and was quite the womanizer--his writing is full of poignant observations:
@@ -11,7 +13,7 @@ _Slightly Out of Focus_, Robert Capa's memoir of photographing World War II, wa
 
 The later reminded me of my visits to Nagasaki and Dresden, and feeling dissatisfied with any photos I could take there. Separated by sixty years, visually capturing or memorializing historical significance is like photographing a ghost.
 
-\[caption id="attachment\_151" align="alignnone" width="800"\]![Nagasaki Remains](images/Nagasaki-Peace-Park.jpg) Nagasaki Remains\[/caption\]
+![Nagasaki Remains](../images/Nagasaki-Peace-Park.jpg 'Nagasaki Remains')
 
 Of course, everything I have photographed and will likely ever photograph pales in comparison to photographing on a battlefront:
 

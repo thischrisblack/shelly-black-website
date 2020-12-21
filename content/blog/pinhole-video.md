@@ -1,6 +1,10 @@
 ---
-title: "Pinhole Video"
-date: "2015-02-12"
+title: 'Pinhole Video'
+date: '2015-02-12'
+image: images/pinhole-video.jpg
+category: Photography
 ---
 
-\[embed\]https://www.youtube.com/watch?v=doJFZ\_XA444&feature=youtu.be\[/embed\]
+<div class="video-container">
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/doJFZ_XA444" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

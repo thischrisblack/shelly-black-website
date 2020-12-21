@@ -29,7 +29,7 @@ export default function BlogPost({
             <article>
                 <h1>{frontmatter.title}</h1>
                 <div>
-                    <ReactMarkdown source={content} />
+                    <ReactMarkdown source={content} escapeHtml={false} />
                 </div>
             </article>
         </Layout>

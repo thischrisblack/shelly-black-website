@@ -31,7 +31,6 @@ const Index = ({
 export default Index;
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-    console.log(ctx);
     const configData = await import(`../siteconfig.json`);
     const allPostsFrontmatter = getAllPostFrontmatter(contentPaths.blog) || [];
     return {
