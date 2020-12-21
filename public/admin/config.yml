@@ -15,9 +15,9 @@ collections:
           label: "Published Date",
           name: "date",
           widget: "datetime",
-          date_format: true,
+          date_format: "YYYY-MM-DD",
           time_format: false,
-          format: "LLL",
+          format: "YYYY-MM-DD",
           picker_utc: true,
         }
       - { label: "Image", name: "image", widget: "image" }
@@ -39,9 +39,9 @@ collections:
           label: "Published Date",
           name: "date",
           widget: "datetime",
-          date_format: true,
+          date_format: "YYYY-MM-DD",
           time_format: false,
-          format: "LLL",
+          format: "YYYY-MM-DD",
           picker_utc: true,
         }
       - { label: "Image", name: "image", widget: "image" }
