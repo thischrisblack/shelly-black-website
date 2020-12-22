@@ -1,6 +1,8 @@
 ---
-title: "Week 14"
-date: "2020-04-23"
+title: Week 14
+date: '2020-04-23'
+image: images/The_Little_Folks_of_Animal_Land_-_Page_97.jpg
+category: Librarianship
 ---
 
 _Above image: Miss Kindeyes' kindergarten class (Frees, 1915, p. 97)_
@@ -13,10 +15,10 @@ I've also started researching accessioning as processing. This method, which red
 
 In her article, she explained that the accuracy of finding aids could be compromised for researchers and reference archivists when minimal work is done below the series level. However, she explained that donors at her institution are apprised of the minimal description provided for their collections and are even invited to help describe materials. More than a decade has passed since Weideman's proposal, but I'm not finding that many accessioning manuals that incorporate this practice. I'm guessing that many institutions aren't putting them online or finding the time to update their workflows.
 
-* * *
+---
 
 Frees, H. W. (1915). _The little folks of animal land._ Boston: Lothrop, Lee & Shepard Company.
 
-University of Illinois Library. (n.d.) _Tips on writing learning outcomes_. https://www.library.illinois.edu/staff/infolit/learningoutcomes/
+University of Illinois Library. (n.d.) *Tips on writing learning outcomes*. https://www.library.illinois.edu/staff/infolit/learningoutcomes/
 
 Weideman, C. (2006). Accessioning as processing. _The American Archivist, 69_(2), 274-283.

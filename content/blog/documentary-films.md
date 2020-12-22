@@ -1,6 +1,8 @@
 ---
-title: "Documentary Film Recaps"
-date: "2015-06-02"
+title: Documentary Film Recaps
+date: '2015-06-02'
+image: images/salt-earth-loft.jpg
+category: Photography
 ---
 
 ## 1\. The Salt of the Earth
@@ -11,9 +13,9 @@ Salgado is very much a contemporary photographer; he is [winning photojournalis
 
 What separates this film from other artist documentaries is Salgado's gift of endearing and honest storytelling.  We reach a gut-wrenching peak when he discusses his time with Doctors Without Borders and Rwanda. When his photograph of a bulldozer moving carcasses is shown, he says that everyone should see images like this. His grief and disgust with the human race put an end to his years documenting wars and famine. (His latter projects focused on nature and thriving indigenous populations.)
 
-Were it not for Salgado's personal insights, demonstrating his humanity and genuine interest in his subjects as individuals, I might dismiss his work as poverty porn, as photography critic Susan Sontag did. From _Regarding The Pain of Others_:
+Were it not for Salgado's personal insights, demonstrating his humanity and genuine interest in his subjects as individuals, I might dismiss his work as poverty porn, as photography critic Susan Sontag did. From *Regarding The Pain of Others*:
 
-_"It is significant that the powerless are not named in the captions. \[ . . . \] Making suffering loom larger, by globalizing it, may spur people to feel they ought to "care" more. It also invites them to feel that the sufferings and misfortunes are too vast, too irrevocable, too epic to be much changed by any local political intervention. \[ . . .\] It used to be thought, when the candid images were not common, that showing something that needed to be seen, bringing a painful reality closer, was bound to goad viewers to feel more. In a world in which photography is brilliantly at the service of consumerist manipulations, no effect of a photograph of a doleful scene can be taken for granted. As a consequence, morally alert photographers and ideologues of photography have become increasingly concerned with the issues of exploitation of sentiment (pity, compassion, indignation) in war photography and of rote ways of provoking feeling."_
+> _"It is significant that the powerless are not named in the captions. \[ . . . \] Making suffering loom larger, by globalizing it, may spur people to feel they ought to "care" more. It also invites them to feel that the sufferings and misfortunes are too vast, too irrevocable, too epic to be much changed by any local political intervention. \[ . . .\] It used to be thought, when the candid images were not common, that showing something that needed to be seen, bringing a painful reality closer, was bound to goad viewers to feel more. In a world in which photography is brilliantly at the service of consumerist manipulations, no effect of a photograph of a doleful scene can be taken for granted. As a consequence, morally alert photographers and ideologues of photography have become increasingly concerned with the issues of exploitation of sentiment (pity, compassion, indignation) in war photography and of rote ways of provoking feeling."_
 
 No viewer would admit to Sontag's uncomfortable accusations.  But much of photojournalism is glossy and cinematic these days, thanks to digital. If becoming acquainted with Salgado's gorgeous prints in books or through the film is the gateway to being more globally informed, so be it.
 

@@ -1,6 +1,8 @@
 ---
-title: "Week 7"
-date: "2020-02-27"
+title: Week 7
+date: '2020-02-27'
+image: images/louise_marshall.jpg
+category: Librarianship
 ---
 
 _Above image: University of Arizona Photograph Collection, Faculty--1891-1910. University of Arizona Libraries, Special Collections._

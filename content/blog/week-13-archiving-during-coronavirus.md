@@ -1,6 +1,8 @@
 ---
-title: "Week 13: Archiving during coronavirus"
-date: "2020-04-16"
+title: 'Week 13: Archiving during coronavirus'
+date: '2020-04-16'
+image: images/asche.jpg
+category: Librarianship
 ---
 
 _Originally [posted](https://archivistapprenticeship.wordpress.com/2020/04/15/archiving-during-coronavirus/) on Archivist Apprenticeship on April 15, 2020._
@@ -9,6 +11,6 @@ At the beginning of the semester, I thought this post would be about my near com
 
 I’m fortunate to be able to complete this internship at a distance. One project I wrapped up was researching collections development and management policies of other institutions. I was first introduced to such documentation in my advanced archives class, where we learned about its purpose and examined different sections it may contain. As Collections Management Archivist, Lisa plans to compile a policy for Special Collections. I found about 120 examples on the websites of other special collections and archives in higher education. While some institutions had recently updated policies explaining collecting areas and how much they’re collecting in said areas, others were brief. Some were written more for an internal audience by specifying stakeholders and other policies affecting decision-making, and others spoke more to donors and the general public.
 
-I’ve also begun creating an instruction kit based on an eSociety class I observed earlier this semester. In preparation, I looked at some literature (_Teaching Undergraduates with Archives_ edited by Nancy Bartlett, Elizabeth Gadelha, and Cinda Nofziger) and learned about the [Teaching with Primary Sources Collective](http://rbms.info/tpscollective/homepage/), which offers lesson plans and templates. I’ll also be researching accessioning as processing, a practice akin to “More Product, Less Process,” which addresses backlogs and makes collections more readily available to users.
+I’ve also begun creating an instruction kit based on an eSociety class I observed earlier this semester. In preparation, I looked at some literature (*Teaching Undergraduates with Archives* edited by Nancy Bartlett, Elizabeth Gadelha, and Cinda Nofziger) and learned about the [Teaching with Primary Sources Collective](http://rbms.info/tpscollective/homepage/), which offers lesson plans and templates. I’ll also be researching accessioning as processing, a practice akin to “More Product, Less Process,” which addresses backlogs and makes collections more readily available to users.
 
 I’m sad that I may not see the Special Collections staff and students in person again, as I’m leaving Arizona this summer. However, to end this post positively, I’m looking forward to my next chapter: a two-year fellowship at North Carolina State University Libraries where my home department will be Special Collections.

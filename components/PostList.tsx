@@ -11,18 +11,19 @@ export default function PostList({
     return (
         <div>
             {(!posts || posts.length === 0) && <div>No posts!</div>}
-            <ul>
+            <ol>
                 {posts &&
                     posts.map((post) => {
                         return (
                             <li key={post.id}>
+                                <img src={post.image} width="100" />
                                 <Link href={{ pathname: `/post/${post.id}` }}>
                                     <a>{post.title}</a>
                                 </Link>
                             </li>
                         );
                     })}
-            </ul>
+            </ol>
         </div>
     );
 }

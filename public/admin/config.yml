@@ -25,14 +25,14 @@ collections:
           label: "Category",
           name: "category",
           widget: "select",
-          options: ["Photography", "Library"],
+          options: ["Photography", "Librarianship"],
         }
       - { label: "Body", name: "body", widget: "markdown" }
-  - label: "Library Blog"
-    name: "library-blog"
+  - label: "Librarianship Blog"
+    name: "librarianship-blog"
     folder: "content/blog"
     create: true
-    filter: { field: "category", value: "Library" }
+    filter: { field: "category", value: "Librarianship" }
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {
@@ -49,7 +49,7 @@ collections:
           label: "Category",
           name: "category",
           widget: "select",
-          options: ["Photography", "Library"],
+          options: ["Photography", "Librarianship"],
         }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Gallery"

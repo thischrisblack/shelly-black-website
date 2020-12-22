@@ -1,6 +1,8 @@
 ---
-title: "Art of the Incarceration Camps"
-date: "2016-03-26"
+title: Art of the Incarceration Camps
+date: '2016-03-26'
+image: images/hirabayashi.jpg
+category: Photography
 ---
 
 _Pictured above: Former site of Catalina Federal Honor Camp_
@@ -11,12 +13,12 @@ I was already familiar with the work of Ansel Adams, Dorothea Lange and incarcer
 
 Now, I was not acquainted the many illustrators and painters incarcerated:
 
-- Miné Okubo, who published _Citizen 13660_, a book of drawings
-- Henry Sugimoto, whose painting style reminds me of modern European artists like Christian Schad
-- Chiura Obata, who used a traditional Japanese aesthetic to document the Southwestern landscape, and taught 600 students at Topaz
-- Estelle Ishigo, a white artist who was interned through marriage
-- Judy Sugita, a painter who recounted talk of sterilization in her memoir
-- Isamu Noguchi, a sculptor from the East Coast who was voluntarily interned, and designed a cemetery for Poston that was never constructed
+-   Miné Okubo, who published _Citizen 13660_, a book of drawings
+-   Henry Sugimoto, whose painting style reminds me of modern European artists like Christian Schad
+-   Chiura Obata, who used a traditional Japanese aesthetic to document the Southwestern landscape, and taught 600 students at Topaz
+-   Estelle Ishigo, a white artist who was interned through marriage
+-   Judy Sugita, a painter who recounted talk of sterilization in her memoir
+-   Isamu Noguchi, a sculptor from the East Coast who was voluntarily interned, and designed a cemetery for Poston that was never constructed
 
 Their art was the only imagery the government could not control. White photographers documented smiling individuals. Propaganda posters had racist caricatures, even those by Lew Davis who created posters with African American soldiers for Arizona's Ft. Huachuca.
 

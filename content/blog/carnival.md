@@ -1,9 +1,11 @@
 ---
-title: "Carnival Submission & Future Projects"
-date: "2015-03-16"
+title: Carnival Submission & Future Projects
+date: '2015-03-16'
+image: images/FoodCity10.jpg
+category: Photography
 ---
 
-I spent this week carefully selecting pictures from my [Carnival series](http://shelly-black.com/gallery/carnival/ "Carnival") to apply for a ($5,000!) photography award from The Phoenix Art Museum. I hadn't written a statement for the project, so that required some brain picking:
+I spent this week carefully selecting pictures from my [Carnival series](../gallery/carnival/ 'Carnival') to apply for a ($5,000!) photography award from The Phoenix Art Museum. I hadn't written a statement for the project, so that required some brain picking:
 
 These photographs document a traveling carnival at night in Tucson, Arizona. In these nocturnes, the long exposures yield the starkest black skies. The few visitors in this mostly deserted, urban carnival are rendered as ghosts from another time. The mechanical structures become glowing monuments to a bygone era.
 
