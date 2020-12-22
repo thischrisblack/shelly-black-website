@@ -1,9 +1,10 @@
 ---
 title: Library Marketing and Communications Conference 2018
-date: 2018-11-16
+date: '2018-11-16'
 image: images/st-louis-courthouse-snow.jpg
 category: Librarianship
 ---
+
 ![St. Louis Arch](../images/st-louis-arch.jpg)Just came back from my third [Library Marketing and Communications Conference](http://www.librarymarketingconference.org/) (LMCC). The last two I attended were in Dallas. This time, the conference was held in St. Louis, and I was there as a presenter with my wonderful colleague Kenya Johnson. Much to the surprise of these two desert dwellers, it was snowing!
 
 Both of us are passionate about diversity and have had many conversations about how libraries can produce more inclusive and representational marketing. Our presentation was called ["What About Me? Bringing Diversity and Inclusion into Your Library Marketing"](http://shelly-black.com/wp-content/uploads/2018/11/LMCC18_What_About_Me_Johnson_Black.pdf) and we packed the room! In fact, folks were standing at the back and sitting on the floor. This goes to show that our profession does want to do better, and I hope that diversity becomes a reoccurring topic at future LMCCs!
