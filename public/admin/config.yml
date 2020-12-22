@@ -17,7 +17,7 @@ collections:
           widget: "datetime",
           date_format: "YYYY-MM-DD",
           time_format: false,
-          format: "'YYYY-MM-DD'",
+          format: '"YYYY-MM-DD"',
           picker_utc: true,
         }
       - { label: "Image", name: "image", widget: "image" }
@@ -41,7 +41,7 @@ collections:
           widget: "datetime",
           date_format: "YYYY-MM-DD",
           time_format: false,
-          format: "'YYYY-MM-DD'",
+          format: '"YYYY-MM-DD"',
           picker_utc: true,
         }
       - { label: "Image", name: "image", widget: "image" }
