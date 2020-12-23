@@ -1,6 +1,6 @@
 ---
 title: My First ALA
-date: '2019-07-07'
+date: 2019/07/07
 image: images/ALA-convention-center.jpg
 category: Librarianship
 ---

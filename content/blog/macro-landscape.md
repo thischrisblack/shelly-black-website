@@ -1,6 +1,6 @@
 ---
 title: Macro Landscape Experiment
-date: '2015-07-19'
+date: 2015/07/19
 image: images/ice-04.jpg
 category: Photography
 ---

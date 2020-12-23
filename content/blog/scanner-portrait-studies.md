@@ -1,6 +1,6 @@
 ---
 title: Scanner Portrait Studies
-date: '2015-04-16'
+date: 2015/04/16
 image: images/wine.jpg
 category: Photography
 ---

@@ -3,6 +3,7 @@ backend:
   branch: main
 media_folder: public/images
 public_folder: images
+publish_mode: editorial_workflow
 collections:
   - label: "Photography Blog"
     name: "photo-blog"
@@ -15,19 +16,25 @@ collections:
           label: "Published Date",
           name: "date",
           widget: "datetime",
-          date_format: "YYYY-MM-DD",
+          date_format: "YYYY/MM/DD",
           time_format: false,
           format: "YYYY/MM/DD",
           picker_utc: true,
         }
-      - { label: "Image", name: "image", widget: "image" }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          default: "../images/photography-default.jpg",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
       - {
           label: "Category",
           name: "category",
           widget: "select",
-          options: ["Photography"],
+          options: ["Photography", "Librarianship"],
+          default: "Photography",
         }
-      - { label: "Body", name: "body", widget: "markdown" }
   - label: "Librarianship Blog"
     name: "librarianship-blog"
     folder: "content/blog"
@@ -39,19 +46,25 @@ collections:
           label: "Published Date",
           name: "date",
           widget: "datetime",
-          date_format: "YYYY-MM-DD",
+          date_format: "YYYY/MM/DD",
           time_format: false,
           format: "YYYY/MM/DD",
           picker_utc: true,
         }
-      - { label: "Image", name: "image", widget: "image" }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          default: "../images/library-default.jpg",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
       - {
           label: "Category",
           name: "category",
           widget: "select",
-          options: ["Librarianship"],
+          options: ["Photography", "Librarianship"],
+          default: "Librarianship",
         }
-      - { label: "Body", name: "body", widget: "markdown" }
   - label: "Gallery"
     name: "gallery"
     folder: "content/galleries"

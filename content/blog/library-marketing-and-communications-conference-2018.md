@@ -1,6 +1,6 @@
 ---
 title: Library Marketing and Communications Conference 2018
-date: '2018-11-16'
+date: 2018/11/16
 image: images/st-louis-courthouse-snow.jpg
 category: Librarianship
 ---

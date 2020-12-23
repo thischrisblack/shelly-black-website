@@ -1,6 +1,6 @@
 ---
 title: James Nachtwey's Inferno
-date: '2016-02-24'
+date: 2016/02/24
 image: images/james-nachtway.jpg
 category: Photography
 ---

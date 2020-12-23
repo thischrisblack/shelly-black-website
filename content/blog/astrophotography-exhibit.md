@@ -1,6 +1,6 @@
 ---
 title: Astrophotography Exhibit
-date: '2015-03-09'
+date: 2015/03/09
 image: images/sun-prints.jpg
 category: Photography
 ---

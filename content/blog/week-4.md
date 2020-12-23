@@ -1,6 +1,6 @@
 ---
 title: 'Week 4: Getting acquainted with George Chambers'
-date: '2020-02-05'
+date: 2020/02/05
 image: images/newspaper-press.jpg
 category: Librarianship
 ---

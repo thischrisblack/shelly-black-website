@@ -1,6 +1,6 @@
 ---
 title: Weeks 1-2
-date: '2020-01-22'
+date: 2020/01/22
 image: images/archive-boxes.jpg
 category: Librarianship
 ---

@@ -1,6 +1,6 @@
 ---
 title: 'One Video A Day'
-date: '2015-01-29'
+date: 2015/01/29
 image: images/video-still.jpg
 category: Photography
 ---

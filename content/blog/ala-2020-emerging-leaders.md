@@ -1,6 +1,6 @@
 ---
 title: ALA 2020 Emerging Leaders in American Libraries magazine
-date: '2020-05-07'
+date: 2020/05/07
 image: images/american_libraries_magazine_may_2020.jpg
 category: Librarianship
 ---

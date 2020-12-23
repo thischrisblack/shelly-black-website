@@ -1,6 +1,6 @@
 ---
 title: Camera Hospital
-date: '2016-10-29'
+date: 2016/10/29
 image: images/pcb.jpg
 category: Photography
 ---

@@ -1,6 +1,6 @@
 ---
 title: Sunprints
-date: '2016-03-30'
+date: 2016/03/30
 image: images/hot-spring-edit.jpg
 category: Photography
 ---

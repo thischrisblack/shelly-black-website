@@ -1,6 +1,6 @@
 ---
 title: Redscaling
-date: '2015-05-03'
+date: 2015/05/03
 image: images/redscale-collage.jpg
 category: Photography
 ---

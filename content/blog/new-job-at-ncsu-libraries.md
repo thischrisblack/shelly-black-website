@@ -1,6 +1,6 @@
 ---
 title: New job at NCSU Libraries
-date: '2020-05-04'
+date: 2020/05/04
 image: images/ncsu_belltower.jpg
 category: Librarianship
 ---

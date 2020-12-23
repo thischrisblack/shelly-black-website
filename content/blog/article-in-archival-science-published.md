@@ -1,6 +1,6 @@
 ---
 title: Article in Archival Science published
-date: '2019-09-18'
+date: 2019/09/18
 image: images/ArchSci-e1568848983943.jpg
 category: Librarianship
 ---

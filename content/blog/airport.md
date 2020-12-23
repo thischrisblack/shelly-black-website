@@ -1,6 +1,6 @@
 ---
 title: Miracle Mile 1AM Exhibit
-date: '2017-05-15'
+date: 2017/05/15
 image: images/Tiki-Motel.jpg
 category: Photography
 ---

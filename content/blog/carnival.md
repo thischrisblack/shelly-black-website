@@ -1,6 +1,6 @@
 ---
 title: Carnival Submission & Future Projects
-date: '2015-03-16'
+date: 2015/03/16
 image: images/FoodCity10.jpg
 category: Photography
 ---

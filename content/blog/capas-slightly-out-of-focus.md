@@ -1,6 +1,6 @@
 ---
 title: 'Robert Capa & WWII'
-date: '2015-02-22'
+date: 2015/02/22
 image: images/capa-excerpt.jpg
 category: Photography
 ---

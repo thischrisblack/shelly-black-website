@@ -1,6 +1,6 @@
 ---
 title: '"Marketing Library Services" Write-Up'
-date: '2019-03-01'
+date: 2019/03/01
 image: images/marketing-library-services.jpg
 category: Librarianship
 ---

@@ -1,6 +1,6 @@
 ---
 title: Week 15
-date: '2020-05-01'
+date: 2020/05/01
 image: images/20200203-Shelly_Spec_Coll.jpg
 category: Librarianship
 ---

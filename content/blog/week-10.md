@@ -1,6 +1,6 @@
 ---
 title: Week 10
-date: '2020-03-20'
+date: 2020/03/20
 image: images/spiegel-laptop.jpg
 category: Librarianship
 ---

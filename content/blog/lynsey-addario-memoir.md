@@ -1,6 +1,6 @@
 ---
 title: Lynsey Addario's Memoir
-date: '2015-07-13'
+date: 2015/07/13
 image: images/linsey-addarop-memoir.jpg
 category: Photography
 ---

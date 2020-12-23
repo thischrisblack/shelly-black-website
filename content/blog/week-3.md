@@ -1,6 +1,6 @@
 ---
 title: Week 3
-date: '2020-01-31'
+date: 2020/01/31
 image: images/newspaper.jpg
 category: Librarianship
 ---
