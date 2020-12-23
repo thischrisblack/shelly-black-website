@@ -14,9 +14,11 @@ export default function PostList({
             <ol>
                 {posts &&
                     posts.map((post) => {
+                        const imgSrc =
+                            post.image + '?nf_resize=smartcrop&w=300&h=300';
                         return (
                             <li key={post.id}>
-                                <img src={post.image} width="100" />
+                                <img src={imgSrc} width="300" />
                                 <Link href={{ pathname: `/post/${post.id}` }}>
                                     <a>{post.title}</a>
                                 </Link>
