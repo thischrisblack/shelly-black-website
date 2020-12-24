@@ -18,7 +18,7 @@ export default function PostList({
                             post.image + '?nf_resize=smartcrop&w=300&h=300';
                         return (
                             <li key={post.id}>
-                                <img src={imgSrc} width="300" />
+                                <img src={imgSrc} />
                                 <Link href={{ pathname: `/post/${post.id}` }}>
                                     <a>{post.title}</a>
                                 </Link>
