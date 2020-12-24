@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { IPostFrontmatter } from '../utils/content-retrieval';
+import { getImagePath, ImageTransformations } from '../utils/get-image-path';
 
 export default function PostList({
     posts,
@@ -14,8 +15,12 @@ export default function PostList({
             <ol>
                 {posts &&
                     posts.map((post) => {
-                        const imgSrc =
-                            post.image + '?nf_resize=smartcrop&w=300&h=300';
+                        const imgSrc = getImagePath(
+                            post.image,
+                            ImageTransformations.Smartcrop,
+                            200,
+                            200
+                        );
                         return (
                             <li key={post.id}>
                                 <img src={imgSrc} />
