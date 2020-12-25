@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import { IPostFrontmatter } from '../utils/content-retrieval';
-import { getImagePath, ImageTransformations } from '../utils/get-image-path';
+import {
+    getAbsoluteImageUrl,
+    ImageTransformations,
+} from '../utils/get-absolute-image-path';
 
 export default function PostList({
     posts,
@@ -15,7 +18,7 @@ export default function PostList({
             <ol>
                 {posts &&
                     posts.map((post) => {
-                        const imgSrc = getImagePath(
+                        const imgSrc = getAbsoluteImageUrl(
                             post.image,
                             ImageTransformations.Smartcrop,
                             200,
