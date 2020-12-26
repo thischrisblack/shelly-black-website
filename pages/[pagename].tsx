@@ -4,16 +4,20 @@ import ReactMarkdown from 'react-markdown';
 import { GetStaticProps, GetStaticPaths } from 'next';
 
 import Layout from '../components/Layout';
-import { contentPaths, getAllIds } from '../utils/content-retrieval';
+import {
+    contentPaths,
+    getAllIds,
+    getSinglePost,
+} from '../utils/content-retrieval';
 
 export default function PageContainer({
     siteTitle,
     frontmatter,
-    markdownBody,
+    content,
 }: {
     siteTitle: string;
     frontmatter: any;
-    markdownBody: string;
+    content: string;
 }) {
     if (!frontmatter) return <></>;
 
@@ -25,7 +29,7 @@ export default function PageContainer({
             <article>
                 <h1>{frontmatter.title}</h1>
                 <div>
-                    <ReactMarkdown source={markdownBody} />
+                    <ReactMarkdown source={content} />
                 </div>
             </article>
         </Layout>
@@ -34,16 +38,14 @@ export default function PageContainer({
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { pagename } = ctx.params;
-    // TODO: Use getSinglePost here like in [postname].tsx
-    const content = await import(`../content/pages/${pagename}.md`);
+
+    const pageData = getSinglePost(pagename as string, contentPaths.pages);
     const config = await import(`../siteconfig.json`);
-    const data = matter(content.default);
 
     return {
         props: {
             siteTitle: config.title,
-            frontmatter: data.data,
-            markdownBody: data.content,
+            ...pageData,
         },
     };
 };

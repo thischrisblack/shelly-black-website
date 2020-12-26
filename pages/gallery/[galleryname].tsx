@@ -4,16 +4,20 @@ import ReactMarkdown from 'react-markdown';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
 import Layout from '../../components/Layout';
-import { contentPaths, getAllIds } from '../../utils/content-retrieval';
+import {
+    contentPaths,
+    getAllIds,
+    getSinglePost,
+} from '../../utils/content-retrieval';
 
 export default function Gallery({
     siteTitle,
     frontmatter,
-    markdownBody,
+    content,
 }: {
     siteTitle: string;
     frontmatter: any;
-    markdownBody: string;
+    content: string;
 }) {
     if (!frontmatter) return <></>;
 
@@ -25,7 +29,7 @@ export default function Gallery({
             <article>
                 <h1>{frontmatter.title}</h1>
                 <div>
-                    <ReactMarkdown source={markdownBody} />
+                    <ReactMarkdown source={content} />
                 </div>
                 <div>
                     {frontmatter.galleryImages.map((image) => (
@@ -39,16 +43,17 @@ export default function Gallery({
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { galleryname } = ctx.params;
-    // TODO: Use getSinglePost here like in [postname].tsx
-    const content = await import(`../../content/galleries/${galleryname}.md`);
+
+    const galleryData = getSinglePost(
+        galleryname as string,
+        contentPaths.galleries
+    );
     const config = await import(`../../siteconfig.json`);
-    const data = matter(content.default);
 
     return {
         props: {
             siteTitle: config.title,
-            frontmatter: data.data,
-            markdownBody: data.content,
+            ...galleryData,
         },
     };
 };

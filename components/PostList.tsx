@@ -1,9 +1,5 @@
 import Link from 'next/link';
 import { IPostFrontmatter } from '../utils/content-retrieval';
-import {
-    getAbsoluteImageUrl,
-    ImageTransformations,
-} from '../utils/get-absolute-image-path';
 
 export default function PostList({
     posts,
@@ -18,16 +14,10 @@ export default function PostList({
             <ol>
                 {posts &&
                     posts.map((post) => {
-                        const imgSrc = getAbsoluteImageUrl(
-                            post.image,
-                            ImageTransformations.Smartcrop,
-                            200,
-                            200
-                        );
                         return (
                             <li key={post.id}>
-                                <img src={imgSrc} />
-                                <Link href={{ pathname: `/post/${post.id}` }}>
+                                <img src={post.image} />
+                                <Link href={{ pathname: `/blog/${post.id}` }}>
                                     <a>{post.title}</a>
                                 </Link>
                             </li>

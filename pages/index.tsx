@@ -7,6 +7,10 @@ import {
     getAllPostFrontmatter,
     IPostFrontmatter,
 } from '../utils/content-retrieval';
+import {
+    getAbsoluteImageUrl,
+    ImageTransformations,
+} from '../utils/get-absolute-image-path';
 
 const Index = ({
     posts,
@@ -33,9 +37,20 @@ export default Index;
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const configData = await import(`../siteconfig.json`);
     const allPostsFrontmatter = getAllPostFrontmatter(contentPaths.blog) || [];
+    const postsWithRootImageUrl = allPostsFrontmatter.map((post) => {
+        return {
+            ...post,
+            image: getAbsoluteImageUrl(
+                post.image,
+                ImageTransformations.Smartcrop,
+                200,
+                200
+            ),
+        };
+    });
     return {
         props: {
-            posts: allPostsFrontmatter,
+            posts: postsWithRootImageUrl,
             title: configData.default.title,
             description: configData.default.description,
         },

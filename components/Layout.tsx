@@ -15,6 +15,7 @@ export default function Layout({
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
+                <title>{pageTitle}</title>
                 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
             </Head>
             <Navigation />
