@@ -2,8 +2,6 @@ import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import styles from './Home.module.scss';
 
-import Layout from '../components/Layout';
-import PostList from '../components/PostList';
 import {
     contentPaths,
     getAllPostFrontmatter,
@@ -27,11 +25,11 @@ const Index = ({
         <>
             <div className={styles.name}>{title}</div>
             <div className={styles.container}>
-                <div className={styles.about}>Wah</div>
+                <div className={styles.about}>{description}</div>
                 <div className={styles.sections}>
                     <Link href={{ pathname: '/libraries' }}>
                         <h1>
-                            <a>Library &amp; Archival Work</a>
+                            <a>Library &amp; Archival&nbsp;Work</a>
                         </h1>
                     </Link>
                     <Link href={{ pathname: '/photography' }}>

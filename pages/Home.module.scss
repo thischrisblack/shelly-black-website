@@ -1,11 +1,10 @@
 @import '../styles/variables.scss';
 
 .name {
+    padding: 2rem;
     display: flex;
     align-items: center;
-    padding-left: 10rem;
-    height: 40vh;
-    font-size: 12rem;
+    font-size: 8rem;
     font-family: $title-text;
     font-weight: 700;
     text-transform: uppercase;
@@ -13,18 +12,62 @@
 
 .container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about {
-    padding-left: 10rem;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    padding: 2rem;
+
+    a {
+        color: inherit;
+        font-weight: normal;
+    }
 }
 
 .sections {
     text-align: right;
-    padding-right: 10rem;
-    flex: 1 1 0px;
 
     h1 {
-        padding: 1.2rem 0;
+        font-size: 4rem;
+    }
+
+    a {
+        color: inherit;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .name {
+        padding-left: 10%;
+        font-size: 14rem;
+        height: 40vh;
+    }
+
+    .about {
+        padding-left: 10%;
+        padding-right: 5%;
+        max-width: 50rem;
+        min-width: 40rem;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        color: #333;
+    }
+
+    .sections {
+        text-align: right;
+        padding-right: 10rem;
+
+        h1 {
+            font-size: 6.4rem;
+        }
     }
 }
