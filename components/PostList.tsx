@@ -18,7 +18,9 @@ export default function PostList({
                             <li key={post.id}>
                                 <img src={post.image} />
                                 <Link href={{ pathname: `/blog/${post.id}` }}>
-                                    <a>{post.title}</a>
+                                    <h2>
+                                        <a>{post.title}</a>
+                                    </h2>
                                 </Link>
                             </li>
                         );

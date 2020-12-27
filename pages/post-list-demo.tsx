@@ -1,6 +1,4 @@
 import { GetStaticProps } from 'next';
-import Link from 'next/link';
-import styles from './Home.module.scss';
 
 import Layout from '../components/Layout';
 import PostList from '../components/PostList';
@@ -24,24 +22,15 @@ const Index = ({
     description: string;
 }) => {
     return (
-        <>
-            <div className={styles.name}>{title}</div>
-            <div className={styles.container}>
-                <div className={styles.about}>Wah</div>
-                <div className={styles.sections}>
-                    <Link href={{ pathname: '/libraries' }}>
-                        <h1>
-                            <a>Library &amp; Archival Work</a>
-                        </h1>
-                    </Link>
-                    <Link href={{ pathname: '/photography' }}>
-                        <h1>
-                            <a>Photography</a>
-                        </h1>
-                    </Link>
-                </div>
-            </div>
-        </>
+        <Layout pageTitle={title}>
+            <h1 className="title">Welcome to my blog!</h1>
+            <h2 className="title">Welcome to my blog!</h2>
+            <h3 className="title">Welcome to my blog!</h3>
+            <p className="description">{description}</p>
+            <main>
+                <PostList posts={posts} />
+            </main>
+        </Layout>
     );
 };
 
