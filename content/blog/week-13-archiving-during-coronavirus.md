@@ -2,7 +2,7 @@
 title: 'Week 13: Archiving during coronavirus'
 date: 2020/04/16
 image: images/asche.jpg
-category: Librarianship
+category: Library & Archival Work
 ---
 
 _Originally [posted](https://archivistapprenticeship.wordpress.com/2020/04/15/archiving-during-coronavirus/) on Archivist Apprenticeship on April 15, 2020._

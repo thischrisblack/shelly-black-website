@@ -22,7 +22,6 @@ export default function Layout({
             <section className="layout">
                 <div className="content">{children}</div>
             </section>
-            <footer>Built by me!</footer>
         </>
     );
 }

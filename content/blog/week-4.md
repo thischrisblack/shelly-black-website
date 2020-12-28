@@ -2,7 +2,7 @@
 title: 'Week 4: Getting acquainted with George Chambers'
 date: 2020/02/05
 image: images/newspaper-press.jpg
-category: Librarianship
+category: Library & Archival Work
 ---
 
 _Originally [posted](https://archivistapprenticeship.wordpress.com/2020/02/05/getting-acquainted-with-george-chambers/) on Archivist Apprenticeship on February 5, 2020._

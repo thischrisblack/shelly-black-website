@@ -2,7 +2,7 @@
 title: Week 5
 date: 2020/02/15
 image: images/george-chambers.jpg
-category: Librarianship
+category: Library & Archival Work
 ---
 
 This week I only had one shift, so I was relieved to have completed most of my survey of the George Chambers Papers. (One oversize box is left to go!) A profile of Chambers continues to emerge as I explore his papers. He was Republican during the 1964 presidential election, which I gathered from his cordial correspondence with Senator Barry Goldwater. He had a sense of humor, evidenced by a photo of him and a possible colleague in just shirts and boxers. There were also 7" tapes, where one recording from a day in the office of Arizona Silhouettes features someone telling adult jokes in Spanish.

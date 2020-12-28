@@ -2,7 +2,7 @@
 title: 'Book chapter in "Social Media for Communication and Instruction in Academic Libraries" published'
 date: 2019/03/23
 image: images/social-media-book.jpg
-category: Librarianship
+category: Library & Archival Work
 ---
 
 I am excited to see my book chapter, ["Diversity and Inclusion: How to Avoid Bias and Social Media Blunders,"](https://repository.arizona.edu/handle/10150/631799) in print!

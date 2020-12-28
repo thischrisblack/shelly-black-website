@@ -33,14 +33,14 @@ collections:
           label: "Category",
           name: "category",
           widget: "select",
-          options: ["Photography", "Librarianship"],
+          options: ["Photography", "Library & Archival Work"],
           default: "Photography",
         }
-  - label: "Librarianship Blog"
-    name: "librarianship-blog"
+  - label: "Library & Archival Work Blog"
+    name: "Library & Archival Work-blog"
     folder: "content/blog"
     create: true
-    filter: { field: "category", value: "Librarianship" }
+    filter: { field: "category", value: "Library & Archival Work" }
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {
@@ -63,8 +63,8 @@ collections:
           label: "Category",
           name: "category",
           widget: "select",
-          options: ["Photography", "Librarianship"],
-          default: "Librarianship",
+          options: ["Photography", "Library & Archival Work"],
+          default: "Library & Archival Work",
         }
   - label: "Gallery"
     name: "gallery"

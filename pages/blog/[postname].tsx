@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import styles from './Post.module.scss';
 
 import Layout from '../../components/Layout';
 import {
@@ -26,13 +27,23 @@ export default function BlogPost({
 
     return (
         <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
-            <Link href="/">
-                <a>Back to post list</a>
-            </Link>
-            <article>
-                <img src={frontmatter.image} />
-                <h1>{frontmatter.title}</h1>
-                <div>
+            <article className={styles.post}>
+                <div className={styles.meta}>
+                    <p>
+                        {new Date(frontmatter.date).toLocaleDateString([], {
+                            weekday: 'long',
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric',
+                        })}
+                    </p>
+                    <h2>{frontmatter.title}</h2>
+                    <p>
+                        <em>{frontmatter.category}</em>
+                    </p>
+                </div>
+                <div className={styles.content}>
+                    <img src={frontmatter.image} />
                     <ReactMarkdown source={content} escapeHtml={false} />
                 </div>
             </article>
@@ -53,7 +64,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
             image: getAbsoluteImageUrl(
                 postData.frontmatter.image,
                 ImageTransformations.Fit,
-                600,
+                920,
                 null
             ),
         },

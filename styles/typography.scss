@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-@import './variables.scss';
-
 html {
     font-size: 62.5%;
 }
 
 body {
     font-family: $body-text;
+    font-weight: 400;
     color: $text-color;
     font-size: 1.6rem;
 }
@@ -16,7 +13,7 @@ h1 {
     font-family: $title-text;
     font-weight: 700;
     font-size: 6.4rem;
-    margin: 36px 0;
+    margin: 12px;
     text-transform: uppercase;
 
     a {
@@ -28,7 +25,7 @@ h1 {
 h2 {
     font-family: $title-text;
     font-weight: 600;
-    font-size: 3.2rem;
+    font-size: 3.6rem;
     margin: 12px 0;
     text-transform: uppercase;
 
@@ -40,7 +37,7 @@ h2 {
 
 h3 {
     font-family: $title-text;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 2.4rem;
     text-transform: uppercase;
 

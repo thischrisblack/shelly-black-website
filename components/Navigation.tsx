@@ -5,12 +5,7 @@ export default function Navigation() {
         <>
             <header className="header">
                 <nav className="nav">
-                    <Link href="/">
-                        <a>My Blog</a>
-                    </Link>
-                    <Link href="/about">
-                        <a>About</a>
-                    </Link>
+                    <h1>Shelly Black</h1>
                 </nav>
             </header>
         </>

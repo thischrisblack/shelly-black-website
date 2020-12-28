@@ -2,7 +2,7 @@
 title: Week 10
 date: 2020/03/20
 image: images/spiegel-laptop.jpg
-category: Librarianship
+category: Library & Archival Work
 ---
 
 Life changed drastically due to COVID-19. Classes and work, including internships, have become remote (pictured is my work from home setup). While much archival work is hands-on, there is plenty to keep me busy for the rest of the semester.

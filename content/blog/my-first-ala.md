@@ -2,7 +2,7 @@
 title: My First ALA
 date: 2019/07/07
 image: images/ALA-convention-center.jpg
-category: Librarianship
+category: Library & Archival Work
 ---
 
 ![](../images/ALA-Poster-1.jpg)
