@@ -1,11 +1,23 @@
 import Link from 'next/link';
 import Hamburger from 'hamburger-react';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styles from './Navigation.module.scss';
 import ColorBar from './ColorBar';
 
 export default function Navigation() {
     const [isOpen, setOpen] = useState(false);
+
+    const photoNav = useRef(null);
+    const libraryNav = useRef(null);
+
+    // Open/close nav items.
+    useEffect(() => {
+        if (typeof window !== 'undefined' && window.innerWidth < 700) {
+            photoNav.current.style.display = isOpen ? 'block' : 'none';
+            libraryNav.current.style.display = isOpen ? 'block' : 'none';
+        }
+    });
+
     return (
         <>
             <header>
@@ -15,9 +27,9 @@ export default function Navigation() {
                             <a>Shelly Black</a>
                         </Link>
                     </div>
-                    <div className={styles.navSection}>
+                    <div className={styles.navSection} ref={libraryNav}>
                         Library &amp; Archive Work
-                        <ul>
+                        <ul onClick={() => setOpen(false)}>
                             <li>
                                 <Link href={{ pathname: '/about' }}>
                                     <a>About</a>
@@ -40,9 +52,9 @@ export default function Navigation() {
                             </li>
                         </ul>
                     </div>
-                    <div className={styles.navSection}>
+                    <div className={styles.navSection} ref={photoNav}>
                         Photography
-                        <ul>
+                        <ul onClick={() => setOpen(false)}>
                             <li>
                                 <Link href={{ pathname: '/gallery' }}>
                                     <a>Gallery</a>

@@ -27,6 +27,7 @@ collections:
           name: "image",
           widget: "image",
           default: "../images/photography-default.jpg",
+          required: false,
         }
       - { label: "Body", name: "body", widget: "markdown" }
       - {
@@ -57,6 +58,7 @@ collections:
           name: "image",
           widget: "image",
           default: "../images/library-default.jpg",
+          required: false,
         }
       - { label: "Body", name: "body", widget: "markdown" }
       - {
@@ -87,4 +89,5 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }

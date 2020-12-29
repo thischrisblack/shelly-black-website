@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import { GetStaticProps, GetStaticPaths } from 'next';
-
+// Just using same styles as posts for now.
+import styles from './blog/Post.module.scss';
 import Layout from '../components/Layout';
+
 import {
     contentPaths,
     getAllIds,
@@ -23,13 +23,13 @@ export default function PageContainer({
 
     return (
         <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
-            <Link href="/">
-                <a>Back to post list</a>
-            </Link>
-            <article>
-                <h1>{frontmatter.title}</h1>
-                <div>
-                    <ReactMarkdown source={content} />
+            <article className={styles.post}>
+                <div className={styles.meta}>
+                    <h2>{frontmatter.title}</h2>
+                    {frontmatter.image && <img src={frontmatter.image} />}
+                </div>
+                <div className={styles.content}>
+                    <ReactMarkdown source={content} escapeHtml={false} />
                 </div>
             </article>
         </Layout>

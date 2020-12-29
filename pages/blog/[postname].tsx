@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import styles from './Post.module.scss';
