@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Hamburger from 'hamburger-react';
 import { useState } from 'react';
 import styles from './Navigation.module.scss';
+import ColorBar from './ColorBar';
 
 export default function Navigation() {
     const [isOpen, setOpen] = useState(false);
@@ -16,20 +17,13 @@ export default function Navigation() {
                         <h3>Photography</h3>
                     </div>
                     <div className={styles.library}>
-                        <h3>Library &amp Archive Work</h3>
+                        <h3>Library &amp; Archive Work</h3>
                     </div>
                     <div className={styles.burger}>
                         <Hamburger toggled={isOpen} toggle={setOpen} />
                     </div>
-                    <div className={styles.colorbar}>
-                        <div className={styles.blue}></div>
-                        <div className={styles.aqua}></div>
-                        <div className={styles.lime}></div>
-                        <div className={styles.yellow}></div>
-                        <div className={styles.red}></div>
-                        <div className={styles.fuchsia}></div>
-                    </div>
                 </nav>
+                <ColorBar />
             </header>
         </>
     );

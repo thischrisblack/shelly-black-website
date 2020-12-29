@@ -1,0 +1,42 @@
+.colorbar {
+    grid-area: colorbar;
+    display: flex;
+    height: 1rem;
+    width: 100%;
+}
+
+.blue {
+    background: blue;
+    flex: 1;
+}
+
+.aqua {
+    background: aqua;
+    flex: 1;
+}
+
+.lime {
+    background: lime;
+    flex: 1;
+}
+
+.yellow {
+    background: yellow;
+    flex: 1;
+}
+
+.red {
+    background: red;
+    flex: 1;
+}
+
+.fuchsia {
+    background: fuchsia;
+    flex: 1;
+}
+
+@media screen and (min-width: 800px) {
+    .colorbar {
+        height: 3rem;
+    }
+}
