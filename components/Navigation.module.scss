@@ -1,0 +1,101 @@
+.nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto min-content;
+    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-areas:
+        'name burger'
+        'photo photo'
+        'library library'
+        'colorbar colorbar';
+}
+
+.name {
+    grid-area: name;
+    margin-left: 1rem;
+
+    h1 {
+        font-size: 3.2rem;
+        margin: 0.8rem 0;
+    }
+}
+
+.burger {
+    grid-area: burger;
+    text-align: right;
+    margin-right: 0.5rem;
+}
+
+.photo {
+    grid-area: photo;
+    display: none;
+}
+
+.library {
+    grid-area: library;
+    display: none;
+}
+
+.colorbar {
+    grid-area: colorbar;
+    display: flex;
+    height: 1rem;
+    width: 100%;
+}
+
+.blue {
+    background: blue;
+    flex: 1;
+}
+
+.aqua {
+    background: aqua;
+    flex: 1;
+}
+
+.lime {
+    background: lime;
+    flex: 1;
+}
+
+.yellow {
+    background: yellow;
+    flex: 1;
+}
+
+.red {
+    background: red;
+    flex: 1;
+}
+
+.fuchsia {
+    background: fuchsia;
+    flex: 1;
+}
+@media screen and (min-width: 800px) {
+    .nav {
+        grid-template-columns: max-content max-content auto;
+        grid-template-rows: min-content min-content;
+        grid-template-areas:
+            'name photo library'
+            'colorbar colorbar colorbar';
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .photo {
+        grid-area: photo;
+        display: block;
+    }
+
+    .library {
+        grid-area: library;
+        display: block;
+    }
+
+    .colorbar {
+        height: 3rem;
+    }
+}

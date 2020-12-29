@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
+    "hamburger-react": "^2.4.0",
     "next": "10.0.3",
     "raw-loader": "^4.0.2",
     "react": "17.0.1",
