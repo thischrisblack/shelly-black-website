@@ -1,4 +1,36 @@
 @import '../styles/variables.scss';
 
+.content {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-template-areas:
+        'left'
+        'right';
+}
+
+.left {
+    grid-area: left;
+    padding: 2rem 4rem;
+    font-size: 2.2rem;
+
+    a {
+        font-weight: 400;
+        color: $text-color;
+    }
+}
+
+.right {
+    grid-area: right;
+}
+
+.more {
+    opacity: 0;
+    transition: all 1s;
+}
+
 @media only screen and (min-width: 1024px) {
+    .content {
+        grid-template-columns: 58rem 70rem auto;
+        grid-template-areas: 'left right .';
+    }
 }
