@@ -11,13 +11,54 @@ export default function Navigation() {
             <header>
                 <nav className={styles.nav}>
                     <div className={styles.name}>
-                        <h1>Shelly Black</h1>
+                        <Link href={{ pathname: '/' }}>
+                            <a>Shelly Black</a>
+                        </Link>
                     </div>
-                    <div className={styles.photo}>
-                        <h3>Photography</h3>
+                    <div className={styles.navSection}>
+                        Library &amp; Archive Work
+                        <ul>
+                            <li>
+                                <Link href={{ pathname: '/about' }}>
+                                    <a>About</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={{ pathname: '/cv' }}>
+                                    <a>CV</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={{ pathname: '/portfolio' }}>
+                                    <a>Portfolio</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={{ pathname: '/library-blog' }}>
+                                    <a>Blog</a>
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
-                    <div className={styles.library}>
-                        <h3>Library &amp; Archive Work</h3>
+                    <div className={styles.navSection}>
+                        Photography
+                        <ul>
+                            <li>
+                                <Link href={{ pathname: '/gallery' }}>
+                                    <a>Gallery</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={{ pathname: '/exhibits' }}>
+                                    <a>Exhibits</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={{ pathname: '/photo-blog' }}>
+                                    <a>Blog</a>
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
                     <div className={styles.burger}>
                         <Hamburger toggled={isOpen} toggle={setOpen} />

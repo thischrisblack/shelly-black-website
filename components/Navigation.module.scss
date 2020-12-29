@@ -1,54 +1,87 @@
+@import '../styles/variables.scss';
+
 .nav {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    position: relative;
+    align-items: flex-start;
+    padding: 2rem 0.5rem 2rem 0.5rem;
+}
+
+.navSection {
+    font-family: $title-text;
+    font-weight: 600;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    padding-top: 2rem;
+
+    ul {
+        padding: 0.25rem 0 0 0;
+        margin: 0;
+        list-style: none;
+        font-family: $body-text;
+        font-size: 1.6rem;
+        text-transform: none;
+
+        li {
+            padding: 0;
+            margin-right: 2rem;
+            display: inline-block;
+            font-weight: 400;
+
+            a {
+                font-weight: 400;
+                color: $text-color;
+            }
+        }
+    }
 }
 
 .name {
-    margin-left: 1rem;
+    font-family: $title-text;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding-left: 1rem;
 
-    h1 {
-        font-size: 3.6rem;
-        margin: 0.8rem 0;
+    a {
+        color: $text-color;
     }
 }
 
 .burger {
     display: inline-block;
     position: absolute;
-    top: 0.3rem;
-    right: 0.5rem;
-}
-
-.photo {
-    display: none;
-}
-
-.library {
-    display: none;
+    top: 1.8rem;
+    right: 2.2rem;
 }
 
 @media screen and (min-width: 800px) {
     .nav {
         flex-direction: row;
         align-items: center;
+        padding: 2rem 1rem 2rem 1rem;
     }
 
     .burger {
         display: none;
+        top: 1.8rem;
+        right: 3.6rem;
     }
 
-    .photo {
-        display: block;
+    .navSection {
+        padding-left: 8rem;
+        font-size: 2.2rem;
+        padding-top: 0;
+
+        ul {
+            font-size: 1.4rem;
+        }
     }
 
-    .library {
-        display: block;
-    }
-
-    .colorbar {
-        height: 3rem;
+    .name {
+        font-size: 4.6rem;
     }
 }
