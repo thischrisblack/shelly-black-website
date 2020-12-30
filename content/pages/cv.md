@@ -70,36 +70,54 @@ Black, S., & Prescott-Smith, J. (2017, September). _Special Collections: Shining
 
 #### National
 
-Privacy and Confidentiality Section Steering Committee, Society of American Archivists (2020-Present)  
-Advisory Committee, Historical Nikkei American Missions Archive (2020-Present)  
+Privacy and Confidentiality Section Steering Committee, Society of American Archivists (2020-Present)
+
+Advisory Committee, Historical Nikkei American Missions Archive (2020-Present)
+
 Media and Publicity Committee, Asian Pacific American Librarians Association (2019-20)
 
 #### Local
 
-Information Technology Advisory Committee, North Carolina State University Libraries (2020-Present)  
-Director of Special Collections Search Committee, University of Arizona Libraries (2019)  
+Information Technology Advisory Committee, North Carolina State University Libraries (2020-Present)
+
+Director of Special Collections Search Committee, University of Arizona Libraries (2019)
+
 Diversity, Social Justice, and Equity Council, University of Arizona Libraries (2016–18)
 
 ## Awards
 
-ALA Emerging Leader (2020)  
-Dr. Arnulfo D. Trejo Memorial Scholarship (2019-20)  
-University of Arizona School of Information Tuition Scholarship (2019-20)  
-IDEAL’19: Advancing Inclusion, Diversity, Equity, and Accessibility in Libraries & Archives Conference Scholarship Award (2019)  
-Society of Human Resource Management of Greater Tucson Diversity & Inclusion Award as a member of the University of Arizona Libraries Diversity, Social Justice and Equity Council (2018)  
-University of Arizona College of Fine Arts Small Grant (2009)  
-University of Arizona Asian American Faculty, Staff, and Alumni Association Grant (2009)  
+ALA Emerging Leader (2020)
+
+Dr. Arnulfo D. Trejo Memorial Scholarship (2019-20)
+
+University of Arizona School of Information Tuition Scholarship (2019-20)
+
+IDEAL’19: Advancing Inclusion, Diversity, Equity, and Accessibility in Libraries & Archives Conference Scholarship Award (2019)
+
+Society of Human Resource Management of Greater Tucson Diversity & Inclusion Award as a member of the University of Arizona Libraries Diversity, Social Justice and Equity Council (2018)
+
+University of Arizona College of Fine Arts Small Grant (2009)
+
+University of Arizona Asian American Faculty, Staff, and Alumni Association Grant (2009)
+
 University of Arizona Student Affairs Student/Faculty Interaction Program Grant (2009)
 
 ## Affiliations
 
-Academy of Certified Archivists (2020-Present, provisional status)  
-Society of American Archivists (2020-Present)  
-International Council on Archives (2020-Present)  
-Asian Pacific American Librarians Association (2018-Present)  
-REFORMA (National Association to Promote Library and Information Services to Latinos and the Spanish-Speaking) (2019-Present)  
-American Library Association (2018-2020)  
-Arizona Library Association (2018-2020)  
+Academy of Certified Archivists (2020-Present, provisional status)
+
+Society of American Archivists (2020-Present)
+
+International Council on Archives (2020-Present)
+
+Asian Pacific American Librarians Association (2018-Present)
+
+REFORMA (National Association to Promote Library and Information Services to Latinos and the Spanish-Speaking) (2019-Present)
+
+American Library Association (2018-2020)
+
+Arizona Library Association (2018-2020)
+
 University of Arizona Knowledge River Cohort 17
 
 ## Skills
@@ -120,5 +138,6 @@ Final Cut Pro
 
 #### Languages
 
-Limited working proficiency in Japanese  
+Limited working proficiency in Japanese
+
 Elementary proficiency in Spanish

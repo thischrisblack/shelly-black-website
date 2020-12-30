@@ -1,29 +1,41 @@
 import Link from 'next/link';
 import { IPostFrontmatter } from '../utils/content-retrieval';
+import styles from './PostList.module.scss';
 
 export default function PostList({
     posts,
 }: {
     posts: Array<IPostFrontmatter>;
 }) {
-    if (posts === []) return null;
-
     return (
-        <div>
-            {(!posts || posts.length === 0) && <div>No posts!</div>}
+        <div className={styles.postList}>
+            {(!posts || posts.length === 0) && <div>No posts to display.</div>}
             <ol>
                 {posts &&
                     posts.map((post) => {
                         return (
-                            <li key={post.id}>
-                                <div className="listImage">
-                                    <img src={post.image} />
+                            <li key={post.id} className={styles.postItem}>
+                                <div className={styles.postImage}>
+                                    <Link
+                                        href={{ pathname: `/blog/${post.id}` }}
+                                    >
+                                        <a>
+                                            <img src={post.image} />
+                                        </a>
+                                    </Link>
                                 </div>
-                                <Link href={{ pathname: `/blog/${post.id}` }}>
-                                    <h2>
-                                        <a>{post.title}</a>
-                                    </h2>
-                                </Link>
+                                <div className={styles.postTitle}>
+                                    <Link
+                                        href={{ pathname: `/blog/${post.id}` }}
+                                    >
+                                        <h3>
+                                            <a>{post.title}</a>
+                                        </h3>
+                                    </Link>
+                                </div>
+                                <div className={styles.postDate}>
+                                    {post.date}
+                                </div>
                             </li>
                         );
                     })}

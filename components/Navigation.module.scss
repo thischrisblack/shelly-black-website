@@ -34,6 +34,10 @@
             a {
                 font-weight: 400;
                 color: $text-color;
+
+                &:hover {
+                    font-weight: 700;
+                }
             }
         }
     }
@@ -55,10 +59,10 @@
     display: inline-block;
     position: absolute;
     top: 1.5rem;
-    right: 2.2rem;
+    right: 1.5rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1050px) {
     .nav {
         flex-direction: row;
         align-items: center;

@@ -1,5 +1,4 @@
--   Make home page
--   Make blog pages
+-   Add prev/next links in post meta.
 -   Make fancy hover effect for nav links
 -   Make gallery page
 -   Image gallery in post "macro-landscape" and similar.

@@ -12,7 +12,7 @@ import {
 } from '../utils/get-absolute-image-path';
 import styles from '../styles/Content.module.scss';
 
-const LibraryBlog = ({
+const PhotographyBlog = ({
     posts,
     title,
 }: {
@@ -33,7 +33,7 @@ const LibraryBlog = ({
     );
 };
 
-export default LibraryBlog;
+export default PhotographyBlog;
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const configData = await import(`../siteconfig.json`);
@@ -44,13 +44,13 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
             image: getAbsoluteImageUrl(
                 post.image,
                 ImageTransformations.Smartcrop,
-                600,
-                600
+                360,
+                360
             ),
         };
     });
     const onlyLibraryPosts = postsWithRootImageUrl.filter(
-        (post) => post.category === 'Library & Archival Work'
+        (post) => post.category === 'Photography'
     );
     return {
         props: {

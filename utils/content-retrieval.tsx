@@ -31,6 +31,7 @@ export interface IPostFrontmatter {
     image?: string;
     galleryImages?: Array<string>;
     category?: string;
+    privtae?: boolean;
 }
 
 export const getAllIds = (directoryPath: string): Array<string> => {
@@ -62,9 +63,10 @@ export const getAllPostFrontmatter = (
     return allPostFrontmatter
         .filter((post) => {
             return (
-                !categoryFilter ||
-                !post.category ||
-                post.category === categoryFilter
+                !post.private &&
+                (!categoryFilter ||
+                    !post.category ||
+                    post.category === categoryFilter)
             );
         })
         .sort((a, b) => {

@@ -1,0 +1,60 @@
+.postList {
+    ol {
+        padding: 0;
+    }
+}
+
+.postItem {
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+        'image'
+        'title'
+        'date';
+    margin-bottom: 7rem;
+}
+
+.postImage {
+    grid-area: image;
+    width: 100%;
+    a {
+        transform: none;
+    }
+}
+
+.postTitle {
+    grid-area: title;
+
+    h3 {
+        margin: 0;
+    }
+}
+
+.postDate {
+    grid-area: date;
+}
+
+@media screen and (min-width: 800px) {
+    .postItem {
+        grid-template-rows: 1fr min-content min-content 1fr;
+        grid-template-columns: min-content 1fr;
+        grid-template-areas:
+            'image .'
+            'image title'
+            'image date'
+            'image .';
+
+        &:hover {
+            .postImage {
+                opacity: 1;
+            }
+        }
+    }
+
+    .postImage {
+        width: 15rem;
+        margin-right: 2rem;
+        opacity: 0.7;
+        transition: opacity 0.5s;
+    }
+}

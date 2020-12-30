@@ -1,6 +1,5 @@
 import ReactMarkdown from 'react-markdown';
 import { GetStaticProps, GetStaticPaths } from 'next';
-// Just using same styles as posts for now.
 import styles from '../styles/Content.module.scss';
 import Layout from '../components/Layout';
 

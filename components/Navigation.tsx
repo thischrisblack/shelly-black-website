@@ -12,7 +12,7 @@ export default function Navigation() {
 
     // Open/close nav items.
     useEffect(() => {
-        if (typeof window !== 'undefined' && window.innerWidth < 700) {
+        if (typeof window !== 'undefined' && window.innerWidth < 1050) {
             photoNav.current.style.display = isOpen ? 'block' : 'none';
             libraryNav.current.style.display = isOpen ? 'block' : 'none';
         }
@@ -66,7 +66,7 @@ export default function Navigation() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href={{ pathname: '/photo-blog' }}>
+                                <Link href={{ pathname: '/photography-blog' }}>
                                     <a>Blog</a>
                                 </Link>
                             </li>

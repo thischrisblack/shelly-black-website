@@ -29,6 +29,7 @@ collections:
           default: "../images/photography-default.jpg",
           required: false,
         }
+      - { label: "Private", name: "private", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }
       - {
           label: "Category",
@@ -60,6 +61,7 @@ collections:
           default: "../images/library-default.jpg",
           required: false,
         }
+      - { label: "Private", name: "private", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }
       - {
           label: "Category",

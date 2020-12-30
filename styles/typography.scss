@@ -48,20 +48,20 @@ h3 {
 }
 
 a {
-    display: inline-block;
     text-decoration: none;
-    color: $wolfpack-red;
+    color: $link-color;
     font-weight: 700;
     cursor: pointer;
     -webkit-transition-duration: 0.25s;
     transition-duration: 0.25s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
+    -webkit-transition-property: text-decoration;
+    transition-property: text-decoration;
     -webkit-transform-origin: 0 100%;
     transform-origin: 0 100%;
 
     &:hover {
-        -webkit-transform: skew(-10deg);
-        transform: skew(-10deg);
+        // -webkit-transform: skew(-10deg);
+        // transform: skew(-10deg);
+        text-decoration: underline;
     }
 }

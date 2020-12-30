@@ -3,6 +3,7 @@ title: Week 15
 date: 2020/05/01
 image: images/20200203-Shelly_Spec_Coll.jpg
 category: Library & Archival Work
+private: true
 ---
 
 I'm surprised that my internship is already almost over! While the first weeks working from home dragged on, time began to fly by. This week, I worked on another instruction kit incorporating the Louise Foucar Marshall materials. Instead of piecing her story together, this lesson plan calls for a classroom debate over whether she was guilty of murdering her husband. Adapted from Bahde, Smedberg, and Taormina (2014), students substantiate their arguments using the historical evidence. While I don't necessarily want to sensationalize her life or downplay her contributions, this may be a great way to engage undergraduate students unfamiliar with archives.
