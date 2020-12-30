@@ -1,6 +1,6 @@
 import ReactMarkdown from 'react-markdown';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import styles from './Post.module.scss';
+import styles from '../../styles/Content.module.scss';
 
 import Layout from '../../components/Layout';
 import {
@@ -26,7 +26,7 @@ export default function BlogPost({
 
     return (
         <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
-            <article className={styles.post}>
+            <article className={styles.container}>
                 <div className={styles.meta}>
                     <p>
                         {new Date(frontmatter.date).toLocaleDateString([], {

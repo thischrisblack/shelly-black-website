@@ -16,7 +16,9 @@ export default function PostList({
                     posts.map((post) => {
                         return (
                             <li key={post.id}>
-                                <img src={post.image} />
+                                <div className="listImage">
+                                    <img src={post.image} />
+                                </div>
                                 <Link href={{ pathname: `/blog/${post.id}` }}>
                                     <h2>
                                         <a>{post.title}</a>

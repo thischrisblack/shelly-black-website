@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import { GetStaticProps, GetStaticPaths } from 'next';
 // Just using same styles as posts for now.
-import styles from './blog/Post.module.scss';
+import styles from '../styles/Content.module.scss';
 import Layout from '../components/Layout';
 
 import {
@@ -23,7 +23,7 @@ export default function PageContainer({
 
     return (
         <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
-            <article className={styles.post}>
+            <article className={styles.container}>
                 <div className={styles.meta}>
                     <h2>{frontmatter.title}</h2>
                     {frontmatter.image && <img src={frontmatter.image} />}

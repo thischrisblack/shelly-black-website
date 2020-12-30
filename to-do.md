@@ -2,5 +2,5 @@
 -   Make blog pages
 -   Make fancy hover effect for nav links
 -   Make gallery page
--   OG stuff
 -   Image gallery in post "macro-landscape" and similar.
+-   OG stuff

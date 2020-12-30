@@ -1,4 +1,4 @@
-.post {
+.container {
     display: grid;
     grid-template-rows: min-content min-content;
     grid-template-areas:
@@ -16,7 +16,7 @@
         margin: 0.5rem 0;
     }
 
-    img {
+    img:not(.listImage) {
         width: 100%;
         border: 1px solid #999;
     }
@@ -24,7 +24,6 @@
 
 .content {
     grid-area: content;
-    line-height: 2.4rem;
     padding: 2rem 4rem;
 
     img {
@@ -34,7 +33,7 @@
 }
 
 @media screen and (min-width: 800px) {
-    .post {
+    .container {
         display: grid;
         grid-template-columns: 36rem minmax(0, 92rem) auto;
         grid-template-areas: 'meta content .';
