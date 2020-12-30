@@ -28,7 +28,7 @@ export default function Navigation() {
                         </Link>
                     </div>
                     <div className={styles.navSection} ref={libraryNav}>
-                        Library &amp; Archive Work
+                        Library &amp; Archival Work
                         <ul onClick={() => setOpen(false)}>
                             <li>
                                 <Link href={{ pathname: '/about' }}>
