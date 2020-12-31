@@ -1,0 +1,103 @@
+// This nice effect taken from https://www.web-expert.it/
+
+.navLink {
+    position: relative;
+    &:before {
+        position: absolute;
+        top: -35px;
+        left: 20px;
+        color: #03f2ea;
+        opacity: 0;
+        z-index: -10;
+        filter: drop-shadow(0 0 6px rgba(3, 242, 234, 0.5));
+        transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    &:after {
+        position: absolute;
+        top: 25px;
+        left: -20px;
+        color: #ff0050;
+        opacity: 0;
+        z-index: -10;
+        filter: drop-shadow(0 0 6px rgba(255, 0, 80, 0.51));
+        transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    &:hover {
+        &:before {
+            top: 6px;
+            left: -6px;
+            opacity: 0.4;
+        }
+
+        &:after {
+            top: -3px;
+            left: 6px;
+            opacity: 0.4;
+        }
+    }
+}
+
+.about {
+    &:before {
+        content: 'About';
+    }
+    &:after {
+        content: 'About';
+    }
+}
+
+.cv {
+    &:before {
+        content: 'CV';
+    }
+    &:after {
+        content: 'CV';
+    }
+}
+
+.portfolio {
+    &:before {
+        content: 'Portfolio';
+    }
+    &:after {
+        content: 'Portfolio';
+    }
+}
+
+.blog {
+    &:before {
+        content: 'Blog';
+    }
+    &:after {
+        content: 'Blog';
+    }
+}
+
+.gallery {
+    &:before {
+        content: 'Gallery';
+    }
+    &:after {
+        content: 'Gallery';
+    }
+}
+
+.exhibits {
+    &:before {
+        content: 'Exhibits';
+    }
+    &:after {
+        content: 'Exhibits';
+    }
+}
+
+.homeLink {
+    &:before {
+        content: 'SHELLY BLACK';
+    }
+    &:after {
+        content: 'SHELLY BLACK';
+    }
+}

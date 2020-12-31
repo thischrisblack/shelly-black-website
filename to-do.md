@@ -1,5 +1,4 @@
--   Add prev/next links in post meta.
--   Make fancy hover effect for nav links
+-   Add prev/next links in post meta
 -   Make gallery page
--   Image gallery in post "macro-landscape" and similar.
+-   Image gallery in post "macro-landscape" and similar
 -   OG stuff
