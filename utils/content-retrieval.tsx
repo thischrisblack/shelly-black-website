@@ -151,17 +151,20 @@ export const getSinglePost = (
     const fileContent = fs.readFileSync(fullPath, 'utf8');
     const { data, content } = matter(fileContent);
 
-    const dataWithRootImageUrlAndTransformation = {
-        ...data,
-        image: data.image
-            ? getAbsoluteImageUrl(
-                  data.image,
-                  imageTransformation?.transformation,
-                  imageTransformation?.w,
-                  imageTransformation?.h
-              )
-            : null,
-    };
+    // Transform images if not gifs (to preserve animated gifs)
+    const dataWithRootImageUrlAndTransformation = data.image.includes('gif')
+        ? data
+        : {
+              ...data,
+              image: data.image
+                  ? getAbsoluteImageUrl(
+                        data.image,
+                        imageTransformation?.transformation,
+                        imageTransformation?.w,
+                        imageTransformation?.h
+                    )
+                  : null,
+          };
 
     return {
         frontmatter: dataWithRootImageUrlAndTransformation as IPostFrontmatter,
