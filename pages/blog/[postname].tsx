@@ -60,59 +60,25 @@ export default function BlogPost({
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { postname } = ctx.params;
 
-    const postData = getSinglePost(postname as string, contentPaths.blog);
     const config = await import(`../../siteconfig.json`);
-
-    const postDataWithRootImageUrl = {
-        ...postData,
-        frontmatter: {
-            ...postData.frontmatter,
-            image: getAbsoluteImageUrl(
-                postData.frontmatter.image,
-                postname === 'cinemagraph' ? null : ImageTransformations.Fit,
-                920,
-                null
-            ),
-        },
-    };
+    const postData = getSinglePost(postname as string, contentPaths.blog, {
+        transformation: ImageTransformations.Fit,
+        w: 920,
+        h: null,
+    });
 
     const previousAndNextPosts = getPreviousAndNextFrontmatter(
         postname as string,
         contentPaths.blog,
-        postData.frontmatter.category as BlogCategories
+        postData.frontmatter.category as BlogCategories,
+        { transformation: ImageTransformations.Smartcrop, w: 300, h: 150 }
     );
-
-    const prevAndNextPostsWithRootImageUrl = {
-        ...previousAndNextPosts,
-        previous: previousAndNextPosts.previous
-            ? {
-                  ...previousAndNextPosts.previous,
-                  image: getAbsoluteImageUrl(
-                      previousAndNextPosts.previous?.image,
-                      ImageTransformations.Smartcrop,
-                      300,
-                      150
-                  ),
-              }
-            : null,
-        next: previousAndNextPosts.next
-            ? {
-                  ...previousAndNextPosts.next,
-                  image: getAbsoluteImageUrl(
-                      previousAndNextPosts.next?.image,
-                      ImageTransformations.Smartcrop,
-                      300,
-                      150
-                  ),
-              }
-            : null,
-    };
 
     return {
         props: {
             siteTitle: config.title,
-            previousAndNext: prevAndNextPostsWithRootImageUrl,
-            ...postDataWithRootImageUrl,
+            previousAndNext: previousAndNextPosts,
+            ...postData,
         },
     };
 };

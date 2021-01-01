@@ -2,6 +2,7 @@ import { GetStaticProps } from 'next';
 import Layout from '../components/Layout';
 import PostList from '../components/PostList';
 import {
+    BlogCategories,
     contentPaths,
     getAllPostFrontmatter,
     IPostFrontmatter,
@@ -37,24 +38,16 @@ export default LibraryBlog;
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const configData = await import(`../siteconfig.json`);
-    const allPostsFrontmatter = getAllPostFrontmatter(contentPaths.blog) || [];
-    const postsWithRootImageUrl = allPostsFrontmatter.map((post) => {
-        return {
-            ...post,
-            image: getAbsoluteImageUrl(
-                post.image,
-                ImageTransformations.Smartcrop,
-                600,
-                600
-            ),
-        };
-    });
-    const onlyLibraryPosts = postsWithRootImageUrl.filter(
-        (post) => post.category === 'Library & Archival Work'
-    );
+    const allPostsFrontmatter =
+        getAllPostFrontmatter(contentPaths.blog, BlogCategories.Library, {
+            transformation: ImageTransformations.Smartcrop,
+            w: 600,
+            h: 600,
+        }) || [];
+
     return {
         props: {
-            posts: onlyLibraryPosts,
+            posts: allPostsFrontmatter,
             title: configData.default.title,
         },
     };

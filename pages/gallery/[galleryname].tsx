@@ -44,6 +44,7 @@ export default function Gallery({
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { galleryname } = ctx.params;
 
+    // TODO Don't forget about image transformations?
     const galleryData = getSinglePost(
         galleryname as string,
         contentPaths.galleries

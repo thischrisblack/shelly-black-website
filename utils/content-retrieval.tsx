@@ -1,6 +1,10 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import {
+    getAbsoluteImageUrl,
+    ImageTransformations,
+} from './get-absolute-image-path';
 
 enum ContentDirectories {
     Blog = 'content/blog',
@@ -34,6 +38,12 @@ export interface IPostFrontmatter {
     private?: boolean;
 }
 
+export interface IImageTransformation {
+    transformation?: ImageTransformations;
+    w?: number;
+    h?: number;
+}
+
 export const getAllIds = (directoryPath: string): Array<string> => {
     const fileNames = fs.readdirSync(directoryPath);
     return fileNames.map((fileName) => {
@@ -43,14 +53,19 @@ export const getAllIds = (directoryPath: string): Array<string> => {
 
 export const getAllPostFrontmatter = (
     directoryPath: string,
-    categoryFilter?: BlogCategories
+    categoryFilter?: BlogCategories,
+    imageTransformation?: IImageTransformation
 ): Array<IPostFrontmatter> => {
     const fileNames = fs.readdirSync(directoryPath);
 
     const allPostFrontmatter: Array<IPostFrontmatter> = fileNames.map(
         (fileName): IPostFrontmatter => {
             const id = fileName.replace(/\.md$/, '');
-            const { frontmatter }: IPost = getSinglePost(id, directoryPath);
+            const { frontmatter }: IPost = getSinglePost(
+                id,
+                directoryPath,
+                imageTransformation
+            );
 
             return {
                 id,
@@ -81,7 +96,8 @@ export const getAllPostFrontmatter = (
 export const getPreviousAndNextFrontmatter = (
     currentPost: string,
     directoryPath: string,
-    categoryFilter?: BlogCategories
+    categoryFilter?: BlogCategories,
+    imageTransformation?: IImageTransformation
 ): { previous: IPostFrontmatter; next: IPostFrontmatter } => {
     const fileNames = fs.readdirSync(directoryPath);
 
@@ -89,7 +105,11 @@ export const getPreviousAndNextFrontmatter = (
         .map(
             (fileName): IPostFrontmatter => {
                 const id = fileName.replace(/\.md$/, '');
-                const { frontmatter }: IPost = getSinglePost(id, directoryPath);
+                const { frontmatter }: IPost = getSinglePost(
+                    id,
+                    directoryPath,
+                    imageTransformation
+                );
                 return {
                     id,
                     ...frontmatter,
@@ -122,13 +142,29 @@ export const getPreviousAndNextFrontmatter = (
     };
 };
 
-export const getSinglePost = (id: string, directoryPath: string): IPost => {
+export const getSinglePost = (
+    id: string,
+    directoryPath: string,
+    imageTransformation?: IImageTransformation
+): IPost => {
     const fullPath = path.join(directoryPath, `${id}.md`);
     const fileContent = fs.readFileSync(fullPath, 'utf8');
     const { data, content } = matter(fileContent);
 
+    const dataWithRootImageUrlAndTransformation = {
+        ...data,
+        image: data.image
+            ? getAbsoluteImageUrl(
+                  data.image,
+                  imageTransformation?.transformation,
+                  imageTransformation?.w,
+                  imageTransformation?.h
+              )
+            : null,
+    };
+
     return {
-        frontmatter: data as IPostFrontmatter,
+        frontmatter: dataWithRootImageUrlAndTransformation as IPostFrontmatter,
         content: content,
     };
 };

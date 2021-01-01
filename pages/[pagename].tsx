@@ -42,23 +42,15 @@ export default function PageContainer({
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { pagename } = ctx.params;
     const config = await import(`../siteconfig.json`);
-    const pageData = getSinglePost(pagename as string, contentPaths.pages);
-    const postDataWithRootImageUrl = {
-        ...pageData,
-        frontmatter: {
-            ...pageData.frontmatter,
-            image: getAbsoluteImageUrl(
-                pageData.frontmatter.image,
-                ImageTransformations.Fit,
-                350,
-                null
-            ),
-        },
-    };
+    const pageData = getSinglePost(pagename as string, contentPaths.pages, {
+        transformation: ImageTransformations.Fit,
+        w: 350,
+        h: null,
+    });
     return {
         props: {
             siteTitle: config.title,
-            ...postDataWithRootImageUrl,
+            ...pageData,
         },
     };
 };
