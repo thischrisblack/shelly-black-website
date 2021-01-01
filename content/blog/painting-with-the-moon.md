@@ -1,7 +1,7 @@
 ---
 title: 'Painting with the Moon'
 date: 2015/02/04
-image: images/painting-with-the-moon.jpg
+image: ../images/painting-with-the-moon.jpg
 category: Photography
 ---
 

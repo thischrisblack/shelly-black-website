@@ -1,7 +1,7 @@
 ---
 title: American Marketing Association Interview
 date: 2019/03/05
-image: images/ama-article.jpg
+image: ../images/ama-article.jpg
 category: Library & Archival Work
 ---
 

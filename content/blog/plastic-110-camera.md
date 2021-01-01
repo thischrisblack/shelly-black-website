@@ -1,7 +1,7 @@
 ---
 title: Plastic 110 Camera
 date: 2015/03/09
-image: images/buster-keaton-day.jpg
+image: ../images/buster-keaton-day.jpg
 category: Photography
 ---
 

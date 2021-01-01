@@ -1,7 +1,7 @@
 ---
 title: Week 7
 date: 2020/02/27
-image: images/louise_marshall.jpg
+image: ../images/louise_marshall.jpg
 category: Library & Archival Work
 private: true
 ---

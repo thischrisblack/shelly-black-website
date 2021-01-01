@@ -1,7 +1,7 @@
 ---
 title: Weeks 1-2
 date: 2020/01/22
-image: images/archive-boxes.jpg
+image: ../images/archive-boxes.jpg
 category: Library & Archival Work
 private: true
 ---

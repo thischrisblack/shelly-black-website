@@ -1,7 +1,7 @@
 ---
 title: '"Cat pictures sold like proverbial hot cakes"'
 date: 2015/03/17
-image: images/lounging-spiegel-window.jpg
+image: ../images/lounging-spiegel-window.jpg
 category: Photography
 ---
 

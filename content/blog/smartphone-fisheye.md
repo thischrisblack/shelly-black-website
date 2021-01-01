@@ -1,7 +1,7 @@
 ---
 title: Smartphone Fisheye
 date: 2016/03/26
-image: images/fisheye-spiegel.jpg
+image: ../images/fisheye-spiegel.jpg
 category: Photography
 ---
 

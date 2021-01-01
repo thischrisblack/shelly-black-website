@@ -1,7 +1,7 @@
 ---
 title: 'From the Stacks: Incarceration Camp Photos'
 date: 2016/07/03
-image: images/umbrella-woman-poston.jpg
+image: ../images/umbrella-woman-poston.jpg
 category: Photography
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Week 3
 date: 2020/01/31
-image: images/newspaper.jpg
+image: ../images/newspaper.jpg
 category: Library & Archival Work
 private: true
 ---

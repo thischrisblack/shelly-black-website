@@ -1,7 +1,7 @@
 ---
 title: 'Zoom Lenses'
 date: 2015/01/28
-image: images/zoom-lenses.jpg
+image: ../images/zoom-lenses.jpg
 category: Photography
 ---
 

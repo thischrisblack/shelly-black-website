@@ -1,7 +1,7 @@
 ---
 title: 'Digital Pinhole'
 date: 2015/01/28
-image: images/digital-pinhole.jpg
+image: ../images/digital-pinhole.jpg
 category: Photography
 ---
 

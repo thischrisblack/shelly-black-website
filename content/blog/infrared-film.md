@@ -1,7 +1,7 @@
 ---
 title: Infrared Film
 date: 2016/01/29
-image: images/infrared-film.jpg
+image: ../images/infrared-film.jpg
 category: Photography
 ---
 

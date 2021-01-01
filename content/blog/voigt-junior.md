@@ -1,7 +1,7 @@
 ---
 title: 'Camera Acquisition: Voigt Junior'
 date: 2015/10/20
-image: images/Voigt-Junior-Camera.jpg
+image: ../images/Voigt-Junior-Camera.jpg
 category: Photography
 ---
 

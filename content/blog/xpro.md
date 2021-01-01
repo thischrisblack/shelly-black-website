@@ -1,7 +1,7 @@
 ---
 title: 'Revisiting Cross-Processing'
 date: 2015/01/28
-image: images/xpro.jpg
+image: ../images/xpro.jpg
 category: Photography
 ---
 

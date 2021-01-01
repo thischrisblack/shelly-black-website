@@ -1,7 +1,7 @@
 ---
 title: Enlightened Still Lifes
 date: 2015/03/17
-image: images/seeds.jpg
+image: ../images/seeds.jpg
 category: Photography
 ---
 

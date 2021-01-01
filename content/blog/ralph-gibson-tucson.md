@@ -1,7 +1,7 @@
 ---
 title: Ralph Gibson in Tucson
 date: 2015/10/05
-image: images/gibson-etherton.jpg
+image: ../images/gibson-etherton.jpg
 category: Photography
 ---
 
