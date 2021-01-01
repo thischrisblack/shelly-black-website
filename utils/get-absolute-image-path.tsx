@@ -20,6 +20,9 @@ export const getAbsoluteImageUrl = (
     w?: number,
     h?: number
 ): string => {
+    if (!path) {
+        return null;
+    }
     // Set root URL
     const rootUrl = process.env.ROOT_IMG_URL || '';
 

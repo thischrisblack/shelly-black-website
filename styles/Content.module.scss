@@ -3,13 +3,14 @@
     grid-template-rows: min-content min-content;
     grid-template-areas:
         'meta'
-        'content';
+        'content'
+        'postnav';
+    margin-bottom: 6rem;
 }
 
 .meta {
     grid-area: meta;
     padding: 2rem;
-    hyphens: auto;
 
     p {
         font-size: 1.4rem;
@@ -18,7 +19,6 @@
 
     img:not(.listImage) {
         width: 100%;
-        border: 1px solid #999;
     }
 
     img {
@@ -37,11 +37,19 @@
     }
 }
 
+.postNav {
+    grid-area: postnav;
+    padding: 2rem;
+}
+
 @media screen and (min-width: 700px) {
     .container {
         display: grid;
+        grid-template-rows: 1fr min-content;
         grid-template-columns: minmax(0, 25rem) minmax(0, 102rem) auto;
-        grid-template-areas: 'meta content .';
+        grid-template-areas:
+            'meta content .'
+            'postnav content .';
     }
 
     .meta {
@@ -50,14 +58,21 @@
 
     .content {
         padding: 2rem 4rem;
+    }
+
+    .postNav {
+        margin-top: 5rem;
     }
 }
 
 @media screen and (min-width: 1050px) {
     .container {
         display: grid;
+        grid-template-rows: 1fr min-content;
         grid-template-columns: minmax(0, 35rem) minmax(0, 92rem) auto;
-        grid-template-areas: 'meta content .';
+        grid-template-areas:
+            'meta content .'
+            'postnav content .';
     }
 
     .meta {
@@ -66,5 +81,9 @@
 
     .content {
         padding: 2rem 4rem;
+    }
+
+    .postNav {
+        margin-top: 5rem;
     }
 }

@@ -16,7 +16,7 @@ export const contentPaths = {
 
 export enum BlogCategories {
     Photography = 'Photography',
-    Library = 'Library',
+    Library = 'Library & Archival Work',
 }
 
 export interface IPost {
@@ -31,7 +31,7 @@ export interface IPostFrontmatter {
     image?: string;
     galleryImages?: Array<string>;
     category?: string;
-    privtae?: boolean;
+    private?: boolean;
 }
 
 export const getAllIds = (directoryPath: string): Array<string> => {
@@ -76,6 +76,50 @@ export const getAllPostFrontmatter = (
                 return -1;
             }
         });
+};
+
+export const getPreviousAndNextFrontmatter = (
+    currentPost: string,
+    directoryPath: string,
+    categoryFilter?: BlogCategories
+): { previous: IPostFrontmatter; next: IPostFrontmatter } => {
+    const fileNames = fs.readdirSync(directoryPath);
+
+    const allPostFrontmatter: Array<IPostFrontmatter> = fileNames
+        .map(
+            (fileName): IPostFrontmatter => {
+                const id = fileName.replace(/\.md$/, '');
+                const { frontmatter }: IPost = getSinglePost(id, directoryPath);
+                return {
+                    id,
+                    ...frontmatter,
+                };
+            }
+        )
+        .filter((post) => {
+            return (
+                !post.private &&
+                (!categoryFilter ||
+                    !post.category ||
+                    post.category === categoryFilter)
+            );
+        })
+        .sort((a, b) => {
+            if ((a.date || a.title) < (b.date || b.title)) {
+                return 1;
+            } else {
+                return -1;
+            }
+        });
+
+    const currentIndex = allPostFrontmatter.findIndex(
+        (post) => post.id === currentPost
+    );
+
+    return {
+        previous: allPostFrontmatter[currentIndex + 1] || null,
+        next: allPostFrontmatter[currentIndex - 1] || null,
+    };
 };
 
 export const getSinglePost = (id: string, directoryPath: string): IPost => {

@@ -3,13 +3,7 @@ import styles from './Home.module.scss';
 import Layout from '../components/Layout';
 import { useEffect, useRef, useState } from 'react';
 
-const Index = ({
-    title,
-    description,
-}: {
-    title: string;
-    description: string;
-}) => {
+const Index = ({ title }: { title: string }) => {
     const [isShown, setShown] = useState(false);
 
     const moreDiv = useRef(null);
@@ -25,10 +19,11 @@ const Index = ({
                 <div className={styles.left}>
                     <p>
                         Hello! I'm Shelly, a Japanese Mexican American librarian
-                        and photographer in Raleigh, NC.{' '}
+                        and photographer in Raleigh, NC. {!isShown && '[ '}
                         <a onClick={() => setShown(!isShown)}>
-                            {isShown ? '' : '[ more ]'}
+                            {isShown ? '' : 'more'}
                         </a>
+                        {!isShown && ' ]'}
                     </p>
                     <div className={styles.more} ref={moreDiv}>
                         <p>
@@ -75,7 +70,6 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     return {
         props: {
             title: configData.default.title,
-            description: configData.default.description,
         },
     };
 };

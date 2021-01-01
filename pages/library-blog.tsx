@@ -23,7 +23,7 @@ const LibraryBlog = ({
         <Layout pageTitle={`${title} | Library & Archive Blog`}>
             <article className={styles.container}>
                 <div className={styles.meta}>
-                    <h2>LIbrary &amp; Archive Blog</h2>
+                    <h2>Library &amp; Archive Blog</h2>
                 </div>
                 <div className={styles.content}>
                     <PostList posts={posts} />

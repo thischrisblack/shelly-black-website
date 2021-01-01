@@ -16,6 +16,11 @@
     a {
         font-weight: 400;
         color: $text-color;
+
+        &:hover {
+            font-weight: 700;
+            text-decoration: none;
+        }
     }
 }
 
@@ -25,7 +30,7 @@
 
 .more {
     opacity: 0;
-    transition: all 1s;
+    transition: opacity 1s;
 }
 
 @media only screen and (min-width: 800px) {

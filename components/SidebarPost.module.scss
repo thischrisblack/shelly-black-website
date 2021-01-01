@@ -1,0 +1,39 @@
+@import '../styles/variables.scss';
+
+.singlePost {
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+        'heading'
+        'image'
+        'title';
+    margin-bottom: 4rem;
+}
+
+.heading {
+    grid-area: heading;
+    font-family: $title-text;
+    margin: 0.5rem 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.postImage {
+    grid-area: image;
+    width: 80%;
+}
+
+.postTitle {
+    grid-area: title;
+
+    h4 {
+        margin: 0;
+        font-family: $title-text;
+        margin-top: 0.8rem;
+
+        a {
+            color: $text-color;
+            font-weight: 400;
+        }
+    }
+}

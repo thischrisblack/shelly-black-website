@@ -8,6 +8,10 @@ import {
     getAllIds,
     getSinglePost,
 } from '../utils/content-retrieval';
+import {
+    getAbsoluteImageUrl,
+    ImageTransformations,
+} from '../utils/get-absolute-image-path';
 
 export default function PageContainer({
     siteTitle,
@@ -37,14 +41,24 @@ export default function PageContainer({
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { pagename } = ctx.params;
-
-    const pageData = getSinglePost(pagename as string, contentPaths.pages);
     const config = await import(`../siteconfig.json`);
-
+    const pageData = getSinglePost(pagename as string, contentPaths.pages);
+    const postDataWithRootImageUrl = {
+        ...pageData,
+        frontmatter: {
+            ...pageData.frontmatter,
+            image: getAbsoluteImageUrl(
+                pageData.frontmatter.image,
+                ImageTransformations.Fit,
+                350,
+                null
+            ),
+        },
+    };
     return {
         props: {
             siteTitle: config.title,
-            ...pageData,
+            ...postDataWithRootImageUrl,
         },
     };
 };

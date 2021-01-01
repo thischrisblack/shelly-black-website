@@ -2,3 +2,5 @@
 -   Make gallery page
 -   Image gallery in post "macro-landscape" and similar
 -   OG stuff
+-   Contact form in about?
+-   Refactor to take image resize props in get posts funtions
