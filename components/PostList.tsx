@@ -4,8 +4,10 @@ import styles from './PostList.module.scss';
 
 export default function PostList({
     posts,
+    postType,
 }: {
     posts: Array<IPostFrontmatter>;
+    postType: string;
 }) {
     return (
         <div className={styles.postList}>
@@ -17,7 +19,9 @@ export default function PostList({
                             <li key={post.id} className={styles.postItem}>
                                 <div className={styles.postImage}>
                                     <Link
-                                        href={{ pathname: `/blog/${post.id}` }}
+                                        href={{
+                                            pathname: `/${postType}/${post.id}`,
+                                        }}
                                     >
                                         <a>
                                             <img src={post.image} />
@@ -26,7 +30,9 @@ export default function PostList({
                                 </div>
                                 <div className={styles.postTitle}>
                                     <Link
-                                        href={{ pathname: `/blog/${post.id}` }}
+                                        href={{
+                                            pathname: `/${postType}/${post.id}`,
+                                        }}
                                     >
                                         <h3>
                                             <a>{post.title}</a>

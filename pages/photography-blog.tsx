@@ -19,13 +19,13 @@ const PhotographyBlog = ({
     title: string;
 }) => {
     return (
-        <Layout pageTitle={`${title} | Library & Archive Blog`}>
+        <Layout pageTitle={`${title} | Photography Blog`}>
             <article className={styles.container}>
                 <div className={styles.meta}>
                     <h2>Photography Blog</h2>
                 </div>
                 <div className={styles.content}>
-                    <PostList posts={posts} />
+                    <PostList posts={posts} postType="blog" />
                 </div>
             </article>
         </Layout>

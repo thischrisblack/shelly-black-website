@@ -49,7 +49,10 @@ export default function BlogPost({
                     <ReactMarkdown source={content} escapeHtml={false} />
                 </div>
                 <div className={styles.postNav}>
-                    <PreviousAndNext previousAndNext={previousAndNext} />
+                    <PreviousAndNext
+                        previousAndNext={previousAndNext}
+                        postType="blog"
+                    />
                 </div>
             </article>
         </Layout>

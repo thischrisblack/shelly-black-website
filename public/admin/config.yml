@@ -76,13 +76,26 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Cover Image", name: "coverImage", widget: "image" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["Personal Projects", "Other Work"],
+          default: "Personal Projects",
+        }
+      - { label: "Cover Image", name: "image", widget: "image" }
       - {
           label: "Gallery Images",
           name: "galleryImages",
           widget: "list",
           summary: "{{fields.galleryImages}}",
           field: { label: Image, name: image, widget: image },
+        }
+      - {
+          label: "Sort Order",
+          name: "sortOrder",
+          widget: "Number",
+          value_types: "int",
         }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Pages"

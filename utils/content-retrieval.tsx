@@ -21,6 +21,12 @@ export const contentPaths = {
 export enum BlogCategories {
     Photography = 'Photography',
     Library = 'Library & Archival Work',
+    Gallery = 'Gallery',
+}
+
+export enum GalleryCategories {
+    Personal = 'Personal Projects',
+    Other = 'Other Work',
 }
 
 export interface IPost {
@@ -36,6 +42,7 @@ export interface IPostFrontmatter {
     galleryImages?: Array<string>;
     category?: string;
     private?: boolean;
+    sortOrder: number;
 }
 
 export interface IImageTransformation {
@@ -85,7 +92,10 @@ export const getAllPostFrontmatter = (
             );
         })
         .sort((a, b) => {
-            if ((a.date || a.title) < (b.date || b.title)) {
+            if (
+                (a.date || a.sortOrder || a.title) <
+                (b.date || b.sortOrder || b.title)
+            ) {
                 return 1;
             } else {
                 return -1;

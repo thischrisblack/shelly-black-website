@@ -64,7 +64,7 @@ export default function Navigation() {
                             <li
                                 className={`${styles.navLink} ${styles.gallery}`}
                             >
-                                <Link href={{ pathname: '/gallery' }}>
+                                <Link href={{ pathname: '/galleries' }}>
                                     <a>Gallery</a>
                                 </Link>
                             </li>

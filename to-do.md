@@ -1,4 +1,3 @@
--   Make gallery page
 -   Image gallery in post "macro-landscape" and similar
 -   OG stuff
 -   Contact form in about?
