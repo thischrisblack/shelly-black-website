@@ -138,6 +138,5 @@ Final Cut Pro
 
 #### Languages
 
-Limited working proficiency in Japanese
-
+Limited working proficiency in Japanese  
 Elementary proficiency in Spanish

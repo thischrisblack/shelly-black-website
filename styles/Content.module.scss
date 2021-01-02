@@ -23,7 +23,6 @@
 
     img {
         width: 100%;
-        border: 1px solid #999;
     }
 }
 
@@ -33,7 +32,16 @@
 
     img {
         width: 100%;
-        border: 1px solid #999;
+        margin-top: 1rem;
+    }
+
+    ul {
+        margin-left: 4rem;
+        list-style: disc;
+
+        li {
+            margin-bottom: 1rem;
+        }
     }
 }
 

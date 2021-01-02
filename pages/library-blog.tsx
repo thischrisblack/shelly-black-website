@@ -40,7 +40,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
         getAllPostFrontmatter(contentPaths.blog, BlogCategories.Library, {
             transformation: ImageTransformations.Smartcrop,
             w: 600,
-            h: 400,
+            h: 450,
         }) || [];
 
     return {

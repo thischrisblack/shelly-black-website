@@ -26,11 +26,13 @@ export default function Navigation() {
                         className={`${styles.name} ${styles.navLink} ${styles.homeLink}`}
                     >
                         <Link href={{ pathname: '/' }}>
-                            <a>Shelly Black</a>
+                            <a>
+                                <h1>Shelly Black</h1>
+                            </a>
                         </Link>
                     </div>
                     <div className={styles.navSection} ref={libraryNav}>
-                        Library &amp; Archival Work
+                        <h3>Library &amp; Archival Work</h3>
                         <ul onClick={() => setOpen(false)}>
                             <li className={`${styles.navLink} ${styles.about}`}>
                                 <Link href={{ pathname: '/about' }}>
@@ -57,7 +59,7 @@ export default function Navigation() {
                         </ul>
                     </div>
                     <div className={styles.navSection} ref={photoNav}>
-                        Photography
+                        <h3>Photography</h3>
                         <ul onClick={() => setOpen(false)}>
                             <li
                                 className={`${styles.navLink} ${styles.gallery}`}

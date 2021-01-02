@@ -11,7 +11,7 @@ export default function SidebarPost({
 }) {
     return (
         <div className={styles.singlePost}>
-            <div className={styles.heading}>{previousOrNext}:</div>
+            <h3>{previousOrNext}:</h3>
             <div className={styles.postImage}>
                 <Link href={{ pathname: `/blog/${post.id}` }}>
                     <a>
