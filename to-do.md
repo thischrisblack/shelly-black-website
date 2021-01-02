@@ -1,4 +1,3 @@
--   Image gallery in post "macro-landscape" and similar
 -   OG stuff
 -   Contact form in about?
 -   Image loading placeholders so they don't jump

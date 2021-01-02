@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import Lightbox from 'react-image-lightbox';
 
 import Layout from '../../components/Layout';
 import PreviousAndNext from '../../components/PreviousAndNext';
@@ -13,6 +14,7 @@ import {
 } from '../../utils/content-retrieval';
 import { ImageTransformations } from '../../utils/get-absolute-image-path';
 import styles from '../../styles/Content.module.scss';
+import { useState } from 'react';
 
 export default function BlogPost({
     siteTitle,
@@ -26,6 +28,11 @@ export default function BlogPost({
     content: string;
 }) {
     if (!frontmatter) return <></>;
+
+    const [isOpen, setOpen] = useState(false);
+    const [photoIndex, setPhotoIndex] = useState(0);
+
+    const { galleryImages } = frontmatter;
 
     return (
         <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
@@ -46,7 +53,55 @@ export default function BlogPost({
                 </div>
                 <div className={styles.content}>
                     <img src={frontmatter.image} />
+
                     <ReactMarkdown source={content} escapeHtml={false} />
+
+                    {galleryImages && (
+                        <div className={styles.boxedContent}>
+                            <div className={styles.imageGallery}>
+                                {galleryImages.map((image, index) => (
+                                    <div
+                                        className={styles.galleryImage}
+                                        onClick={() => {
+                                            setPhotoIndex(index);
+                                            setOpen(true);
+                                        }}
+                                    >
+                                        <img src={image} />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+
+                    {isOpen && (
+                        <Lightbox
+                            mainSrc={galleryImages[photoIndex]}
+                            nextSrc={
+                                galleryImages[
+                                    (photoIndex + 1) % galleryImages.length
+                                ]
+                            }
+                            prevSrc={
+                                galleryImages[
+                                    (photoIndex + galleryImages.length - 1) %
+                                        galleryImages.length
+                                ]
+                            }
+                            onCloseRequest={() => setOpen(false)}
+                            onMovePrevRequest={() =>
+                                setPhotoIndex(
+                                    (photoIndex + galleryImages.length - 1) %
+                                        galleryImages.length
+                                )
+                            }
+                            onMoveNextRequest={() =>
+                                setPhotoIndex(
+                                    (photoIndex + 1) % galleryImages.length
+                                )
+                            }
+                        />
+                    )}
                 </div>
                 <div className={styles.postNav}>
                     <PreviousAndNext

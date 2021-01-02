@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Navigation from './Navigation';
+import 'react-image-lightbox/style.css';
 
 export default function Layout({
     pageTitle,

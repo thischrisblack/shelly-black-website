@@ -3,7 +3,6 @@ import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 import styles from '../../styles/Content.module.scss';
 import PreviousAndNext from '../../components/PreviousAndNext';
 
@@ -35,6 +34,8 @@ export default function Gallery({
     const [isOpen, setOpen] = useState(false);
     const [photoIndex, setPhotoIndex] = useState(0);
 
+    const images = frontmatter.galleryImages;
+
     return (
         <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
             <article className={styles.container}>
@@ -46,8 +47,9 @@ export default function Gallery({
                 </div>
                 <div className={styles.content}>
                     <ReactMarkdown source={content} escapeHtml={false} />
+
                     <div className={styles.imageGallery}>
-                        {frontmatter.galleryImages.map((image, index) => (
+                        {images.map((image, index) => (
                             <div
                                 className={styles.galleryImage}
                                 onClick={() => {
@@ -62,35 +64,23 @@ export default function Gallery({
 
                     {isOpen && (
                         <Lightbox
-                            mainSrc={frontmatter.galleryImages[photoIndex]}
-                            nextSrc={
-                                frontmatter.galleryImages[
-                                    (photoIndex + 1) %
-                                        frontmatter.galleryImages.length
-                                ]
-                            }
+                            mainSrc={images[photoIndex]}
+                            nextSrc={images[(photoIndex + 1) % images.length]}
                             prevSrc={
-                                frontmatter.galleryImages[
-                                    (photoIndex +
-                                        frontmatter.galleryImages.length -
-                                        1) %
-                                        frontmatter.galleryImages.length
+                                images[
+                                    (photoIndex + images.length - 1) %
+                                        images.length
                                 ]
                             }
                             onCloseRequest={() => setOpen(false)}
                             onMovePrevRequest={() =>
                                 setPhotoIndex(
-                                    (photoIndex +
-                                        frontmatter.galleryImages.length -
-                                        1) %
-                                        frontmatter.galleryImages.length
+                                    (photoIndex + images.length - 1) %
+                                        images.length
                                 )
                             }
                             onMoveNextRequest={() =>
-                                setPhotoIndex(
-                                    (photoIndex + 1) %
-                                        frontmatter.galleryImages.length
-                                )
+                                setPhotoIndex((photoIndex + 1) % images.length)
                             }
                         />
                     )}

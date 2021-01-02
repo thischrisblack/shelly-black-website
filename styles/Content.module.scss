@@ -78,11 +78,15 @@
 @media screen and (min-width: 700px) {
     .container {
         display: grid;
-        grid-template-rows: 1fr min-content;
+        grid-template-rows: min-content 1fr;
         grid-template-columns: minmax(0, 25rem) minmax(0, 102rem) auto;
         grid-template-areas:
             'meta content .'
             'postnav content .';
+    }
+
+    .boxedContent {
+        padding: 2rem;
     }
 
     .imageGallery {
@@ -111,7 +115,7 @@
 @media screen and (min-width: 1050px) {
     .container {
         display: grid;
-        grid-template-rows: 1fr min-content;
+        grid-template-rows: min-content 1fr;
         grid-template-columns: minmax(0, 35rem) minmax(0, 92rem) auto;
         grid-template-areas:
             'meta content .'

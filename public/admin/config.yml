@@ -32,6 +32,14 @@ collections:
       - { label: "Private", name: "private", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }
       - {
+          label: "Gallery Images",
+          name: "galleryImages",
+          widget: "list",
+          summary: "{{fields.galleryImages}}",
+          field: { label: Image, name: image, widget: image },
+          required: false,
+        }
+      - {
           label: "Category",
           name: "category",
           widget: "select",
@@ -63,6 +71,14 @@ collections:
         }
       - { label: "Private", name: "private", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Gallery Images",
+          name: "galleryImages",
+          widget: "list",
+          summary: "{{fields.galleryImages}}",
+          field: { label: Image, name: image, widget: image },
+          required: false,
+        }
       - {
           label: "Category",
           name: "category",
