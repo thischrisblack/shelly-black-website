@@ -20,7 +20,10 @@
 
 .postImage {
     grid-area: image;
-    width: 80%;
+
+    img {
+        width: 80%;
+    }
 }
 
 .postTitle {
