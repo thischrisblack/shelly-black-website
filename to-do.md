@@ -1,4 +1,3 @@
--   OG stuff
 -   Contact form in about?
 -   Image loading placeholders so they don't jump
 -   Combine photography-blog and library-blog into a [name]-blog.tsx ???

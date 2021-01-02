@@ -26,7 +26,7 @@ const Galleries = ({
             pageTitle={`${siteProps.title} | Gallery`}
             description="Photography by Shelly Black."
             url={`${siteProps.url}/galleries`}
-            image={siteProps.image}
+            image={`${siteProps.url}/${siteProps.image}`}
         >
             <article className={styles.container}>
                 <div className={styles.meta}>

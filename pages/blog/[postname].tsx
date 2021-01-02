@@ -44,7 +44,7 @@ export default function BlogPost({
             pageTitle={`${siteProps.title} | ${frontmatter.title}`}
             description={excerpt || siteProps.description}
             url={`${siteProps.url}/blog/${slug}`}
-            image={ogImage || siteProps.image}
+            image={`${siteProps.url}/${ogImage || siteProps.image}`}
         >
             <article className={styles.container}>
                 <div className={styles.meta}>

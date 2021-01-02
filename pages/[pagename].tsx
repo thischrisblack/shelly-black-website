@@ -32,7 +32,7 @@ export default function PageContainer({
             pageTitle={`${siteProps.title} | ${frontmatter.title}`}
             description={excerpt || siteProps.description}
             url={`${siteProps.url}/${slug}`}
-            image={ogImage || siteProps.image}
+            image={`${siteProps.url}/${ogImage || siteProps.image}`}
         >
             <article className={styles.container}>
                 <div className={styles.meta}>

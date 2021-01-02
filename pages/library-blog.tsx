@@ -23,7 +23,7 @@ const LibraryBlog = ({
             pageTitle={`${siteProps.title} | Library & Archive Blog`}
             description="Shelly Black's blog about librarianship and archival work."
             url={`${siteProps.url}/library-blog`}
-            image={siteProps.image}
+            image={`${siteProps.url}/${siteProps.image}`}
         >
             <article className={styles.container}>
                 <div className={styles.meta}>

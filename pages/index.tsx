@@ -19,7 +19,7 @@ const Index = ({ siteProps }: { siteProps: any }) => {
             pageTitle={siteProps.title}
             description="Hello! I'm Shelly, a Japanese Mexican American librarian and photographer in Raleigh, NC."
             url={siteProps.url}
-            image={siteProps.image}
+            image={`${siteProps.url}/${siteProps.image}`}
         >
             <article className={styles.content}>
                 <div className={styles.left}>
