@@ -13,16 +13,21 @@ import { ImageTransformations } from '../utils/get-absolute-image-path';
 import styles from '../styles/Content.module.scss';
 
 const Galleries = ({
+    siteProps,
     personalProjects,
     otherWork,
-    title,
 }: {
+    siteProps: any;
     personalProjects: Array<IPostFrontmatter>;
     otherWork: Array<IPostFrontmatter>;
-    title: string;
 }) => {
     return (
-        <Layout pageTitle={`${title} | Gallery`}>
+        <Layout
+            pageTitle={`${siteProps.title} | Gallery`}
+            description="Photography by Shelly Black."
+            url={`${siteProps.url}/galleries`}
+            image={siteProps.image}
+        >
             <article className={styles.container}>
                 <div className={styles.meta}>
                     <h2>Gallery</h2>
@@ -58,9 +63,9 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
     return {
         props: {
+            siteProps: configData.default,
             personalProjects: personalProjects,
             otherWork: otherWork,
-            title: configData.default.title,
         },
     };
 };

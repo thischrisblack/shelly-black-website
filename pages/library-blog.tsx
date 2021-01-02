@@ -12,14 +12,19 @@ import { ImageTransformations } from '../utils/get-absolute-image-path';
 import styles from '../styles/Content.module.scss';
 
 const LibraryBlog = ({
+    siteProps,
     posts,
-    title,
 }: {
+    siteProps: any;
     posts: Array<IPostFrontmatter>;
-    title: string;
 }) => {
     return (
-        <Layout pageTitle={`${title} | Library & Archive Blog`}>
+        <Layout
+            pageTitle={`${siteProps.title} | Library & Archive Blog`}
+            description="Shelly Black's blog about librarianship and archival work."
+            url={`${siteProps.url}/library-blog`}
+            image={siteProps.image}
+        >
             <article className={styles.container}>
                 <div className={styles.meta}>
                     <h2>Library &amp; Archive Blog</h2>
@@ -45,8 +50,8 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
     return {
         props: {
+            siteProps: configData.default,
             posts: allPostsFrontmatter,
-            title: configData.default.title,
         },
     };
 };

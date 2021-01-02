@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Layout from '../components/Layout';
 import styles from './Home.module.scss';
 
-const Index = ({ title }: { title: string }) => {
+const Index = ({ siteProps }: { siteProps: any }) => {
     const [isShown, setShown] = useState(false);
 
     const moreDiv = useRef(null);
@@ -15,7 +15,12 @@ const Index = ({ title }: { title: string }) => {
     });
 
     return (
-        <Layout pageTitle={title}>
+        <Layout
+            pageTitle={siteProps.title}
+            description="Hello! I'm Shelly, a Japanese Mexican American librarian and photographer in Raleigh, NC."
+            url={siteProps.url}
+            image={siteProps.image}
+        >
             <article className={styles.content}>
                 <div className={styles.left}>
                     <p>
@@ -70,7 +75,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     const configData = await import(`../siteconfig.json`);
     return {
         props: {
-            title: configData.default.title,
+            siteProps: configData.default,
         },
     };
 };

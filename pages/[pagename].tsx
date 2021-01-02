@@ -11,18 +11,29 @@ import { ImageTransformations } from '../utils/get-absolute-image-path';
 import styles from '../styles/Content.module.scss';
 
 export default function PageContainer({
-    siteTitle,
+    slug,
+    siteProps,
     frontmatter,
     content,
+    ogImage,
+    excerpt,
 }: {
-    siteTitle: string;
+    slug: string;
+    siteProps: any;
     frontmatter: any;
     content: string;
+    ogImage: string;
+    excerpt: string;
 }) {
     if (!frontmatter) return <></>;
 
     return (
-        <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
+        <Layout
+            pageTitle={`${siteProps.title} | ${frontmatter.title}`}
+            description={excerpt || siteProps.description}
+            url={`${siteProps.url}/${slug}`}
+            image={ogImage || siteProps.image}
+        >
             <article className={styles.container}>
                 <div className={styles.meta}>
                     <h2>{frontmatter.title}</h2>
@@ -46,7 +57,8 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     });
     return {
         props: {
-            siteTitle: config.title,
+            slug: pagename,
+            siteProps: config.default,
             ...pageData,
         },
     };

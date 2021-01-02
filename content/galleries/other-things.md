@@ -1,6 +1,6 @@
 ---
 title: Other Things
-image: /images/asche.jpg
+image: ../images/asche.jpg
 galleryImages:
     - /images/agfa-ansco-viking.jpg
     - /images/asche.jpg

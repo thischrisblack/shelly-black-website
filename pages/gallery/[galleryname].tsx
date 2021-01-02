@@ -19,15 +19,22 @@ import { useState } from 'react';
 import { ImageTransformations } from '../../utils/get-absolute-image-path';
 
 export default function Gallery({
-    siteTitle,
+    slug,
+    siteProps,
     previousAndNext,
     frontmatter,
     content,
+    ogImage,
+    excerpt,
 }: {
+    slug: string;
+    siteProps: any;
     siteTitle: string;
     previousAndNext: { previous: IPostFrontmatter; next: IPostFrontmatter };
     frontmatter: any;
     content: string;
+    ogImage: string;
+    excerpt: string;
 }) {
     if (!frontmatter) return <></>;
 
@@ -37,7 +44,12 @@ export default function Gallery({
     const images = frontmatter.galleryImages;
 
     return (
-        <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
+        <Layout
+            pageTitle={`${siteProps.title} | ${frontmatter.title}`}
+            description={excerpt || siteProps.description}
+            url={`${siteProps.url}/gallery/${slug}`}
+            image={ogImage || siteProps.image}
+        >
             <article className={styles.container}>
                 <div className={styles.meta}>
                     <h2>{frontmatter.title}</h2>
@@ -120,7 +132,8 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
     return {
         props: {
-            siteTitle: config.title,
+            slug: galleryname,
+            siteProps: config.default,
             previousAndNext: previousAndNextPosts,
             ...galleryData,
         },

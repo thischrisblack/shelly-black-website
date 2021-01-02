@@ -17,15 +17,21 @@ import styles from '../../styles/Content.module.scss';
 import { useState } from 'react';
 
 export default function BlogPost({
-    siteTitle,
+    slug,
+    siteProps,
     previousAndNext,
     frontmatter,
     content,
+    ogImage,
+    excerpt,
 }: {
-    siteTitle: string;
+    slug: string;
+    siteProps: any;
     previousAndNext: { previous: IPostFrontmatter; next: IPostFrontmatter };
     frontmatter: any;
     content: string;
+    ogImage: string;
+    excerpt: string;
 }) {
     if (!frontmatter) return <></>;
 
@@ -33,9 +39,13 @@ export default function BlogPost({
     const [photoIndex, setPhotoIndex] = useState(0);
 
     const { galleryImages } = frontmatter;
-
     return (
-        <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
+        <Layout
+            pageTitle={`${siteProps.title} | ${frontmatter.title}`}
+            description={excerpt || siteProps.description}
+            url={`${siteProps.url}/blog/${slug}`}
+            image={ogImage || siteProps.image}
+        >
             <article className={styles.container}>
                 <div className={styles.meta}>
                     <p>
@@ -118,6 +128,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     const { postname } = ctx.params;
 
     const config = await import(`../../siteconfig.json`);
+
     const postData = getSinglePost(postname as string, contentPaths.blog, {
         transformation: ImageTransformations.Fit,
         w: 920,
@@ -133,7 +144,8 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
     return {
         props: {
-            siteTitle: config.title,
+            slug: postname,
+            siteProps: config.default,
             previousAndNext: previousAndNextPosts,
             ...postData,
         },

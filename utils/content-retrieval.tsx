@@ -32,6 +32,8 @@ export enum GalleryCategories {
 export interface IPost {
     frontmatter: IPostFrontmatter;
     content: string;
+    ogImage?: string;
+    excerpt?: string;
 }
 
 export interface IPostFrontmatter {
@@ -178,5 +180,12 @@ export const getSinglePost = (
     return {
         frontmatter: dataWithRootImageUrlAndTransformation as IPostFrontmatter,
         content: content,
+        ogImage: getAbsoluteImageUrl(
+            data.image,
+            ImageTransformations.Smartcrop,
+            1200,
+            627
+        ),
+        excerpt: content.split('.')[0].replace(/(\r\n|\n|\r)/gm, '') + '.',
     };
 };
