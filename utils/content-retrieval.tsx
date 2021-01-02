@@ -42,7 +42,7 @@ export interface IPostFrontmatter {
     galleryImages?: Array<string>;
     category?: string;
     private?: boolean;
-    sortOrder: number;
+    sortOrder?: number;
 }
 
 export interface IImageTransformation {
