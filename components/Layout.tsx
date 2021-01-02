@@ -19,9 +19,7 @@ export default function Layout({
                 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
             </Head>
             <Navigation />
-            <section className="layout">
-                <div className="content">{children}</div>
-            </section>
+            <section>{children}</section>
         </>
     );
 }

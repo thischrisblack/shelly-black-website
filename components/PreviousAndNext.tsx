@@ -1,5 +1,4 @@
 import SidebarPost from './SidebarPost';
-import styles from '../styles/Content.module.scss';
 import { IPostFrontmatter } from '../utils/content-retrieval';
 
 export default function PreviousAndNext({
@@ -8,7 +7,7 @@ export default function PreviousAndNext({
     previousAndNext: { previous: IPostFrontmatter; next: IPostFrontmatter };
 }) {
     return (
-        <div className={styles.postNav}>
+        <>
             {previousAndNext.previous && (
                 <SidebarPost
                     post={previousAndNext.previous}
@@ -21,6 +20,6 @@ export default function PreviousAndNext({
                     previousOrNext="Next"
                 />
             )}
-        </div>
+        </>
     );
 }

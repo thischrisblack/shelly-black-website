@@ -14,8 +14,8 @@ enum ContentDirectories {
 
 export const contentPaths = {
     blog: path.join(process.cwd(), ContentDirectories.Blog),
-    pages: path.join(process.cwd(), ContentDirectories.Pages),
     galleries: path.join(process.cwd(), ContentDirectories.Galleries),
+    pages: path.join(process.cwd(), ContentDirectories.Pages),
 };
 
 export enum BlogCategories {
@@ -152,19 +152,18 @@ export const getSinglePost = (
     const { data, content } = matter(fileContent);
 
     // Transform images if not gifs (to preserve animated gifs)
-    const dataWithRootImageUrlAndTransformation = data.image.includes('gif')
-        ? data
-        : {
-              ...data,
-              image: data.image
-                  ? getAbsoluteImageUrl(
-                        data.image,
-                        imageTransformation?.transformation,
-                        imageTransformation?.w,
-                        imageTransformation?.h
-                    )
-                  : null,
-          };
+    const dataWithRootImageUrlAndTransformation =
+        data.image && !data.image.includes('gif')
+            ? {
+                  ...data,
+                  image: getAbsoluteImageUrl(
+                      data.image,
+                      imageTransformation?.transformation,
+                      imageTransformation?.w,
+                      imageTransformation?.h
+                  ),
+              }
+            : data;
 
     return {
         frontmatter: dataWithRootImageUrlAndTransformation as IPostFrontmatter,

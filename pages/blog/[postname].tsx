@@ -1,9 +1,8 @@
 import ReactMarkdown from 'react-markdown';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import styles from '../../styles/Content.module.scss';
-import PreviousAndNext from '../../components/PreviousAndNext';
 
 import Layout from '../../components/Layout';
+import PreviousAndNext from '../../components/PreviousAndNext';
 import {
     BlogCategories,
     contentPaths,
@@ -12,10 +11,8 @@ import {
     getSinglePost,
     IPostFrontmatter,
 } from '../../utils/content-retrieval';
-import {
-    getAbsoluteImageUrl,
-    ImageTransformations,
-} from '../../utils/get-absolute-image-path';
+import { ImageTransformations } from '../../utils/get-absolute-image-path';
+import styles from '../../styles/Content.module.scss';
 
 export default function BlogPost({
     siteTitle,
@@ -51,7 +48,9 @@ export default function BlogPost({
                     <img src={frontmatter.image} />
                     <ReactMarkdown source={content} escapeHtml={false} />
                 </div>
-                <PreviousAndNext previousAndNext={previousAndNext} />
+                <div className={styles.postNav}>
+                    <PreviousAndNext previousAndNext={previousAndNext} />
+                </div>
             </article>
         </Layout>
     );

@@ -1,4 +1,5 @@
 import { GetStaticProps } from 'next';
+
 import Layout from '../components/Layout';
 import PostList from '../components/PostList';
 import {
@@ -7,10 +8,7 @@ import {
     getAllPostFrontmatter,
     IPostFrontmatter,
 } from '../utils/content-retrieval';
-import {
-    getAbsoluteImageUrl,
-    ImageTransformations,
-} from '../utils/get-absolute-image-path';
+import { ImageTransformations } from '../utils/get-absolute-image-path';
 import styles from '../styles/Content.module.scss';
 
 const PhotographyBlog = ({

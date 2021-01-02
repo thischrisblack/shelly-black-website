@@ -1,7 +1,8 @@
 import { GetStaticProps } from 'next';
-import styles from './Home.module.scss';
-import Layout from '../components/Layout';
 import { useEffect, useRef, useState } from 'react';
+
+import Layout from '../components/Layout';
+import styles from './Home.module.scss';
 
 const Index = ({ title }: { title: string }) => {
     const [isShown, setShown] = useState(false);
