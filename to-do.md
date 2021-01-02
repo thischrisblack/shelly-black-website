@@ -1,6 +1,6 @@
--   Add prev/next links in post meta
 -   Make gallery page
 -   Image gallery in post "macro-landscape" and similar
 -   OG stuff
 -   Contact form in about?
--   Refactor to take image resize props in get posts funtions
+-   Image loading placeholders so they don't jump
+-   Combine photography-blog and library-blog into a [name]-blog.tsx ???
