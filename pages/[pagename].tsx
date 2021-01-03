@@ -7,7 +7,7 @@ import {
     getAllIds,
     getSinglePost,
 } from '../utils/content-retrieval';
-import { ImageTransformations } from '../utils/get-absolute-image-path';
+import { ImageTransformations } from '../utils/image-path-helpers';
 import styles from '../styles/Content.module.scss';
 
 export default function PageContainer({
@@ -26,7 +26,6 @@ export default function PageContainer({
     excerpt: string;
 }) {
     if (!frontmatter) return <></>;
-
     return (
         <Layout
             pageTitle={`${siteProps.title} | ${frontmatter.title}`}

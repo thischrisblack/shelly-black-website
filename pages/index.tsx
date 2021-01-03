@@ -72,10 +72,10 @@ const Index = ({ siteProps }: { siteProps: any }) => {
 export default Index;
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-    const configData = await import(`../siteconfig.json`);
+    const config = await import(`../siteconfig.json`);
     return {
         props: {
-            siteProps: configData.default,
+            siteProps: config.default,
         },
     };
 };

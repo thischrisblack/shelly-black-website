@@ -14,7 +14,19 @@ export enum ImageTransformations {
  * @param w Desired image width
  * @param h Desired image height
  */
-export const getAbsoluteImageUrl = (
+export const getAbsoluteImageUrl = (path: string): string => {
+    if (!path) {
+        return null;
+    }
+
+    if (process.env.ROOT_IMG_URL) {
+        return `${process.env.ROOT_IMG_URL}${path.replace('../', '')}`;
+    }
+
+    return path;
+};
+
+export const getNetlifyEnhancedImage = (
     path: string,
     transformation?: string,
     w?: number,
@@ -23,13 +35,10 @@ export const getAbsoluteImageUrl = (
     if (!path) {
         return null;
     }
-    // Set root URL
-    const rootUrl = process.env.ROOT_IMG_URL || '';
-
     // If no transformation.
     if (!transformation) {
         // Return URL without transform.
-        return `${rootUrl}${path}`;
+        return `${path}`;
     }
 
     // If transformation provided, but missing arguments.
@@ -38,7 +47,7 @@ export const getAbsoluteImageUrl = (
             'Missing required width or height arguments. Transform aborted.'
         );
         // Return URL without transform.
-        return `${rootUrl}${path}`;
+        return `${path}`;
     }
 
     // If smartcrop transformation provided, but missing arguments.
@@ -47,7 +56,7 @@ export const getAbsoluteImageUrl = (
             'Netlify smartcrop requires both width and height arguments. Transform aborted.'
         );
         // Return URL without transform.
-        return `${rootUrl}${path}`;
+        return `${path}`;
     }
 
     // Build query string
@@ -57,5 +66,5 @@ export const getAbsoluteImageUrl = (
         (h ? `&h=${h}` : '');
 
     // Return full URL with query string.
-    return `${rootUrl}${path}${imageTransformQueryString}`;
+    return `${path}${imageTransformQueryString}`;
 };

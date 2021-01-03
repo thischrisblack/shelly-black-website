@@ -1,3 +1,5 @@
 -   Contact form in about?
+-   Description field in pages for OG stuff.
 -   Image loading placeholders so they don't jump
+-   Clean up enums and interfaces
 -   Combine photography-blog and library-blog into a [name]-blog.tsx ???

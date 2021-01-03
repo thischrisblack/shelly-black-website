@@ -3,20 +3,9 @@ import path from 'path';
 import matter from 'gray-matter';
 import {
     getAbsoluteImageUrl,
+    getNetlifyEnhancedImage,
     ImageTransformations,
-} from './get-absolute-image-path';
-
-enum ContentDirectories {
-    Blog = 'content/blog',
-    Galleries = 'content/galleries',
-    Pages = 'content/pages',
-}
-
-export const contentPaths = {
-    blog: path.join(process.cwd(), ContentDirectories.Blog),
-    galleries: path.join(process.cwd(), ContentDirectories.Galleries),
-    pages: path.join(process.cwd(), ContentDirectories.Pages),
-};
+} from './image-path-helpers';
 
 export enum BlogCategories {
     Photography = 'Photography',
@@ -52,6 +41,18 @@ export interface IImageTransformation {
     w?: number;
     h?: number;
 }
+
+enum ContentDirectories {
+    Blog = 'content/blog',
+    Galleries = 'content/galleries',
+    Pages = 'content/pages',
+}
+
+export const contentPaths = {
+    blog: path.join(process.cwd(), ContentDirectories.Blog),
+    galleries: path.join(process.cwd(), ContentDirectories.Galleries),
+    pages: path.join(process.cwd(), ContentDirectories.Pages),
+};
 
 export const getAllIds = (directoryPath: string): Array<string> => {
     const fileNames = fs.readdirSync(directoryPath);
@@ -169,10 +170,12 @@ export const getSinglePost = (
             ? {
                   ...data,
                   image: getAbsoluteImageUrl(
-                      data.image,
-                      imageTransformation?.transformation,
-                      imageTransformation?.w,
-                      imageTransformation?.h
+                      getNetlifyEnhancedImage(
+                          data.image,
+                          imageTransformation?.transformation,
+                          imageTransformation?.w,
+                          imageTransformation?.h
+                      )
                   ),
               }
             : data;
@@ -180,8 +183,8 @@ export const getSinglePost = (
     return {
         frontmatter: dataWithRootImageUrlAndTransformation as IPostFrontmatter,
         content: content,
-        ogImage: getAbsoluteImageUrl(
-            data.image,
+        ogImage: getNetlifyEnhancedImage(
+            data.image?.replace('../', ''),
             ImageTransformations.Smartcrop,
             1200,
             627

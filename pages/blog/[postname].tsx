@@ -12,7 +12,7 @@ import {
     getSinglePost,
     IPostFrontmatter,
 } from '../../utils/content-retrieval';
-import { ImageTransformations } from '../../utils/get-absolute-image-path';
+import { ImageTransformations } from '../../utils/image-path-helpers';
 import styles from '../../styles/Content.module.scss';
 import { useState } from 'react';
 

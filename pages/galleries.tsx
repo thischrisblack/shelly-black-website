@@ -9,7 +9,7 @@ import {
     getAllPostFrontmatter,
     IPostFrontmatter,
 } from '../utils/content-retrieval';
-import { ImageTransformations } from '../utils/get-absolute-image-path';
+import { ImageTransformations } from '../utils/image-path-helpers';
 import styles from '../styles/Content.module.scss';
 
 const Galleries = ({
@@ -46,7 +46,7 @@ const Galleries = ({
 export default Galleries;
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-    const configData = await import(`../siteconfig.json`);
+    const config = await import(`../siteconfig.json`);
     const allPostsFrontmatter =
         getAllPostFrontmatter(contentPaths.galleries, null, {
             transformation: ImageTransformations.Smartcrop,
@@ -63,7 +63,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
     return {
         props: {
-            siteProps: configData.default,
+            siteProps: config.default,
             personalProjects: personalProjects,
             otherWork: otherWork,
         },

@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Lightbox from 'react-image-lightbox';
@@ -16,7 +14,7 @@ import {
     IPostFrontmatter,
 } from '../../utils/content-retrieval';
 import { useState } from 'react';
-import { ImageTransformations } from '../../utils/get-absolute-image-path';
+import { ImageTransformations } from '../../utils/image-path-helpers';
 
 export default function Gallery({
     slug,
