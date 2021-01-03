@@ -29,7 +29,7 @@ export default function PageContainer({
     return (
         <Layout
             pageTitle={`${siteProps.title} | ${frontmatter.title}`}
-            description={excerpt || siteProps.description}
+            description={frontmatter.description || siteProps.description}
             url={`${siteProps.url}/${slug}`}
             image={`${siteProps.url}/${ogImage || siteProps.image}`}
         >

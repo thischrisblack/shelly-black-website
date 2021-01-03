@@ -1,5 +1,6 @@
 ---
 title: Professional Portfolio
+description: Links to articles, presentations, and other projects.
 ---
 
 ### Publications

@@ -12,6 +12,7 @@ const Index = ({ siteProps }: { siteProps: any }) => {
     // Show full about text.
     useEffect(() => {
         moreDiv.current.style.opacity = `${isShown ? '1' : '0'}`;
+        moreDiv.current.style.height = `${isShown ? 'auto' : '0px'}`;
     });
 
     return (
@@ -19,7 +20,7 @@ const Index = ({ siteProps }: { siteProps: any }) => {
             pageTitle={siteProps.title}
             description="Hello! I'm Shelly, a Japanese Mexican American librarian and photographer in Raleigh, NC."
             url={siteProps.url}
-            image={`${siteProps.url}/${siteProps.image}`}
+            image={`${siteProps.url}/images/portrait-camera.jpg?nf_resize=smartcrop&w=1200&h=627`}
         >
             <article className={styles.content}>
                 <div className={styles.left}>
@@ -63,7 +64,12 @@ const Index = ({ siteProps }: { siteProps: any }) => {
                         </p>
                     </div>
                 </div>
-                <div className={styles.right}></div>
+                <div className={styles.right}>
+                    <img
+                        className={styles.blackAndWhite}
+                        src="images/portrait-camera.jpg"
+                    />
+                </div>
             </article>
         </Layout>
     );

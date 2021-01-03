@@ -1,5 +1,6 @@
 ---
 title: Curriculum Vitae
+description: Shelly Black's CV.
 ---
 
 ## Education

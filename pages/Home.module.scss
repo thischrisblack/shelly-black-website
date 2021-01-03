@@ -26,10 +26,21 @@
 
 .right {
     grid-area: right;
+    padding: 2rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+.blackAndWhite {
+    filter: grayscale(100%) contrast(150%) brightness(1.5);
 }
 
 .more {
     opacity: 0;
+    height: 0px;
+    overflow: hidden;
     transition: opacity 1s;
 }
 
@@ -37,5 +48,9 @@
     .content {
         grid-template-columns: 58rem 70rem auto;
         grid-template-areas: 'left right .';
+    }
+
+    .right {
+        padding-top: 4rem;
     }
 }

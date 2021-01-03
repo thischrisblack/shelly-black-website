@@ -3,7 +3,6 @@ import { GetStaticProps } from 'next';
 import Layout from '../components/Layout';
 import PostList from '../components/PostList';
 import {
-    BlogCategories,
     contentPaths,
     GalleryCategories,
     getAllPostFrontmatter,
@@ -26,7 +25,7 @@ const Galleries = ({
             pageTitle={`${siteProps.title} | Gallery`}
             description="Photography by Shelly Black."
             url={`${siteProps.url}/galleries`}
-            image={`${siteProps.url}/${siteProps.image}`}
+            image={`${siteProps.url}/images/FoodCity10.jpg?nf_resize=smartcrop&w=1200&h=627`}
         >
             <article className={styles.container}>
                 <div className={styles.meta}>

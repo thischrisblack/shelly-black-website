@@ -34,6 +34,7 @@ export interface IPostFrontmatter {
     category?: string;
     private?: boolean;
     sortOrder?: number;
+    description?: string;
 }
 
 export interface IImageTransformation {
