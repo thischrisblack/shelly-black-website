@@ -1,6 +1,11 @@
 .postList {
     ol {
         padding: 0;
+        margin-left: 0;
+
+        li {
+            margin: 1rem 0 5rem 0;
+        }
     }
 }
 
@@ -11,7 +16,6 @@
         'image'
         'title'
         'date';
-    margin: 1rem 0 5rem 0;
 }
 
 .postImage {
@@ -33,6 +37,13 @@
 }
 
 @media screen and (min-width: 800px) {
+    .postList {
+        ol {
+            li {
+                margin: 1rem 0 1rem 0;
+            }
+        }
+    }
     .postItem {
         grid-template-rows: 1fr min-content min-content 1fr;
         grid-template-columns: min-content 1fr;
