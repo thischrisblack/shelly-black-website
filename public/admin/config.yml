@@ -28,7 +28,6 @@ collections:
           widget: "image",
           default: "../images/photography-default.jpg",
           required: false,
-          media_foler: "/public/images",
         }
       - { label: "Private", name: "private", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }

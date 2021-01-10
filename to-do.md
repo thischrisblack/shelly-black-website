@@ -1,3 +1,6 @@
+-   Fix all image paths in all MD files
+-   Get rid of all absolute image URL stuff, .env, etc.
+-   Make them work
 -   Contact form in about?
 -   Image loading placeholders so they don't jump
 -   Clean up enums and interfaces
