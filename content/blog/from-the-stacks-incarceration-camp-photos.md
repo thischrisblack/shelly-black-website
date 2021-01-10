@@ -1,7 +1,7 @@
 ---
 title: 'From the Stacks: Incarceration Camp Photos'
 date: 2016/07/03
-image: ../images/umbrella-woman-poston.jpg
+image: images/umbrella-woman-poston.jpg
 category: Photography
 ---
 
@@ -19,8 +19,8 @@ My visit with this ephemera is not meant to be my last. Supplemented with visit
 -   Is the lack of awareness surrounding the incarceration camps the same in Arizona as in other states which didn't host camps? Do Arizona educators call attention to this dark history more than those elsewhere?
 -   What are the preservation efforts for other camp sites?
 
-![](../images/f13.jpg)
+![](images/f13.jpg)
 
-![](../images/f11.jpg)
+![](images/f11.jpg)
 
 Go see these in person by asking for the [United States War Relocation Authority Papers](http://www.azarchivesonline.org/xtf/view?docId=ead/uoa/UAMS042.xml) at University of Arizona Libraries, Special Collections.

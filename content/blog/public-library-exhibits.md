@@ -1,7 +1,7 @@
 ---
 title: Public Library Exhibits
 date: 2018/06/01
-image: ../images/kirk-bear.jpg
+image: images/kirk-bear.jpg
 category: Photography
 ---
 

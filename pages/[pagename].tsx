@@ -36,7 +36,7 @@ export default function PageContainer({
             <article className={styles.container}>
                 <div className={styles.meta}>
                     <h2>{frontmatter.title}</h2>
-                    {frontmatter.image && <img src={frontmatter.image} />}
+                    {frontmatter.image && <img src={`/${frontmatter.image}`} />}
                 </div>
                 <div className={styles.content}>
                     <ReactMarkdown source={content} escapeHtml={false} />

@@ -1,7 +1,7 @@
 ---
 title: GoPro Review
 date: 2016/03/23
-image: ../images/gopro-birds.jpg
+image: images/gopro-birds.jpg
 category: Photography
 ---
 

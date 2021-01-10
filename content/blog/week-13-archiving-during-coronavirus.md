@@ -1,7 +1,7 @@
 ---
 title: 'Week 13: Archiving during coronavirus'
 date: 2020/04/16
-image: ../images/asche.jpg
+image: images/asche.jpg
 category: Library & Archival Work
 private: true
 ---

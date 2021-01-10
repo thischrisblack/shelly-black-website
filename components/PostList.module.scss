@@ -21,6 +21,12 @@
 .postImage {
     grid-area: image;
     width: 100%;
+
+    img {
+        height: 30rem;
+        border: 1px solid #666;
+        object-fit: cover;
+    }
 }
 
 .postTitle {
@@ -40,7 +46,7 @@
     .postList {
         ol {
             li {
-                margin: 1rem 0 1rem 0;
+                margin: 1rem 0 4rem 0;
             }
         }
     }
@@ -56,6 +62,13 @@
 
     .postImage {
         width: 15rem;
+        height: 10rem;
         margin-right: 2rem;
+
+        img {
+            height: 10rem;
+            border: 1px solid #666;
+            object-fit: cover;
+        }
     }
 }

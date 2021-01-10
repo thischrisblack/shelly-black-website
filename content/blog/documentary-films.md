@@ -1,7 +1,7 @@
 ---
 title: Documentary Film Recaps
 date: 2015/06/02
-image: ../images/salt-earth-loft.jpg
+image: images/salt-earth-loft.jpg
 category: Photography
 ---
 

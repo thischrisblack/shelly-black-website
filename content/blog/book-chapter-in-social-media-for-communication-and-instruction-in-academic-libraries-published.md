@@ -1,7 +1,7 @@
 ---
 title: 'Book chapter in "Social Media for Communication and Instruction in Academic Libraries" published'
 date: 2019/03/23
-image: ../images/social-media-book.jpg
+image: images/social-media-book.jpg
 category: Library & Archival Work
 ---
 

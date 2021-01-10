@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import {
-    getAbsoluteImageUrl,
     getNetlifyEnhancedImage,
     ImageTransformations,
 } from './image-path-helpers';
@@ -170,20 +169,19 @@ export const getSinglePost = (
         data.image && !data.image.includes('gif')
             ? {
                   ...data,
-                  image: getAbsoluteImageUrl(
-                      getNetlifyEnhancedImage(
-                          data.image,
-                          imageTransformation?.transformation,
-                          imageTransformation?.w,
-                          imageTransformation?.h
-                      )
+                  image: getNetlifyEnhancedImage(
+                      data.image,
+                      imageTransformation?.transformation,
+                      imageTransformation?.w,
+                      imageTransformation?.h
                   ),
               }
             : data;
 
+    const contentWithCorrectedImgPath = content.replace('images/', '/images/');
     return {
         frontmatter: dataWithRootImageUrlAndTransformation as IPostFrontmatter,
-        content: content,
+        content: contentWithCorrectedImgPath,
         ogImage: getNetlifyEnhancedImage(
             data.image?.replace('../', ''),
             ImageTransformations.Smartcrop,

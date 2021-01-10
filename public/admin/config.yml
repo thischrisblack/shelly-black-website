@@ -26,7 +26,7 @@ collections:
           label: "Image",
           name: "image",
           widget: "image",
-          default: "../images/photography-default.jpg",
+          default: "images/photography-default.jpg",
           required: false,
         }
       - { label: "Private", name: "private", widget: "boolean", default: false }
@@ -66,7 +66,7 @@ collections:
           label: "Image",
           name: "image",
           widget: "image",
-          default: "../images/library-default.jpg",
+          default: "images/library-default.jpg",
           required: false,
         }
       - { label: "Private", name: "private", widget: "boolean", default: false }
