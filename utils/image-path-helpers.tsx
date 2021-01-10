@@ -19,9 +19,9 @@ export const getAbsoluteImageUrl = (path: string): string => {
         return null;
     }
 
-    if (process.env.ROOT_IMG_URL) {
-        return `${process.env.ROOT_IMG_URL}${path.replace('../', '')}`;
-    }
+    // if (process.env.ROOT_IMG_URL) {
+    //     return `${process.env.ROOT_IMG_URL}${path.replace('../', '')}`;
+    // }
 
     return path;
 };
