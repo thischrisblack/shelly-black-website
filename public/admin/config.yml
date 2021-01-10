@@ -48,7 +48,7 @@ collections:
           default: "Photography",
         }
   - label: "Library & Archival Work Blog"
-    name: "Library & Archival Work-blog"
+    name: "library-and-archival-work-blog"
     folder: "content/blog"
     create: true
     filter: { field: "category", value: "Library & Archival Work" }
