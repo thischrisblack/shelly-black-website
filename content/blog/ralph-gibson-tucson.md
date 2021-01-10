@@ -1,7 +1,7 @@
 ---
 title: Ralph Gibson in Tucson
 date: 2015/10/05
-image: ../images/gibson-etherton.jpg
+image: images/gibson-etherton.jpg
 category: Photography
 ---
 
@@ -11,7 +11,7 @@ Gibson was a very insightful speaker, and gave an engaging overview of his care
 
 I had many takeaways from his talk. One of his pieces of advice was to photograph everything. He did street photography, abstraction, nudes, and Surrealism. In discussing each of his projects, he was humble and honest; he described _The Strip_, a documentation of Sunset Boulevard--done in the gritty style of Robert Frank's The Americans--as "neither good nor bad, just where I was at the time." Is it possible to be a good at everything though? I was not a big fan of his guitar book [Light Strings](http://www.ralphgibson.com/2003-light-strings.html). Despite covering a wide range of subjects, he believes that "every image taken is part of a larger whole." Also, one's act of perceiving should ultimately be the subject of the photograph.
 
-![Looking pretty happy, but I was hoping to see some of The Somnabulist instead of larger-than-life bosoms!](../images/gibson-etherton-shelly.jpg)  
+![Looking pretty happy, but I was hoping to see some of The Somnabulist instead of larger-than-life bosoms!](images/gibson-etherton-shelly.jpg)  
 _Looking happy, but I would have preferred_ The Somnabulist _to larger-than-life bosoms!_
 
 At Etherton Gallery, his large scale nudes and newer vertical diptychs "Political Abstractions" were presented. Each piece is composed of two vertical color pictures, juxtaposing subject matter united by geometry or shape. Gibson mentioned that most images are horizontal in our world, unless you close one eye. This may have been one reason for this series' orientation.

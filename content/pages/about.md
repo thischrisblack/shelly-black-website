@@ -1,6 +1,6 @@
 ---
 title: About Shelly Black
-image: ../images/Shelly_Black_2020.jpg
+image: images/Shelly_Black_2020.jpg
 description: Shelly Black's professional bio.
 ---
 

@@ -4,28 +4,6 @@ export enum ImageTransformations {
     Smartcrop = 'smartcrop',
 }
 
-/**
- * Provides absolute path for img src if using Netlify Large Media and image
- * transformations with NextJS. Returns Netlify server root URL so that
- * transformations will still work while developing on localhost.
- * NOTE: This will not work with images added since your last commit & push.
- * @param path Image path from the markdown frontmatter, i.e. "images/image.jpg"
- * @param transformation The Netlify transformation to apply
- * @param w Desired image width
- * @param h Desired image height
- */
-export const getAbsoluteImageUrl = (path: string): string => {
-    if (!path) {
-        return null;
-    }
-
-    // if (process.env.ROOT_IMG_URL) {
-    //     return `${process.env.ROOT_IMG_URL}${path.replace('../', '')}`;
-    // }
-
-    return path;
-};
-
 export const getNetlifyEnhancedImage = (
     path: string,
     transformation?: string,

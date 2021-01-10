@@ -1,7 +1,7 @@
 ---
 title: Smartphone Fisheye
 date: 2016/03/26
-image: ../images/fisheye-spiegel.jpg
+image: images/fisheye-spiegel.jpg
 category: Photography
 ---
 
@@ -9,6 +9,6 @@ Like the GoPro that I just tested, smartphone lens attachments are democratizin
 
 I once scoffed at these attachments, thinking they were a lazy substitute for learning the effect of different focal lengths. But now I see the value of having this affordable equipment readily available to anyone. Coming from an analog background, it's sometimes hard to embrace change that technology and markets bring.
 
-![madera-kiss](../images/madera-kiss.jpg)
+![madera-kiss](images/madera-kiss.jpg)
 
-![sathya-fisheye](../images/sathya-fisheye.jpg)
+![sathya-fisheye](images/sathya-fisheye.jpg)

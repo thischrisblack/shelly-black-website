@@ -62,7 +62,7 @@ export default function BlogPost({
                     </p>
                 </div>
                 <div className={styles.content}>
-                    <img src={frontmatter.image} />
+                    <img src={`/${frontmatter.image}`} />
 
                     <ReactMarkdown source={content} escapeHtml={false} />
 

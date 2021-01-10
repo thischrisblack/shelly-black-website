@@ -61,6 +61,7 @@ export default function Gallery({
                     <div className={styles.imageGallery}>
                         {images.map((image, index) => (
                             <div
+                                key={image}
                                 className={styles.galleryImage}
                                 onClick={() => {
                                     setPhotoIndex(index);
