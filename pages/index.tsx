@@ -20,7 +20,7 @@ const Index = ({ siteProps }: { siteProps: any }) => {
             pageTitle={siteProps.title}
             description="Hello! I'm Shelly, a Japanese Mexican American librarian and photographer in Raleigh, NC."
             url={siteProps.url}
-            image={`${siteProps.url}/images/portrait-camera.jpg?nf_resize=smartcrop&w=1200&h=627`}
+            image={`${siteProps.url}/images/radio-telescope.jpg?nf_resize=smartcrop&w=1200&h=627`}
         >
             <article className={styles.content}>
                 <div className={styles.left}>
@@ -65,10 +65,7 @@ const Index = ({ siteProps }: { siteProps: any }) => {
                     </div>
                 </div>
                 <div className={styles.right}>
-                    <img
-                        className={styles.blackAndWhite}
-                        src="images/portrait-camera.jpg"
-                    />
+                    <img src="/images/radio-telescope.jpg" />
                 </div>
             </article>
         </Layout>
