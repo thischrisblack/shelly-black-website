@@ -4,12 +4,12 @@ date: 2015/07/19
 image: images/ice-04.jpg
 category: Photography
 galleryImages:
-    - /images/ice-01.jpg
-    - /images/ice-02.jpg
-    - /images/ice-03.jpg
-    - /images/ice-05.jpg
-    - /images/ice-06.jpg
-    - /images/ice-071.jpg
+    - images/ice-01.jpg
+    - images/ice-02.jpg
+    - images/ice-03.jpg
+    - images/ice-05.jpg
+    - images/ice-06.jpg
+    - images/ice-071.jpg
 ---
 
 The catalyst for this ongoing project was to photograph something new. I have yet to use a macro lens for subjects other than jewelry. So I shot flora around me, while trying to stay cool.
