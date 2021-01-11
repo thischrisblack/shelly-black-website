@@ -86,18 +86,18 @@ export default function BlogPost({
 
                     {isOpen && (
                         <Lightbox
-                            mainSrc={galleryImages[photoIndex]}
-                            nextSrc={
+                            mainSrc={`/${galleryImages[photoIndex]}`}
+                            nextSrc={`/${
                                 galleryImages[
                                     (photoIndex + 1) % galleryImages.length
                                 ]
-                            }
-                            prevSrc={
+                            }`}
+                            prevSrc={`/${
                                 galleryImages[
                                     (photoIndex + galleryImages.length - 1) %
                                         galleryImages.length
                                 ]
-                            }
+                            }`}
                             onCloseRequest={() => setOpen(false)}
                             onMovePrevRequest={() =>
                                 setPhotoIndex(

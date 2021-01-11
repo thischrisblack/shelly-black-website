@@ -113,7 +113,7 @@ collections:
           widget: "number",
           value_types: "int",
         }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
   - label: "Pages"
     name: "pages"
     folder: "content/pages"
