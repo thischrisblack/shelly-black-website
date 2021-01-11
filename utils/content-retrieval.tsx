@@ -96,8 +96,8 @@ export const getAllPostFrontmatter = (
         })
         .sort((a, b) => {
             if (
-                (a.date || a.sortOrder || a.title) <
-                (b.date || b.sortOrder || b.title)
+                (a.date || b.sortOrder || a.title) <
+                (b.date || a.sortOrder || b.title)
             ) {
                 return 1;
             } else {
