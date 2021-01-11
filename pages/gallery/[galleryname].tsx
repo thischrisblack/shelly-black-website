@@ -98,12 +98,6 @@ export default function Gallery({
                         />
                     )}
                 </div>
-                <div className={styles.postNav}>
-                    <PreviousAndNext
-                        previousAndNext={previousAndNext}
-                        postType="gallery"
-                    />
-                </div>
             </article>
         </Layout>
     );

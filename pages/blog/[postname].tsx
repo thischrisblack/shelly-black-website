@@ -77,7 +77,7 @@ export default function BlogPost({
                                             setOpen(true);
                                         }}
                                     >
-                                        <img src={image} />
+                                        <img src={`/${image}`} />
                                     </div>
                                 ))}
                             </div>
