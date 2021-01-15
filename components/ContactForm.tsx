@@ -8,6 +8,7 @@ export default function ContactForm() {
             name="contact"
             method="POST"
             data-netlify="true"
+            action="/about?message=sent"
             netlify-honeypot="bot-field"
         >
             <input type="hidden" name="form-name" value="contact" />

@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown';
 import { GetStaticProps, GetStaticPaths } from 'next';
+import { useRouter } from 'next/router';
 import ContactForm from '../components/ContactForm';
 
 import Layout from '../components/Layout';
@@ -27,6 +28,11 @@ export default function PageContainer({
     excerpt: string;
 }) {
     if (!frontmatter) return <></>;
+
+    const {
+        query: { message },
+    } = useRouter();
+
     return (
         <Layout
             pageTitle={`${siteProps.title} | ${frontmatter.title}`}
@@ -41,7 +47,16 @@ export default function PageContainer({
                 </div>
                 <div className={styles.content}>
                     <ReactMarkdown source={content} escapeHtml={false} />
-                    {slug === 'about' && <ContactForm />}
+                    {slug === 'about' && message !== 'sent' && <ContactForm />}
+                    {slug === 'about' && message === 'sent' && (
+                        <div>
+                            <h3>Thank you!</h3>
+                            <p>
+                                Your message has been sent and I'll get back to
+                                you soon.
+                            </p>
+                        </div>
+                    )}
                 </div>
             </article>
         </Layout>
