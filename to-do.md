@@ -1,7 +1,4 @@
--   Fix all image paths in all MD files
--   Get rid of all absolute image URL stuff, .env, etc.
--   Make them work
--   Contact form in about?
+-   Contact form! Look into serverless functions.
 -   Image loading placeholders so they don't jump
 -   Clean up enums and interfaces
 -   Combine photography-blog and library-blog into a [name]-blog.tsx ???

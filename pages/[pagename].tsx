@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown';
 import { GetStaticProps, GetStaticPaths } from 'next';
+import ContactForm from '../components/ContactForm';
 
 import Layout from '../components/Layout';
 import {
@@ -40,6 +41,7 @@ export default function PageContainer({
                 </div>
                 <div className={styles.content}>
                     <ReactMarkdown source={content} escapeHtml={false} />
+                    {slug === 'about' && <ContactForm />}
                 </div>
             </article>
         </Layout>
