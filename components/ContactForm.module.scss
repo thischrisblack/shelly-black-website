@@ -12,6 +12,9 @@
         padding: 0.5rem 1rem;
         border: 1px solid #333;
         border-radius: 0.5rem;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box; /* Firefox, other Gecko */
+        box-sizing: border-box;
     }
 
     textarea {
@@ -20,6 +23,9 @@
         padding: 0.5rem 1rem;
         border: 1px solid #333;
         border-radius: 0.5rem;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box; /* Firefox, other Gecko */
+        box-sizing: border-box;
     }
 
     button {
