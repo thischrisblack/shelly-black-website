@@ -1,6 +1,5 @@
 import ReactMarkdown from 'react-markdown';
 import { GetStaticProps, GetStaticPaths } from 'next';
-import { useRouter } from 'next/router';
 import ContactForm from '../components/ContactForm';
 
 import Layout from '../components/Layout';
