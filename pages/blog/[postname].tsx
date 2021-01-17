@@ -14,7 +14,7 @@ import {
 } from '../../utils/content-retrieval';
 import { ImageTransformations } from '../../utils/image-path-helpers';
 import styles from '../../styles/Content.module.scss';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function BlogPost({
     slug,
@@ -39,6 +39,19 @@ export default function BlogPost({
     const [photoIndex, setPhotoIndex] = useState(0);
 
     const { galleryImages } = frontmatter;
+
+    useEffect(() => {
+        // Find embedded Twitter elements and append the script tag.
+        const twitterEmbedElement = document.getElementsByClassName(
+            'twitter-embed'
+        )[0];
+        if (twitterEmbedElement) {
+            const script = document.createElement('script');
+            script.src = 'https://platform.twitter.com/widgets.js';
+            twitterEmbedElement.appendChild(script);
+        }
+    }, []);
+
     return (
         <Layout
             pageTitle={`${siteProps.title} | ${frontmatter.title}`}
