@@ -178,7 +178,10 @@ export const getSinglePost = (
               }
             : data;
 
-    const contentWithCorrectedImgPath = content.replace('images/', '/images/');
+    const contentWithCorrectedImgPath = content.replace(
+        /images\//g,
+        '/images/'
+    );
     return {
         frontmatter: dataWithRootImageUrlAndTransformation as IPostFrontmatter,
         content: contentWithCorrectedImgPath,

@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
     "gray-matter": "^4.0.2",
     "hamburger-react": "^2.4.0",
     "next": "10.0.3",

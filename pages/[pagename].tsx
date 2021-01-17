@@ -29,10 +29,6 @@ export default function PageContainer({
 }) {
     if (!frontmatter) return <></>;
 
-    const {
-        query: { message },
-    } = useRouter();
-
     return (
         <Layout
             pageTitle={`${siteProps.title} | ${frontmatter.title}`}
@@ -47,16 +43,7 @@ export default function PageContainer({
                 </div>
                 <div className={styles.content}>
                     <ReactMarkdown source={content} escapeHtml={false} />
-                    {slug === 'about' && message !== 'sent' && <ContactForm />}
-                    {slug === 'about' && message === 'sent' && (
-                        <div className={styles.messageSent}>
-                            <h3>Thank you!</h3>
-                            <p>
-                                Your message has been sent and I'll get back to
-                                you soon.
-                            </p>
-                        </div>
-                    )}
+                    {slug === 'about' && <ContactForm />}
                 </div>
             </article>
         </Layout>

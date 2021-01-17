@@ -75,10 +75,6 @@
     padding: 2rem;
 }
 
-.messageSent {
-    margin-top: 5rem;
-}
-
 @media screen and (min-width: 700px) {
     .container {
         display: grid;
@@ -112,7 +108,7 @@
     }
 
     .postNav {
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
 }
 
@@ -124,17 +120,5 @@
         grid-template-areas:
             'meta content .'
             'postnav content .';
-    }
-
-    .meta {
-        padding: 2rem;
-    }
-
-    .content {
-        padding: 2rem 4rem;
-    }
-
-    .postNav {
-        margin-top: 5rem;
     }
 }
