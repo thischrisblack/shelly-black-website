@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Navigation from './Navigation';
 import 'react-image-lightbox/style.css';
+import { dom } from '@fortawesome/fontawesome-svg-core';
 
 export default function Layout({
     pageTitle,
@@ -36,6 +37,7 @@ export default function Layout({
                     src="https://kit.fontawesome.com/a3d3e90f49.js"
                     crossOrigin="anonymous"
                 ></script>
+                <style type="text/css">{dom.css()}</style>
             </Head>
             <Navigation />
             <section>{children}</section>
