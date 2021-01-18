@@ -12,31 +12,31 @@ University of Arizona, Tucson, Arizona
 Minor in Japanese\
 University of Arizona, Tucson, Arizona
 
-## Library & Archival Experience
+## Experience
 
 **Cyma Rubin Library Fellow,** 2020-Present\
-North Carolina State University Libraries, Raleigh, North Carolina
+North Carolina State University Libraries, Raleigh, NC
 
 **Digital Marketing Specialist**, 2015-2020\
-University of Arizona Libraries, Tucson, Arizona
+University of Arizona Libraries, Tucson, AZ
 
 **Processing Intern**, 2020\
-University of Arizona Special Collections, Tucson, Arizona
+University of Arizona Special Collections, Tucson, AZ
 
-**Digital Archives Intern,** 2019\
-Azusa Pacific University Libraries, Azusa, California
+**Digital Archives Intern (remote),** 2019\
+Azusa Pacific University Libraries, Azusa, CA
 
 **Volunteer English Instructor**, 2014\
-Pima County Public Library, Tucson, Arizona
+Pima County Public Library, Tucson, AZ
 
 **Digital Imaging Assistant**, 2011\
-WWII Living History Project, Tucson, Arizona
+WWII Living History Project, Tucson, AZ
 
 **Digital Imaging Intern**, 2009\
-Center for Creative Photography, Tucson, Arizona
+Center for Creative Photography, Tucson, AZ
 
 **Library Volunteer**, 2008\
-Wingspan: Southern Arizona’s LGBT Community Center, Tucson, Arizona
+Wingspan: Southern Arizona’s LGBT Community Center, Tucson, AZ
 
 ## Publications
 
