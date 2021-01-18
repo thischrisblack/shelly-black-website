@@ -9,5 +9,7 @@ galleryImages:
   - images/janelle-star.jpg
   - images/le-butcherettes.jpg
   - images/screaming-females55050de6d4167.jpg
+  - images/2009-octopus.jpg
+  - images/onegin.jpg
 sortOrder: 4
 ---
