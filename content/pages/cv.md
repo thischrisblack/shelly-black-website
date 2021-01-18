@@ -6,11 +6,11 @@ description: Shelly Black's CV.
 
 **MA in Library and Information Science**, 2020\
 Graduate Certificate in Archival Studies\
-University of Arizona, Tucson, Arizona
+University of Arizona, Tucson, AZ
 
 **BFA in Photography**, 2009\
 Minor in Japanese\
-University of Arizona, Tucson, Arizona
+University of Arizona, Tucson, AZ
 
 ## Experience
 
