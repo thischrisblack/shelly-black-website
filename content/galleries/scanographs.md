@@ -7,5 +7,5 @@ galleryImages:
   - images/flora.jpg
   - images/flatbed-red.jpg
   - images/self-portrait-american.jpg
-sortOrder: 2
+sortOrder: 4
 ---
