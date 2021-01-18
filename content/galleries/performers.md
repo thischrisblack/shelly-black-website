@@ -11,5 +11,6 @@ galleryImages:
   - images/screaming-females55050de6d4167.jpg
   - images/2009-octopus.jpg
   - images/onegin.jpg
+  - images/2013-chamberlab-string.jpg
 sortOrder: 4
 ---
