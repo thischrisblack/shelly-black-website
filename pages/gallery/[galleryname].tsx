@@ -52,11 +52,7 @@ export default function Gallery({
                 <div className={styles.meta}>
                     <h2>{frontmatter.title}</h2>
                     <p>
-                        {frontmatter.category.map((category: string) => (
-                            <div>
-                                <em>{category}</em>
-                            </div>
-                        ))}
+                        <em>{frontmatter.category}</em>
                     </p>
                 </div>
                 <div className={styles.content}>
