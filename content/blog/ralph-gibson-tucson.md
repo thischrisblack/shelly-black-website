@@ -1,7 +1,9 @@
 ---
 title: Ralph Gibson in Tucson
 date: 2015/10/05
-image: images/gibson-etherton.jpg
+image:
+    src: images/gibson-etherton.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

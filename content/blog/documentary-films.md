@@ -1,7 +1,9 @@
 ---
 title: Documentary Film Recaps
 date: 2015/06/02
-image: images/salt-earth-loft.jpg
+image:
+    src: images/salt-earth-loft.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

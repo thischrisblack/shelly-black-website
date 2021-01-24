@@ -1,7 +1,9 @@
 ---
 title: 'Week 4: Getting acquainted with George Chambers'
 date: 2020/02/05
-image: images/newspaper-press.jpg
+image:
+    src: images/newspaper-press.jpg
+    alt: Shelly Black
 category:
     - Internship
 private: true

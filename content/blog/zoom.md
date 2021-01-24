@@ -1,7 +1,9 @@
 ---
 title: 'Zoom Lenses'
 date: 2015/01/28
-image: images/zoom-lenses.jpg
+image:
+    src: images/zoom-lenses.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

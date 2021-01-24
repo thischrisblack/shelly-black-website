@@ -28,7 +28,7 @@ export default function BlogPost({
     slug: string;
     siteProps: any;
     previousAndNext: { previous: IPostFrontmatter; next: IPostFrontmatter };
-    frontmatter: any;
+    frontmatter: IPostFrontmatter;
     content: string;
     ogImage: string;
     excerpt: string;
@@ -73,15 +73,20 @@ export default function BlogPost({
                     </p>
                     <h2>{frontmatter.title}</h2>
                     <p>
-                        {frontmatter.category.map((category: string) => (
-                            <div>
-                                <em>{category}</em>
-                            </div>
-                        ))}
+                        {(frontmatter.category as Array<string>).map(
+                            (category: string) => (
+                                <div>
+                                    <em>{category}</em>
+                                </div>
+                            )
+                        )}
                     </p>
                 </div>
                 <div className={styles.content}>
-                    <img src={`/${frontmatter.image}`} />
+                    <img
+                        src={`/${frontmatter.image.src}`}
+                        alt={frontmatter.image.alt}
+                    />
 
                     <ReactMarkdown source={content} escapeHtml={false} />
 

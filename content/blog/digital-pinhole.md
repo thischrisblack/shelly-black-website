@@ -1,7 +1,9 @@
 ---
 title: 'Digital Pinhole'
 date: 2015/01/28
-image: images/digital-pinhole.jpg
+image:
+    src: images/digital-pinhole.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

@@ -1,7 +1,9 @@
 ---
 title: Performers
 category: Other Work
-image: images/le-butcherettes.jpg
+image:
+    src: images/le-butcherettes.jpg
+    alt: Shelly Black
 galleryImages:
     - images/2013-artifact-promo.jpg
     - images/2013-chris.jpg

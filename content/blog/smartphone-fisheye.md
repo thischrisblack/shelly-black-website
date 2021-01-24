@@ -1,7 +1,9 @@
 ---
 title: Smartphone Fisheye
 date: 2016/03/26
-image: images/fisheye-spiegel.jpg
+image:
+    src: images/fisheye-spiegel.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

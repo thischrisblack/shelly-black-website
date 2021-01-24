@@ -1,7 +1,9 @@
 ---
 title: Week 8
 date: 2020/03/06
-image: images/oyama-exhibit.jpg
+image:
+    src: images/oyama-exhibit.jpg
+    alt: Shelly Black
 category:
     - Internship
 private: true

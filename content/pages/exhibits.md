@@ -1,6 +1,8 @@
 ---
 title: Exhibition Record
-image: images/airport-gallery.jpg
+image:
+    src: images/airport-gallery.jpg
+    alt: Airport gallery exhibit
 description: A list of galleries, museums, and places where Shelly Black has shown her work.
 ---
 

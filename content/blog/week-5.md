@@ -1,7 +1,9 @@
 ---
 title: Week 5
 date: 2020/02/15
-image: images/george-chambers.jpg
+image:
+    src: images/george-chambers.jpg
+    alt: Shelly Black
 category:
     - Internship
 private: true

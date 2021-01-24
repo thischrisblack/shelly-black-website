@@ -1,7 +1,9 @@
 ---
 title: Cameraless Photography
 date: 2016/02/14
-image: images/takeda.jpg
+image:
+    src: images/takeda.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

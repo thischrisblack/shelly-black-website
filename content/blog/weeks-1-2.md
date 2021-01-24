@@ -1,7 +1,9 @@
 ---
 title: Weeks 1-2
 date: 2020/01/22
-image: images/archive-boxes.jpg
+image:
+    src: images/archive-boxes.jpg
+    alt: Shelly Black
 category:
     - Internship
 private: true

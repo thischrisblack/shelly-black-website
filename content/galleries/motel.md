@@ -1,7 +1,9 @@
 ---
 title: Motel
 category: Personal Projects
-image: images/motel-07.jpg
+image:
+    src: images/motel-07.jpg
+    alt: Shelly Black
 galleryImages:
     - images/motel-01.jpg
     - images/motel-03.jpg

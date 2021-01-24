@@ -31,7 +31,7 @@ export interface IPostFrontmatter {
     description?: string;
     galleryImages?: Array<string>;
     id?: string;
-    image?: string;
+    image?: { src: string; alt: string };
     private?: boolean;
     sortOrder?: number;
     title: string;
@@ -167,15 +167,18 @@ export const getSinglePost = (
 
     // Transform images if not gifs (to preserve animated gifs)
     const dataWithRootImageUrlAndTransformation =
-        data.image && !data.image.includes('gif')
+        data.image && !data.image.src.includes('gif')
             ? {
                   ...data,
-                  image: getNetlifyEnhancedImage(
-                      data.image,
-                      imageTransformation?.transformation,
-                      imageTransformation?.w,
-                      imageTransformation?.h
-                  ),
+                  image: {
+                      ...data.image,
+                      src: getNetlifyEnhancedImage(
+                          data.image.src,
+                          imageTransformation?.transformation,
+                          imageTransformation?.w,
+                          imageTransformation?.h
+                      ),
+                  },
               }
             : data;
 
@@ -187,7 +190,7 @@ export const getSinglePost = (
         frontmatter: dataWithRootImageUrlAndTransformation as IPostFrontmatter,
         content: contentWithCorrectedImgPath,
         ogImage: getNetlifyEnhancedImage(
-            data.image?.replace('../', ''),
+            data.image?.src?.replace('../', ''),
             ImageTransformations.Smartcrop,
             1200,
             627

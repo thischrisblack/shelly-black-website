@@ -1,7 +1,9 @@
 ---
 title: 'Week 13: Archiving during coronavirus'
 date: 2020/04/16
-image: images/asche.jpg
+image:
+    src: images/asche.jpg
+    alt: Shelly Black
 category:
     - Internship
 private: true

@@ -1,7 +1,9 @@
 ---
 title: 'Pinhole Video'
 date: 2015/02/12
-image: images/pinhole-video.jpg
+image:
+    src: images/pinhole-video.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

@@ -1,7 +1,9 @@
 ---
 title: Art of the Incarceration Camps
 date: 2016/03/26
-image: images/hirabayashi.jpg
+image:
+    src: images/hirabayashi.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

@@ -1,7 +1,9 @@
 ---
 title: Polaroid Land 250
 date: 2015/04/05
-image: images/red-yellow-blue-web.jpg
+image:
+    src: images/red-yellow-blue-web.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

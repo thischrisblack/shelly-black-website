@@ -1,7 +1,9 @@
 ---
 title: Camera Hospital
 date: 2016/10/29
-image: images/pcb.jpg
+image:
+    src: images/pcb.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

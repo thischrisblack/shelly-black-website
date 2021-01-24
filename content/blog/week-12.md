@@ -1,7 +1,9 @@
 ---
 title: Week 12
 date: 2020/04/02
-image: images/dreamstime_xxl_92160843.jpg
+image:
+    src: images/dreamstime_xxl_92160843.jpg
+    alt: Shelly Black
 category:
     - Internship
 private: true

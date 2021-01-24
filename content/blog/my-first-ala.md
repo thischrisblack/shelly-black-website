@@ -1,7 +1,9 @@
 ---
 title: My First ALA
 date: 2019/07/07
-image: images/ALA-convention-center.jpg
+image:
+    src: images/ALA-convention-center.jpg
+    alt: Shelly Black
 category:
     - Library & Archival Work
 ---

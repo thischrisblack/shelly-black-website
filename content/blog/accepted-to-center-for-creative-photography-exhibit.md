@@ -1,7 +1,9 @@
 ---
 title: Accepted to Center for Creative Photography exhibit
 date: 2019/10/21
-image: images/ccp.jpg
+image:
+    src: images/ccp.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

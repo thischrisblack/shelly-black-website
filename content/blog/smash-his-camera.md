@@ -1,7 +1,9 @@
 ---
 title: 'Documentary Recap: Smash His Camera'
 date: 2015/10/02
-image: images/jackie.jpg
+image:
+    src: images/jackie.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

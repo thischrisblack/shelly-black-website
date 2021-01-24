@@ -1,7 +1,9 @@
 ---
 title: Redscaling
 date: 2015/05/03
-image: images/redscale-collage.jpg
+image:
+    src: images/redscale-collage.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

@@ -1,7 +1,9 @@
 ---
 title: Lynsey Addario's Memoir
 date: 2015/07/13
-image: images/linsey-addarop-memoir.jpg
+image:
+    src: images/linsey-addarop-memoir.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---
