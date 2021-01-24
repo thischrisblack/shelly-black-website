@@ -3,8 +3,7 @@ title: Documentary Film Recaps
 date: 2015/06/02
 image:
     src: images/salt-earth-loft.jpg
-    alt: Shelly Black
-category:
+    alt: Loft Cinema sign
     - Photography
 ---
 

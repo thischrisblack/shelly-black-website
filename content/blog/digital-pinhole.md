@@ -3,7 +3,7 @@ title: 'Digital Pinhole'
 date: 2015/01/28
 image:
     src: images/digital-pinhole.jpg
-    alt: Shelly Black
+    alt: Hands peeling orange
 category:
     - Photography
 ---

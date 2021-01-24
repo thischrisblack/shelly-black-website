@@ -3,7 +3,7 @@ title: 'Painting with the Moon'
 date: 2015/02/04
 image:
     src: images/painting-with-the-moon.jpg
-    alt: Shelly Black
+    alt: Light painting with moon
 category:
     - Photography
 ---

@@ -3,7 +3,7 @@ title: Miracle Mile 1AM
 category: Personal Projects
 image:
     src: images/frontier-motel.jpg
-    alt: Shelly Black
+    alt: Frontier Motel sign
 galleryImages:
     - images/ghost-ranch.jpg
     - images/hacienda-motel.jpg

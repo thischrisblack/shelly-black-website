@@ -3,7 +3,7 @@ title: Miscellaneous
 category: Personal Projects
 image:
     src: images/2008-amanda3.jpg
-    alt: Shelly Black
+    alt: Woman in chair with head covered
 galleryImages:
     - images/2008-amanda3.jpg
     - images/2008-laura1.jpg

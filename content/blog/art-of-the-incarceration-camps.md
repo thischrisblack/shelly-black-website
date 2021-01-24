@@ -3,7 +3,7 @@ title: Art of the Incarceration Camps
 date: 2016/03/26
 image:
     src: images/hirabayashi.jpg
-    alt: Shelly Black
+    alt: Catalina Federal Honor Camp remains
 category:
     - Photography
 ---

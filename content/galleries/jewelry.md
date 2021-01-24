@@ -3,7 +3,7 @@ title: Jewelry
 category: Other Work
 image:
     src: images/moon-sputnik-rings.jpg
-    alt: Shelly Black
+    alt: Space-themed rings
 galleryImages:
     - images/cust-custom-cello-ring-pv1-14.jpg
     - images/cust-juicy-vintage-fleur-de-lis-engagement-ring-pv-14.jpg

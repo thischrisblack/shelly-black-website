@@ -3,7 +3,7 @@ title: Scanographs
 category: Personal Projects
 image:
     src: images/flatbed-red.jpg
-    alt: Shelly Black
+    alt: Scanograph self-portrait
 galleryImages:
     - images/chiles-hands.jpg
     - images/flora.jpg

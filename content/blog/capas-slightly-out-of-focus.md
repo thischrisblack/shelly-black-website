@@ -3,7 +3,7 @@ title: 'Robert Capa & WWII'
 date: 2015/02/22
 image:
     src: images/capa-excerpt.jpg
-    alt: Shelly Black
+    alt: Slightout Out of Focus book page
 category:
     - Photography
 ---

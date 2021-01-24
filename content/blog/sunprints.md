@@ -3,7 +3,7 @@ title: Sunprints
 date: 2016/03/30
 image:
     src: images/hot-spring-edit.jpg
-    alt: Shelly Black
+    alt: Figures in fog
 category:
     - Photography
 ---

@@ -3,7 +3,7 @@ title: Camera Hospital
 date: 2016/10/29
 image:
     src: images/pcb.jpg
-    alt: Shelly Black
+    alt: DSLR circuit board and face
 category:
     - Photography
 ---

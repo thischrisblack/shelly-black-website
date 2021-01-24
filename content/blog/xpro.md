@@ -3,7 +3,7 @@ title: 'Revisiting Cross-Processing'
 date: 2015/01/28
 image:
     src: images/xpro.jpg
-    alt: Shelly Black
+    alt: Man and cat at table
 category:
     - Photography
 ---

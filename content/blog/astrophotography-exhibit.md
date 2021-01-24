@@ -3,7 +3,7 @@ title: Astrophotography Exhibit
 date: 2015/03/09
 image:
     src: images/sun-prints.jpg
-    alt: Shelly Black
+    alt: Astrophotography exhibit wall
 category:
     - Photography
 ---

@@ -3,7 +3,7 @@ title: ALA 2020 Emerging Leaders in American Libraries magazine
 date: 2020/05/07
 image:
     src: images/american_libraries_magazine_may_2020.jpg
-    alt: Shelly Black
+    alt: ALA Emerging Leaders in American Libraries magazine
 category:
     - Library & Archival Work
 ---

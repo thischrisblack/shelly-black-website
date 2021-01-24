@@ -3,7 +3,7 @@ title: GoPro Review
 date: 2016/03/23
 image:
     src: images/gopro-birds.jpg
-    alt: Shelly Black
+    alt: Bird feeder
 category:
     - Photography
 ---

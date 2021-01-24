@@ -3,7 +3,7 @@ title: Scanner Portrait Studies
 date: 2015/04/16
 image:
     src: images/wine.jpg
-    alt: Shelly Black
+    alt: Scannography portrait
 category:
     - Photography
 ---

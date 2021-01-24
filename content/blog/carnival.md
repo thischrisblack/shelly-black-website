@@ -3,7 +3,7 @@ title: Carnival Submission & Future Projects
 date: 2015/03/16
 image:
     src: images/FoodCity10.jpg
-    alt: Shelly Black
+    alt: Carnival ticket booth
 category:
     - Photography
 ---

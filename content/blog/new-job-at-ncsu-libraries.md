@@ -3,7 +3,7 @@ title: New job at NCSU Libraries
 date: 2020/05/04
 image:
     src: images/ncsu_belltower.jpg
-    alt: Shelly Black
+    alt: NC State University bell tower
 category:
     - Library & Archival Work
 ---

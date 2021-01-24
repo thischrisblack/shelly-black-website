@@ -3,7 +3,7 @@ title: Camera Show
 date: 2015/04/13
 image:
     src: images/camera-show.jpg
-    alt: Shelly Black
+    alt: Cameras in display case
 category:
     - Photography
 ---

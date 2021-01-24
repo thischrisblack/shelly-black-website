@@ -3,7 +3,7 @@ title: Week 8
 date: 2020/03/06
 image:
     src: images/oyama-exhibit.jpg
-    alt: Shelly Black
+    alt: George Oyama exhibit
 category:
     - Internship
 ---

@@ -3,7 +3,7 @@ title: Motel
 category: Personal Projects
 image:
     src: images/motel-07.jpg
-    alt: Shelly Black
+    alt: Trash bin by door
 galleryImages:
     - images/motel-01.jpg
     - images/motel-03.jpg

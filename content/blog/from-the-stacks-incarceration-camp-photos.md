@@ -3,7 +3,7 @@ title: 'From the Stacks: Incarceration Camp Photos'
 date: 2016/07/03
 image:
     src: images/umbrella-woman-poston.jpg
-    alt: Shelly Black
+    alt: Woman with umbrella in Poston incarceration camp
 category:
     - Photography
 ---

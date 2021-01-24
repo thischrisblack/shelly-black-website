@@ -25,42 +25,46 @@ const Index = ({ siteProps }: { siteProps: any }) => {
             <article className={styles.content}>
                 <div className={styles.left}>
                     <p>
-                        Hello! I'm Shelly, a Japanese Mexican American librarian
-                        and photographer in Raleigh, NC. {!isShown && '[ '}
-                        <a onClick={() => setShown(!isShown)}>
-                            {isShown ? '' : 'more'}
-                        </a>
-                        {!isShown && ' ]'}
+                        Hello! I’m Shelly, a Japanese Mexican American
+                        librarian, archivist, and photographer on the unceded
+                        land of the Tuscarora and the Catawba.{' '}
+                        {!isShown && (
+                            <div className={styles.moreLink}>
+                                <a
+                                    aria-label="Read more about Shelly Black"
+                                    onClick={() => setShown(!isShown)}
+                                >
+                                    {isShown ? '' : 'more'}
+                                </a>
+                            </div>
+                        )}
                     </p>
                     <div className={styles.more} ref={moreDiv}>
                         <p>
-                            I'm currently the Cyma Rubin Library Fellow at North
-                            Carolina State University Libraries where I support
-                            digital preservation in Special Collections.
-                            Previously I was a marketing specialist at the
-                            University of Arizona Libraries and was selected as
-                            a 2020 Emerging Leader by the American Library
-                            Association. During my student days, I worked in
-                            special collections and fine art photography
-                            archives.
+                            I’m currently a fellow at North Carolina State
+                            University Libraries where I support digital
+                            preservation in Special Collections. Previously I
+                            was a marketing specialist at the University of
+                            Arizona Libraries. I’m proud to be a member of{' '}
+                            <a href="https://ischool.arizona.edu/knowledge-river">
+                                Knowledge River
+                            </a>{' '}
+                            cohort 17 and the 2020 class of{' '}
+                            <a href="http://www.ala.org/educationcareers/leadership/emergingleaders">
+                                American Library Association Emerging Leaders
+                            </a>
+                            .
                         </p>
                         <p>
-                            As a photographer, I've exhibited in spaces across
-                            the US and abroad, such as: Center for Creative
-                            Photography, Tucson, AZ; University of Arizona
-                            Museum of Art; Tucson International Airport; West
-                            Valley Art Museum, Surprise, AZ; ISE Cultural
-                            Foundation, New York, NY; and the International
-                            Photography Festival, Pingyao, China. My photography
-                            has also appeared on wine labels and in alt-weekly
-                            music columns. I've also been a professional jewelry
-                            photographer and volunteer photography instructor
-                            for refugees.
-                        </p>
-                        <p>
-                            I also have 10 years of experience in marketing and
-                            skills including copywriting, graphic design, and
-                            social media.
+                            As a photographer, I’ve exhibited in spaces across
+                            the US and overseas, including the{' '}
+                            <a href="https://ccp.arizona.edu/">
+                                Center for Creative Photography
+                            </a>
+                            , and my work has appeared on wine labels and in
+                            alt-weekly music columns. I’ve also been a
+                            professional jewelry photographer and taught
+                            photography to refugees.
                         </p>
                     </div>
                 </div>

@@ -3,7 +3,7 @@ title: Cameraless Photography
 date: 2016/02/14
 image:
     src: images/takeda.jpg
-    alt: Shelly Black
+    alt: Trace by Shimpei Takeda
 category:
     - Photography
 ---

@@ -3,7 +3,7 @@ title: Infrared Film
 date: 2016/01/29
 image:
     src: images/infrared-film.jpg
-    alt: Shelly Black
+    alt: Yuma, AZ landscape
 category:
     - Photography
 ---

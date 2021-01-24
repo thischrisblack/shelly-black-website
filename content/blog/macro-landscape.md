@@ -3,7 +3,7 @@ title: Macro Landscape Experiment
 date: 2015/07/19
 image:
     src: images/ice-04.jpg
-    alt: Shelly Black
+    alt: Cactus in ice
 category:
     - Photography
 galleryImages:

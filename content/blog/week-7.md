@@ -3,7 +3,7 @@ title: Week 7
 date: 2020/02/27
 image:
     src: images/louise_marshall.jpg
-    alt: Shelly Black
+    alt: Louise Foucar Marshall
 category:
     - Internship
 ---

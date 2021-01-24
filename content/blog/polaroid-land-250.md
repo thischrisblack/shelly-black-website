@@ -3,7 +3,7 @@ title: Polaroid Land 250
 date: 2015/04/05
 image:
     src: images/red-yellow-blue-web.jpg
-    alt: Shelly Black
+    alt: Man on bed and lamp
 category:
     - Photography
 ---

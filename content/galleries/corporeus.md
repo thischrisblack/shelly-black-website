@@ -3,7 +3,7 @@ title: Corporeus
 category: Personal Projects
 image:
     src: images/corporeus-9-shelly-flores.jpg
-    alt: Shelly Black
+    alt: Meat and drain
 galleryImages:
     - images/corporeus-15-shelly-flores.jpg
     - images/corporeus-9-shelly-flores.jpg

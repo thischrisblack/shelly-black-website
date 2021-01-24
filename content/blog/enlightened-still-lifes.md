@@ -3,7 +3,7 @@ title: Enlightened Still Lifes
 date: 2015/03/17
 image:
     src: images/seeds.jpg
-    alt: Shelly Black
+    alt: Seeds on windowsill
 category:
     - Photography
 ---

@@ -3,7 +3,7 @@ title: Cinemagraphs
 date: 2016/10/23
 image:
     src: images/book-animation.gif
-    alt: Shelly Black
+    alt: Woman flipping pages of book
 category:
     - Photography
 ---

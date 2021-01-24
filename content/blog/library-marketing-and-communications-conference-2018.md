@@ -3,7 +3,7 @@ title: Library Marketing and Communications Conference 2018
 date: 2018/11/16
 image:
     src: images/st-louis-courthouse-snow.jpg
-    alt: Shelly Black
+    alt: St. Louis courthouse in snow
 category:
     - Library & Archival Work
 ---

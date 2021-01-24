@@ -3,7 +3,7 @@ title: '"Marketing Library Services" Write-Up'
 date: 2019/03/01
 image:
     src: images/marketing-library-services.jpg
-    alt: Shelly Black
+    alt: Marketing Library Services
 category:
     - Library & Archival Work
 ---

@@ -3,7 +3,7 @@ title: Performers
 category: Other Work
 image:
     src: images/le-butcherettes.jpg
-    alt: Shelly Black
+    alt: Teri Gender Bender
 galleryImages:
     - images/2013-artifact-promo.jpg
     - images/2013-chris.jpg

@@ -3,7 +3,7 @@ title: 'Zoom Lenses'
 date: 2015/01/28
 image:
     src: images/zoom-lenses.jpg
-    alt: Shelly Black
+    alt: Motion blurred man
 category:
     - Photography
 ---

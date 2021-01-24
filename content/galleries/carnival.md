@@ -3,7 +3,7 @@ title: Carnival
 category: Personal Projects
 image:
     src: images/foodcity08.jpg
-    alt: Shelly Black
+    alt: Carnival at night
 galleryImages:
     - images/foodcity08.jpg
     - images/foodcity02.jpg

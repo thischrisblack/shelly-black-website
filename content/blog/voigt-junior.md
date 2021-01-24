@@ -3,7 +3,7 @@ title: 'Camera Acquisition: Voigt Junior'
 date: 2015/10/20
 image:
     src: images/Voigt-Junior-Camera.jpg
-    alt: Shelly Black
+    alt: Voigt Junior camera
 category:
     - Photography
 ---

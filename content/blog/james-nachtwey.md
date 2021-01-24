@@ -3,7 +3,7 @@ title: James Nachtwey's Inferno
 date: 2016/02/24
 image:
     src: images/james-nachtway.jpg
-    alt: Shelly Black
+    alt: James Nachtwey book
 category:
     - Photography
 ---

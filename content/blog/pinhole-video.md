@@ -3,7 +3,7 @@ title: 'Pinhole Video'
 date: 2015/02/12
 image:
     src: images/pinhole-video.jpg
-    alt: Shelly Black
+    alt: Video still of cacti and street
 category:
     - Photography
 ---

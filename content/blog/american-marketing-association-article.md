@@ -3,7 +3,7 @@ title: American Marketing Association Interview
 date: 2019/03/05
 image:
     src: images/ama-article.jpg
-    alt: Shelly Black
+    alt: American Marketing Association article
 category:
     - Library & Archival Work
 ---

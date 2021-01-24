@@ -3,7 +3,7 @@ title: 'Week 13: Archiving during coronavirus'
 date: 2020/04/16
 image:
     src: images/asche.jpg
-    alt: Shelly Black
+    alt: Cat and laptop
 category:
     - Internship
 ---

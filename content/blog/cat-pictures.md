@@ -3,7 +3,7 @@ title: '"Cat pictures sold like proverbial hot cakes"'
 date: 2015/03/17
 image:
     src: images/lounging-spiegel-window.jpg
-    alt: Shelly Black
+    alt: Gray cat on windowsill
 category:
     - Photography
 ---

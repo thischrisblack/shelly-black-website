@@ -3,7 +3,7 @@ title: Week 5
 date: 2020/02/15
 image:
     src: images/george-chambers.jpg
-    alt: Shelly Black
+    alt: George Chambers and typewriter
 category:
     - Internship
 ---

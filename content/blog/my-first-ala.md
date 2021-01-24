@@ -3,7 +3,7 @@ title: My First ALA
 date: 2019/07/07
 image:
     src: images/ALA-convention-center.jpg
-    alt: Shelly Black
+    alt: ALA banner on convention center, Washington, DC
 category:
     - Library & Archival Work
 ---

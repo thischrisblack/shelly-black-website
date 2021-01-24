@@ -3,7 +3,7 @@ title: Smartphone Fisheye
 date: 2016/03/26
 image:
     src: images/fisheye-spiegel.jpg
-    alt: Shelly Black
+    alt: Fisheye photo of cats
 category:
     - Photography
 ---

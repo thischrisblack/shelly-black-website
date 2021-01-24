@@ -3,7 +3,7 @@ title: Week 10
 date: 2020/03/20
 image:
     src: images/spiegel-laptop.jpg
-    alt: Shelly Black
+    alt: Cat and laptop
 category:
     - Internship
 ---

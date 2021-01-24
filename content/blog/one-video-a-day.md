@@ -3,7 +3,7 @@ title: 'One Video A Day'
 date: 2015/01/29
 image:
     src: images/video-still.jpg
-    alt: Shelly Black
+    alt: Video still of newspaper machine
 category:
     - Photography
 ---

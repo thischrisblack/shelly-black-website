@@ -3,7 +3,7 @@ title: Week 3
 date: 2020/01/31
 image:
     src: images/newspaper.jpg
-    alt: Shelly Black
+    alt: Old newspaper
 category:
     - Internship
 ---

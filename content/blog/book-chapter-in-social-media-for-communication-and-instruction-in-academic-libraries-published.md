@@ -3,7 +3,7 @@ title: 'Book chapter in "Social Media for Communication and Instruction in Acade
 date: 2019/03/23
 image:
     src: images/social-media-book.jpg
-    alt: Shelly Black
+    alt: Social Media for Communication and Instruction book and cat
 category:
     - Library & Archival Work
 ---
