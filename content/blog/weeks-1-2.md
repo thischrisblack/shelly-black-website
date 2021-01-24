@@ -6,7 +6,6 @@ image:
     alt: Shelly Black
 category:
     - Internship
-private: true
 ---
 
 This semester, I’m doing a 3-credit internship at the University of Arizona Special Collections with Collections Management Archivist Lisa Duncan. While I’m familiar with this department, I already learned so much on my first day. I met Lisa during her reference desk shift, where she explained Reading Room operations and how reference questions are assigned to the staff. She then gave me an overview of the internship: I’ll be processing the George Chambers collection, creating a pop-up exhibit on a topic of my choice, and possibly shadowing an instruction session. I was also offered the opportunity to learn about preservation and reference. While my classes covered the breadth of duties of an archivist, I was still surprised by all the responsibilities one can have between the reference desk and working on a collection. My day wrapped up with a tour of the facility, meeting other student workers, and reading the online processing manual.

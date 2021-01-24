@@ -35,8 +35,6 @@ export default function BlogPost({
 }) {
     if (!frontmatter) return <></>;
 
-    console.log(frontmatter);
-
     const [isOpen, setOpen] = useState(false);
     const [photoIndex, setPhotoIndex] = useState(0);
 

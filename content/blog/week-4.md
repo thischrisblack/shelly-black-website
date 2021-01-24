@@ -6,7 +6,6 @@ image:
     alt: Shelly Black
 category:
     - Internship
-private: true
 ---
 
 _Originally [posted](https://archivistapprenticeship.wordpress.com/2020/02/05/getting-acquainted-with-george-chambers/) on Archivist Apprenticeship on February 5, 2020._

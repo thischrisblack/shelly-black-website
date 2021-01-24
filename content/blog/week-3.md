@@ -6,7 +6,6 @@ image:
     alt: Shelly Black
 category:
     - Internship
-private: true
 ---
 
 This week I started processing the George Chambers Papers. Chambers (1901-1978) was an amateur historian, business manager for Tucson newspapers, and civic leader. While he was born in Onaga, Kansas, he spent his adult life in Arizona and was the driving force behind many historic preservation projects. These include saving the façade of the original San Agustin Cathedral. He also led the microfilming of El Archivo de Hidalgo del Parral, a collection of colonial era documents.

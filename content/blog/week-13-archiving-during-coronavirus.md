@@ -6,7 +6,6 @@ image:
     alt: Shelly Black
 category:
     - Internship
-private: true
 ---
 
 _Originally [posted](https://archivistapprenticeship.wordpress.com/2020/04/15/archiving-during-coronavirus/) on Archivist Apprenticeship on April 15, 2020._

@@ -6,7 +6,6 @@ image:
     alt: Shelly Black
 category:
     - Internship
-private: true
 ---
 
 _Above image: Miss Kindeyes' kindergarten class (Frees, 1915, p. 97)_

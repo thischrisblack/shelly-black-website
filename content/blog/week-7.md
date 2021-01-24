@@ -6,7 +6,6 @@ image:
     alt: Shelly Black
 category:
     - Internship
-private: true
 ---
 
 _Above image: University of Arizona Photograph Collection, Faculty--1891-1910. University of Arizona Libraries, Special Collections._

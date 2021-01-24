@@ -6,7 +6,6 @@ image:
     alt: Shelly Black
 category:
     - Internship
-private: true
 ---
 
 Over the past three weeks, I've found more than 120 collections development policies from different higher education special collections and archives. I began by searching for policies from Research I and Research II institutions. I also did a Google search for policies from universities and colleges without those classifications. Whether an institution posts a policy on their website doesn't seem to correlate with its size. Initially, I thought more R1 institutions, having greater resources, would have more policies. In reality, I couldn't find policies on some R1 websites, while I found policies for smaller universities I hadn't heard of before.

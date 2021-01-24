@@ -6,7 +6,6 @@ image:
     alt: Shelly Black
 category:
     - Internship
-private: true
 ---
 
 Life changed drastically due to COVID-19. Classes and work, including internships, have become remote (pictured is my work from home setup). While much archival work is hands-on, there is plenty to keep me busy for the rest of the semester.
