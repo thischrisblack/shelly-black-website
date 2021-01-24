@@ -65,7 +65,10 @@ const Index = ({ siteProps }: { siteProps: any }) => {
                     </div>
                 </div>
                 <div className={styles.right}>
-                    <img src="/images/radio-telescope.jpg" />
+                    <img
+                        src="/images/radio-telescope.jpg"
+                        alt="Shelly and radio telescope."
+                    />
                 </div>
             </article>
         </Layout>

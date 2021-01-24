@@ -5,7 +5,7 @@ image: images/ALA-convention-center.jpg
 category: Library & Archival Work
 ---
 
-![](images/ALA-Poster-1.jpg)
+![Shelly with ALA poster presentation](images/ALA-Poster-1.jpg)
 
 I finally made it to my first ALA in Washington, DC. I presented a poster on inclusive marketing strategies (unfortunately my collaborator, Kenya, couldn't make it). I met old and new library friends and mentors. I toured the Library of Congress Manuscript Division.
 

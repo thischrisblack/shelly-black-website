@@ -18,5 +18,5 @@ Meissner's concepts of organic and artificial also provide clarity. He said "the
 
 Meissner, D. (2019). _Arranging and describing archives and manuscripts_ (Vol. 2). Chicago, IL: Society of American Archivists.
 
-![](images/7-inch-tapes.jpg)  
+![7-inch tapes](images/7-inch-tapes.jpg)  
 _7" tapes of recordings from board meetings, presentations, and office life._
