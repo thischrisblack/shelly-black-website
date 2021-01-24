@@ -2,7 +2,8 @@
 title: 'Digital Pinhole'
 date: 2015/01/28
 image: images/digital-pinhole.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 It started with a can of Shiner beer.

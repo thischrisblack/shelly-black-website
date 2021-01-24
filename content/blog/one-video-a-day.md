@@ -2,7 +2,8 @@
 title: 'One Video A Day'
 date: 2015/01/29
 image: images/video-still.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 In 2014, I consciously made New Year's resolutions, and one of these included practicing gratitude. Every week, I would write down three things I was grateful for.  Somewhat replacing this exercise is one of my projects for 2015 (and beyond): taking a one-second video every day. I was inspired to do this after seeing a TED Talk by [Cesar Kuriyama](http://www.ted.com/talks/cesar_kuriyama_one_second_every_day), streamed at TEDx Tucson.

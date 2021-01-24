@@ -2,7 +2,8 @@
 title: 'Revisiting Cross-Processing'
 date: 2015/01/28
 image: images/xpro.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 _Nervous. Impatient. Thinking about the second I released the shutter: the light in the room, the objects that infiltrated the shot, the smells and sounds that film does not capture. Coercing myself into worshiping these moments before I even see the glossy, burnt orange negatives. When will my film be ready?_

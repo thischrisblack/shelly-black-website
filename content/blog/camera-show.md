@@ -2,7 +2,8 @@
 title: Camera Show
 date: 2015/04/13
 image: images/camera-show.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 I returned to the [Western Photographic Historical Society's](http://www.wphsociety.org/) 57th(!) camera show! I first learned about this local camera club when I was in art school. They're a student-friendly organization, as they offer scholarships to college photography students and host high school photo contests. Back then, I visited their annual camera fair once, and at that time, went home empty-handed. This time around, I did not want that to happen.

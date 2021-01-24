@@ -2,7 +2,8 @@
 title: Miracle Mile 1AM Exhibit
 date: 2017/05/15
 image: images/Tiki-Motel.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 June 12–September 7, 2017 Tucson International Airport Center Gallery

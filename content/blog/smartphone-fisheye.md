@@ -2,7 +2,8 @@
 title: Smartphone Fisheye
 date: 2016/03/26
 image: images/fisheye-spiegel.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 Like the GoPro that I just tested, smartphone lens attachments are democratizing the photography toolkit for consumers and amateur photographers. For the price of lunch, I ordered the Photojojo Super Fisheye lens. I always wanted my own fisheye, but the glass for SLR cameras is a little expensive. This 235-degree wide phone lens attachment is just gratifying enough. My phone camera has trouble focusing and is poor in low light, but I enjoy using this fisheye lens--especially for selfies and videos!

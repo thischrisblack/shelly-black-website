@@ -2,7 +2,8 @@
 title: Scanner Portrait Studies
 date: 2015/04/16
 image: images/wine.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 One thing led to another. A fleeting interest in cat scans--that is, flatbed scanner images of cats' underbellies--inspired me to do more with my dated,  consumer-level scanner.

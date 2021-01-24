@@ -35,6 +35,8 @@ export default function BlogPost({
 }) {
     if (!frontmatter) return <></>;
 
+    console.log(frontmatter);
+
     const [isOpen, setOpen] = useState(false);
     const [photoIndex, setPhotoIndex] = useState(0);
 
@@ -71,7 +73,11 @@ export default function BlogPost({
                     </p>
                     <h2>{frontmatter.title}</h2>
                     <p>
-                        <em>{frontmatter.category}</em>
+                        {frontmatter.category.map((category: string) => (
+                            <div>
+                                <em>{category}</em>
+                            </div>
+                        ))}
                     </p>
                 </div>
                 <div className={styles.content}>
@@ -151,7 +157,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     const previousAndNextPosts = getPreviousAndNextFrontmatter(
         postname as string,
         contentPaths.blog,
-        postData.frontmatter.category as BlogCategories,
+        postData.frontmatter.category[0] as BlogCategories,
         { transformation: ImageTransformations.Smartcrop, w: 300, h: 150 }
     );
 

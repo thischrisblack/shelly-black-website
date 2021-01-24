@@ -2,7 +2,8 @@
 title: Accepted to Center for Creative Photography exhibit
 date: 2019/10/21
 image: images/ccp.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 I'm so grateful and thrilled to have one of my photographs selected for inclusion in *[The Qualities of LIGHT: A View from the Archive](https://ccp.arizona.edu/exhibitions-events/exhibitions/qualities-light-view-archive-center-creative-photography)* at the Center for Creative Photography. It's on view December 14, 2019—May 9, 2020. Not only will my work be a part of that exhibit, but it will also be acquired as a part of their permanent collection. This is meaningful for multiple reasons.

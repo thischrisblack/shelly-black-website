@@ -2,7 +2,8 @@
 title: 'Robert Capa & WWII'
 date: 2015/02/22
 image: images/capa-excerpt.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 _Slightly Out of Focus_, Robert Capa's memoir of photographing World War II, was nothing less than riveting. It was particularly harrowing. Despite the bravado--he schmoozed with Ernest Hemingway and was quite the womanizer--his writing is full of poignant observations:

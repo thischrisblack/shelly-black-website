@@ -2,7 +2,8 @@
 title: Lynsey Addario's Memoir
 date: 2015/07/13
 image: images/linsey-addarop-memoir.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 I just finished reading conflict photographer Lynsey Addario's book, _It's What I Do_. I admit that I judged the book by its title, which didn't stir much in me. My expectations were quickly derailed. She got into global photojournalism in her early 20s, was shooting in Afghanistan before the US military got there, and has been kidnapped twice.

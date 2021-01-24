@@ -2,7 +2,8 @@
 title: Redscaling
 date: 2015/05/03
 image: images/redscale-collage.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 Would I do it again? Possibly. Am I glad I did? Yes. I stretched out a roll of 35mm color film, cut it it at the end, flipped it around, re-taped it, then wound it back into the canister.

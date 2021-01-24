@@ -2,7 +2,8 @@
 title: Week 5
 date: 2020/02/15
 image: images/george-chambers.jpg
-category: Library & Archival Work
+category:
+    - Internship
 private: true
 ---
 

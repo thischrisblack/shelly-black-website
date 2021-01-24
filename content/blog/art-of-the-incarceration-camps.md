@@ -2,7 +2,8 @@
 title: Art of the Incarceration Camps
 date: 2016/03/26
 image: images/hirabayashi.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 _Pictured above: Former site of Catalina Federal Honor Camp_

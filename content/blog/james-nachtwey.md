@@ -2,7 +2,8 @@
 title: James Nachtwey's Inferno
 date: 2016/02/24
 image: images/james-nachtway.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 At the new Holocaust History Center at the [Jewish History Museum](http://jewishhistorymuseum.org/), I was very struck by a quote from Walter Benjamin: “For every image of the past that is not recognized by the present as one of its own concerns threatens to disappear irretrievably.”\*

@@ -7,39 +7,40 @@ import {
 } from './image-path-helpers';
 
 export enum BlogCategories {
-    Photography = 'Photography',
-    Library = 'Library & Archival Work',
     Gallery = 'Gallery',
+    Library = 'Library & Archival Work',
+    Photography = 'Photography',
+    Internship = 'Internship',
 }
 
 export enum GalleryCategories {
-    Personal = 'Personal Projects',
     Other = 'Other Work',
+    Personal = 'Personal Projects',
 }
 
 export interface IPost {
-    frontmatter: IPostFrontmatter;
     content: string;
-    ogImage?: string;
     excerpt?: string;
+    frontmatter: IPostFrontmatter;
+    ogImage?: string;
 }
 
 export interface IPostFrontmatter {
-    id?: string;
-    title: string;
+    category?: Array<string> | string;
     date?: string;
-    image?: string;
+    description?: string;
     galleryImages?: Array<string>;
-    category?: string;
+    id?: string;
+    image?: string;
     private?: boolean;
     sortOrder?: number;
-    description?: string;
+    title: string;
 }
 
 export interface IImageTransformation {
+    h?: number;
     transformation?: ImageTransformations;
     w?: number;
-    h?: number;
 }
 
 enum ContentDirectories {
@@ -91,7 +92,7 @@ export const getAllPostFrontmatter = (
                 !post.private &&
                 (!categoryFilter ||
                     !post.category ||
-                    post.category === categoryFilter)
+                    post.category.includes(categoryFilter))
             );
         })
         .sort((a, b) => {
@@ -134,7 +135,7 @@ export const getPreviousAndNextFrontmatter = (
                 !post.private &&
                 (!categoryFilter ||
                     !post.category ||
-                    post.category === categoryFilter)
+                    post.category.includes(categoryFilter))
             );
         })
         .sort((a, b) => {

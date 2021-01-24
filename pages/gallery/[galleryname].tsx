@@ -52,7 +52,11 @@ export default function Gallery({
                 <div className={styles.meta}>
                     <h2>{frontmatter.title}</h2>
                     <p>
-                        <em>{frontmatter.category}</em>
+                        {frontmatter.category.map((category: string) => (
+                            <div>
+                                <em>{category}</em>
+                            </div>
+                        ))}
                     </p>
                 </div>
                 <div className={styles.content}>
@@ -121,7 +125,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     const previousAndNextPosts = getPreviousAndNextFrontmatter(
         galleryname as string,
         contentPaths.galleries,
-        galleryData.frontmatter.category as BlogCategories,
+        galleryData.frontmatter.category[0] as BlogCategories,
         { transformation: ImageTransformations.Smartcrop, w: 300, h: 150 }
     );
 

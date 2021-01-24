@@ -2,7 +2,8 @@
 title: 'Camera Acquisition: Voigt Junior'
 date: 2015/10/20
 image: images/Voigt-Junior-Camera.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 My latest camera came from [the oldest musical instrument store](http://www.chicagomusicstore.com/) in Tucson. My husband, who works there, took the old gadget home after his colleague found it. Surprisingly, after years of being kept with aging instruments and other ephemera, the camera is in decent shape . . . and works!

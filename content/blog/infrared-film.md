@@ -2,7 +2,8 @@
 title: Infrared Film
 date: 2016/01/29
 image: images/infrared-film.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 Before infared film is continued, I decided to shoot a roll on a trip to Yuma, Arizona. While the town is more known as a place that one passes through, I thought some of its features would be conducive to the dreamy qualities of infrared pictures.

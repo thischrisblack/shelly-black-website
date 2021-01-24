@@ -2,7 +2,8 @@
 title: Library Marketing and Communications Conference 2018
 date: 2018/11/16
 image: images/st-louis-courthouse-snow.jpg
-category: Library & Archival Work
+category:
+    - Library & Archival Work
 ---
 
 ![St. Louis Arch](images/st-louis-arch.jpg)Just came back from my third [Library Marketing and Communications Conference](http://www.librarymarketingconference.org/) (LMCC). The last two I attended were in Dallas. This time, the conference was held in St. Louis, and I was there as a presenter with my wonderful colleague Kenya Johnson. Much to the surprise of these two desert dwellers, it was snowing!

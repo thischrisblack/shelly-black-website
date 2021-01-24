@@ -2,7 +2,8 @@
 title: Astrophotography Exhibit
 date: 2015/03/09
 image: images/sun-prints.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 Once again, I commend the Center for Creative Photography's new director Joshua Chang for their latest exhibition, *Astronomical: Photographs of Our Solar System and Beyond.*  The show features astrophotography, from its infancy through today's high resolution imagery. Given the University of Arizona's role in the space sciences, I am surprised that such a collaborative exhibit had yet to happen! Having just gone window shopping for a telescope--and intending to do some astrophotography--this exhibit felt inspiring and serendipitous in timing.

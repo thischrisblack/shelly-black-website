@@ -2,7 +2,8 @@
 title: 'Pinhole Video'
 date: 2015/02/12
 image: images/pinhole-video.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 <div class="video-container">
