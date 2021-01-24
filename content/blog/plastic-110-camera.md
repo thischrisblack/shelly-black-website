@@ -1,7 +1,9 @@
 ---
 title: Plastic 110 Camera
 date: 2015/03/09
-image: images/buster-keaton-day.jpg
+image:
+    src: images/buster-keaton-day.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

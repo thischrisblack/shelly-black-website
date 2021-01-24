@@ -1,7 +1,9 @@
 ---
 title: DLF Forum Blog
 date: 2020/12/02
-image: images/dlf.jpg
+image:
+    src: images/dlf.jpg
+    alt: Shelly Black
 private: false
 category:
     - Library & Archival Work

@@ -7,6 +7,7 @@ import {
     contentPaths,
     getAllIds,
     getSinglePost,
+    IPostFrontmatter,
 } from '../utils/content-retrieval';
 import { ImageTransformations } from '../utils/image-path-helpers';
 import styles from '../styles/Content.module.scss';
@@ -21,7 +22,7 @@ export default function PageContainer({
 }: {
     slug: string;
     siteProps: any;
-    frontmatter: any;
+    frontmatter: IPostFrontmatter;
     content: string;
     ogImage: string;
     excerpt: string;
@@ -38,7 +39,12 @@ export default function PageContainer({
             <article className={styles.container}>
                 <div className={styles.meta}>
                     <h2>{frontmatter.title}</h2>
-                    {frontmatter.image && <img src={`/${frontmatter.image}`} />}
+                    {frontmatter.image && (
+                        <img
+                            src={`/${frontmatter.image.src}`}
+                            alt={frontmatter.image.alt}
+                        />
+                    )}
                 </div>
                 <div className={styles.content}>
                     <ReactMarkdown source={content} escapeHtml={false} />

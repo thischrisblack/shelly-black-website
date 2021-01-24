@@ -1,7 +1,9 @@
 ---
 title: Infrared Film
 date: 2016/01/29
-image: images/infrared-film.jpg
+image:
+    src: images/infrared-film.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

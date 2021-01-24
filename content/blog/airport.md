@@ -1,7 +1,9 @@
 ---
 title: Miracle Mile 1AM Exhibit
 date: 2017/05/15
-image: images/Tiki-Motel.jpg
+image:
+    src: images/Tiki-Motel.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

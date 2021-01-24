@@ -1,7 +1,9 @@
 ---
 title: Camera Show
 date: 2015/04/13
-image: images/camera-show.jpg
+image:
+    src: images/camera-show.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

@@ -1,7 +1,9 @@
 ---
 title: Public Library Exhibits
 date: 2018/06/01
-image: images/kirk-bear.jpg
+image:
+    src: images/kirk-bear.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

@@ -1,7 +1,9 @@
 ---
 title: Week 15
 date: 2020/05/01
-image: images/20200203-Shelly_Spec_Coll.jpg
+image:
+    src: images/20200203-Shelly_Spec_Coll.jpg
+    alt: Shelly Black
 category:
     - Internship
 private: true

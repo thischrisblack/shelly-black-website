@@ -1,7 +1,9 @@
 ---
 title: Sunprints
 date: 2016/03/30
-image: images/hot-spring-edit.jpg
+image:
+    src: images/hot-spring-edit.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

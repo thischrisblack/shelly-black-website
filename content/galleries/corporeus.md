@@ -1,7 +1,9 @@
 ---
 title: Corporeus
 category: Personal Projects
-image: images/corporeus-9-shelly-flores.jpg
+image:
+    src: images/corporeus-9-shelly-flores.jpg
+    alt: Shelly Black
 galleryImages:
     - images/corporeus-15-shelly-flores.jpg
     - images/corporeus-9-shelly-flores.jpg

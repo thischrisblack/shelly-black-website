@@ -29,7 +29,13 @@ collections:
           format: "YYYY/MM/DD",
           picker_utc: true,
         }
-      - { label: "Image", name: "image", widget: "image", required: true }
+      - label: "Image"
+        name: "image"
+        widget: "object"
+        required: true
+        fields:
+          - { label: "File", name: "src", widget: "image", required: true }
+          - { label: "Alt Text", name: "alt", widget: "string", required: true }
       - { label: "Private", name: "private", widget: "boolean", default: false }
       - {
           label: "Gallery Images",
@@ -53,7 +59,13 @@ collections:
           required: true,
           options: ["Personal Projects", "Other Work"],
         }
-      - { label: "Cover Image", name: "image", widget: "image" }
+      - label: "Cover Image"
+        name: "image"
+        widget: "object"
+        required: true
+        fields:
+          - { label: "File", name: "src", widget: "image", required: true }
+          - { label: "Alt Text", name: "alt", widget: "string", required: true }
       - {
           label: "Gallery Images",
           name: "galleryImages",
@@ -75,5 +87,11 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Image", name: "image", widget: "image", required: false }
+      - label: "Image"
+        name: "image"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "File", name: "src", widget: "image", required: true }
+          - { label: "Alt Text", name: "alt", widget: "string", required: true }
       - { label: "Body", name: "body", widget: "markdown" }

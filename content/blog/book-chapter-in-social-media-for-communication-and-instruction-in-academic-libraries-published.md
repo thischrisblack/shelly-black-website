@@ -1,7 +1,9 @@
 ---
 title: 'Book chapter in "Social Media for Communication and Instruction in Academic Libraries" published'
 date: 2019/03/23
-image: images/social-media-book.jpg
+image:
+    src: images/social-media-book.jpg
+    alt: Shelly Black
 category:
     - Library & Archival Work
 ---

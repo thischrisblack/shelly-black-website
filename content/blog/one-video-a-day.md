@@ -1,7 +1,9 @@
 ---
 title: 'One Video A Day'
 date: 2015/01/29
-image: images/video-still.jpg
+image:
+    src: images/video-still.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

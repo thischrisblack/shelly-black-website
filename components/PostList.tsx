@@ -24,7 +24,10 @@ export default function PostList({
                                         }}
                                     >
                                         <a>
-                                            <img src={post.image} />
+                                            <img
+                                                src={post.image.src}
+                                                alt={post.image.alt}
+                                            />
                                         </a>
                                     </Link>
                                 </div>

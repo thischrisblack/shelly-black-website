@@ -1,7 +1,9 @@
 ---
 title: Miracle Mile 1AM
 category: Personal Projects
-image: images/frontier-motel.jpg
+image:
+    src: images/frontier-motel.jpg
+    alt: Shelly Black
 galleryImages:
     - images/ghost-ranch.jpg
     - images/hacienda-motel.jpg

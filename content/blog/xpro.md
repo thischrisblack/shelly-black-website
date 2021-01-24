@@ -1,7 +1,9 @@
 ---
 title: 'Revisiting Cross-Processing'
 date: 2015/01/28
-image: images/xpro.jpg
+image:
+    src: images/xpro.jpg
+    alt: Shelly Black
 category:
     - Photography
 ---

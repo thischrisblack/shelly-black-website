@@ -1,7 +1,9 @@
 ---
 title: New job at NCSU Libraries
 date: 2020/05/04
-image: images/ncsu_belltower.jpg
+image:
+    src: images/ncsu_belltower.jpg
+    alt: Shelly Black
 category:
     - Library & Archival Work
 ---

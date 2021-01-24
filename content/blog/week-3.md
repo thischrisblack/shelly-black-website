@@ -1,7 +1,9 @@
 ---
 title: Week 3
 date: 2020/01/31
-image: images/newspaper.jpg
+image:
+    src: images/newspaper.jpg
+    alt: Shelly Black
 category:
     - Internship
 private: true

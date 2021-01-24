@@ -1,7 +1,9 @@
 ---
 title: Week 10
 date: 2020/03/20
-image: images/spiegel-laptop.jpg
+image:
+    src: images/spiegel-laptop.jpg
+    alt: Shelly Black
 category:
     - Internship
 private: true
