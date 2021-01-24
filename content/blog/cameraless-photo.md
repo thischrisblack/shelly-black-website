@@ -2,7 +2,8 @@
 title: Cameraless Photography
 date: 2016/02/14
 image: images/takeda.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 A talk by art historian and professor Geoffrey Batchen was very illuminating on the topic of cameraless photography. I formerly called this medium photograms, but it has been known by countless names (e.g. contact prints, Rayographs, Schadographs). Batchen gave a thorough yet quick history of this kind of imagery, beginning with Henry Fox Talbot.

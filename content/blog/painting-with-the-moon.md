@@ -2,7 +2,8 @@
 title: 'Painting with the Moon'
 date: 2015/02/04
 image: images/painting-with-the-moon.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 Light painting fail galore! In half an hour, I couldn't do what a fifteen year-old photographer is able to do. Upon seeing [John Kraus](http://johnkrausphotos.com/)' light-painted signature with moon light, I was inspired to try it myself.

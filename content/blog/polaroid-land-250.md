@@ -2,7 +2,8 @@
 title: Polaroid Land 250
 date: 2015/04/05
 image: images/red-yellow-blue-web.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 ![Polaroid Land 250](images/polaroid-land-250.jpeg)

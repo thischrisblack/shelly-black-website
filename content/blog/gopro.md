@@ -2,7 +2,8 @@
 title: GoPro Review
 date: 2016/03/23
 image: images/gopro-birds.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 At last, I got to tinker with a GoPro (Hero3, so not the latest model). Designed for action, these were the most exciting videos I could create confined at home. Truth be told, it _was_ exciting to download the free GoPro app, which grants one complete control of the camera from a smartphone. Seeing the livefeed on my phone, especially when the camera was pointed at me, was a little trippy. My home wireless connection can be dodgy sometimes, but I didn't run into any problems even when the camera was outdoors.

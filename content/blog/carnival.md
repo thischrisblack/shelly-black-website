@@ -2,7 +2,8 @@
 title: Carnival Submission & Future Projects
 date: 2015/03/16
 image: images/FoodCity10.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 I spent this week carefully selecting pictures from my [Carnival series](../gallery/carnival/ 'Carnival') to apply for a ($5,000!) photography award from The Phoenix Art Museum. I hadn't written a statement for the project, so that required some brain picking:

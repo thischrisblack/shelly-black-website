@@ -2,7 +2,8 @@
 title: Ralph Gibson in Tucson
 date: 2015/10/05
 image: images/gibson-etherton.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 I had the great pleasure of seeing a lecture by Ralph Gibson, a photography giant known for his books like *[The Somnambulist](http://www.ralphgibson.com/1970-somnambulist.html)*. The talk was organized by Tucson's premiere fine art photography gallery, [Etherton](http://www.ethertongallery.com/), currently exhibiting his work, and hosted by the [Center for Creative Photography](http://www.creativephotography.org/).

@@ -2,7 +2,8 @@
 title: Plastic 110 Camera
 date: 2015/03/09
 image: images/buster-keaton-day.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 My photographing style is quite premeditated. While many use the spontaneous and user-friendly Holga, my heavy Mamiya has been one of my go-to cameras. So the Diana Baby 110 was the first plastic camera I ever used!

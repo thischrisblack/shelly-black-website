@@ -2,7 +2,8 @@
 title: Documentary Film Recaps
 date: 2015/06/02
 image: images/salt-earth-loft.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 ## 1\. The Salt of the Earth

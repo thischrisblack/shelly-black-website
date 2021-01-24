@@ -2,7 +2,8 @@
 title: Camera Hospital
 date: 2016/10/29
 image: images/pcb.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 After having my DSLR Nikon for seven years, it finally stopped working in the midst of shooting. At the moment, I knew it wasn't just the battery since its light wasn't flashing and the battery still had some juice. I was afraid the motherboard fried.

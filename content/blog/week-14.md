@@ -2,7 +2,8 @@
 title: Week 14
 date: 2020/04/23
 image: images/The_Little_Folks_of_Animal_Land_-_Page_97.jpg
-category: Library & Archival Work
+category:
+    - Internship
 private: true
 ---
 

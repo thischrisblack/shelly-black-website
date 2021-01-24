@@ -2,7 +2,8 @@
 title: Enlightened Still Lifes
 date: 2015/03/17
 image: images/seeds.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 I've grown to appreciate the soft images my digital pinhole yields. I decided to submit work to an exhibition in Downtown Tucson themed and titled Enlightenment.

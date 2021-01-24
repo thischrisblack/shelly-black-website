@@ -2,7 +2,8 @@
 title: 'From the Stacks: Incarceration Camp Photos'
 date: 2016/07/03
 image: images/umbrella-woman-poston.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 Buried in manila folders, in boxes, in stacks, are the records of the War Relocation Authority. Before taking a pilgrimage to Manzanar, I wanted to take a peek at these archives.

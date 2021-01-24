@@ -2,7 +2,8 @@
 title: Week 10
 date: 2020/03/20
 image: images/spiegel-laptop.jpg
-category: Library & Archival Work
+category:
+    - Internship
 private: true
 ---
 

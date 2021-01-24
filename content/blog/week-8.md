@@ -2,7 +2,8 @@
 title: Week 8
 date: 2020/03/06
 image: images/oyama-exhibit.jpg
-category: Library & Archival Work
+category:
+    - Internship
 private: true
 ---
 

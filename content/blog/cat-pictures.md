@@ -2,7 +2,8 @@
 title: '"Cat pictures sold like proverbial hot cakes"'
 date: 2015/03/17
 image: images/lounging-spiegel-window.jpg
-category: Photography
+category:
+    - Photography
 ---
 
 I wish I could get my paws on some issues of Camera Craft, a monthly photo magazine founded in 1900. A scanned version of all of 1920's journals is online [here](https://books.google.com/books?id=9QzOAAAAMAAJ&dq=%22camera%20craft%22&pg=PP7#v=onepage&q=%22camera%20craft%22&f=false). Much of the advice, tips and concerns still resonate today (titles of articles include "Aerial Photography for Amateurs" and "Some Suggested Business Builders"). While perusing those archives, I stumbled upon a gem: a writer's lament of there being **too many cat photographs in the market!** I guess Ceiling Cat and Grumpy Cat would have been just as popular back in the day.

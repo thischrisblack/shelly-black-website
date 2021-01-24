@@ -6,13 +6,20 @@ media_folder: public/images
 public_folder: images
 publish_mode: editorial_workflow
 collections:
-  - label: "Photography Blog"
-    name: "photo-blog"
+  - label: "Blog"
+    name: "blog"
     folder: "content/blog"
     create: true
-    filter: { field: "category", value: "Photography" }
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          multiple: true,
+          required: true,
+          options: ["Library & Archival Work", "Photography", "Internship"],
+        }
       - {
           label: "Published Date",
           name: "date",
@@ -22,15 +29,8 @@ collections:
           format: "YYYY/MM/DD",
           picker_utc: true,
         }
-      - {
-          label: "Image",
-          name: "image",
-          widget: "image",
-          default: "images/photography-default.jpg",
-          required: false,
-        }
+      - { label: "Image", name: "image", widget: "image", required: true }
       - { label: "Private", name: "private", widget: "boolean", default: false }
-      - { label: "Body", name: "body", widget: "markdown" }
       - {
           label: "Gallery Images",
           name: "galleryImages",
@@ -39,53 +39,7 @@ collections:
           field: { label: Image, name: image, widget: image },
           required: false,
         }
-      - {
-          label: "Category",
-          name: "category",
-          widget: "select",
-          options: ["Photography", "Library & Archival Work"],
-          default: "Photography",
-        }
-  - label: "Library & Archival Work Blog"
-    name: "library-and-archival-work-blog"
-    folder: "content/blog"
-    create: true
-    filter: { field: "category", value: "Library & Archival Work" }
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Published Date",
-          name: "date",
-          widget: "datetime",
-          date_format: "YYYY/MM/DD",
-          time_format: false,
-          format: "YYYY/MM/DD",
-          picker_utc: true,
-        }
-      - {
-          label: "Image",
-          name: "image",
-          widget: "image",
-          default: "images/library-default.jpg",
-          required: false,
-        }
-      - { label: "Private", name: "private", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }
-      - {
-          label: "Gallery Images",
-          name: "galleryImages",
-          widget: "list",
-          summary: "{{fields.galleryImages}}",
-          field: { label: Image, name: image, widget: image },
-          required: false,
-        }
-      - {
-          label: "Category",
-          name: "category",
-          widget: "select",
-          options: ["Photography", "Library & Archival Work"],
-          default: "Library & Archival Work",
-        }
   - label: "Gallery"
     name: "gallery"
     folder: "content/galleries"
@@ -96,8 +50,8 @@ collections:
           label: "Category",
           name: "category",
           widget: "select",
+          required: true,
           options: ["Personal Projects", "Other Work"],
-          default: "Personal Projects",
         }
       - { label: "Cover Image", name: "image", widget: "image" }
       - {
