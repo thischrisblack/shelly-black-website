@@ -53,6 +53,11 @@
         width: 100%;
     }
 
+    /* for image caption */
+    img + br + em {
+        // Caption styles here.
+    }
+
     ul {
         margin-left: 4rem;
         list-style: disc;
