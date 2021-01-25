@@ -8,4 +8,4 @@ image:
   alt: Yay!
 private: false
 ---
-[Portfolio](/images/design_portfolio.pdf)
+[Portfolio](/files/design_portfolio.pdf)
