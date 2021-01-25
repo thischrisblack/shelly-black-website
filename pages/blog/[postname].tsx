@@ -73,7 +73,7 @@ export default function BlogPost({
                     <p>
                         {(frontmatter.category as Array<string>).map(
                             (category: string) => (
-                                <div>
+                                <div key={category}>
                                     <em>{category}</em>
                                 </div>
                             )
