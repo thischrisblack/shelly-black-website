@@ -4,6 +4,7 @@ date: 2015/06/02
 image:
     src: images/salt-earth-loft.jpg
     alt: Loft Cinema sign
+category:
     - Photography
 ---
 
