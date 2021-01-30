@@ -32,6 +32,7 @@ export default function Layout({
                 <meta property="og:image" content={image.src} />
                 <meta property="og:image:alt" content={image.alt} />
                 <meta property="og:url" content={url} />
+                <meta property="og:type" content="article" />
                 <meta name="twitter:title" content={pageTitle} />
                 <meta name="twitter:description" content={description} />
                 <meta name="twitter:image" content={image.src} />
