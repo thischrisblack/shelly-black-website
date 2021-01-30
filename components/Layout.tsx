@@ -38,7 +38,6 @@ export default function Layout({
                 <meta name="twitter:image" content={image.src} />
                 <meta property="twitter:image:alt" content={image.alt} />
                 <meta name="twitter:card" content="summary_large_image" />
-                <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
                 <script
                     src="https://kit.fontawesome.com/a3d3e90f49.js"
                     crossOrigin="anonymous"
