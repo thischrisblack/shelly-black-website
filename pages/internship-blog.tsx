@@ -23,7 +23,7 @@ const InternshipBlog = ({
             pageTitle={`${siteProps.title} | Internship Blog`}
             description="Shelly Black's blog about her library internship."
             url={`${siteProps.url}/library-blog`}
-            image={`${siteProps.url}/images/library-boxes.jpg?nf_resize=smartcrop&w=1200&h=627`}
+            image={`${siteProps.url}/images/library-default.jpg?nf_resize=smartcrop&w=1200&h=627`}
         >
             <article className={styles.container}>
                 <div className={styles.meta}>
