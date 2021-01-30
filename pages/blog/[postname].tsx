@@ -11,6 +11,7 @@ import {
     getPreviousAndNextFrontmatter,
     getSinglePost,
     IPostFrontmatter,
+    ISiteProps,
 } from '../../utils/content-retrieval';
 import { ImageTransformations } from '../../utils/image-path-helpers';
 import styles from '../../styles/Content.module.scss';
@@ -30,7 +31,10 @@ export default function BlogPost({
     previousAndNext: { previous: IPostFrontmatter; next: IPostFrontmatter };
     frontmatter: IPostFrontmatter;
     content: string;
-    ogImage: string;
+    ogImage: {
+        src: string;
+        alt: string;
+    };
     excerpt: string;
 }) {
     if (!frontmatter) return <></>;
@@ -57,7 +61,7 @@ export default function BlogPost({
             pageTitle={`${siteProps.title} | ${frontmatter.title}`}
             description={excerpt || siteProps.description}
             url={`${siteProps.url}/blog/${slug}`}
-            image={`${siteProps.url}/${ogImage || siteProps.image}`}
+            image={ogImage}
         >
             <article className={styles.container}>
                 <div className={styles.meta}>
@@ -149,13 +153,20 @@ export default function BlogPost({
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { postname } = ctx.params;
 
-    const config = await import(`../../siteconfig.json`);
+    const { default: siteProps }: { default: ISiteProps } = await import(
+        `../../siteconfig.json`
+    );
 
-    const postData = getSinglePost(postname as string, contentPaths.blog, {
-        transformation: ImageTransformations.Fit,
-        w: 920,
-        h: null,
-    });
+    const postData = getSinglePost(
+        postname as string,
+        contentPaths.blog,
+        {
+            transformation: ImageTransformations.Fit,
+            w: 920,
+            h: null,
+        },
+        siteProps
+    );
 
     const previousAndNextPosts = getPreviousAndNextFrontmatter(
         postname as string,
@@ -167,7 +178,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     return {
         props: {
             slug: postname,
-            siteProps: config.default,
+            siteProps,
             previousAndNext: previousAndNextPosts,
             ...postData,
         },

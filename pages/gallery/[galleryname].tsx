@@ -12,6 +12,7 @@ import {
     getPreviousAndNextFrontmatter,
     getSinglePost,
     IPostFrontmatter,
+    ISiteProps,
 } from '../../utils/content-retrieval';
 import { useState } from 'react';
 import { ImageTransformations } from '../../utils/image-path-helpers';
@@ -31,7 +32,10 @@ export default function Gallery({
     previousAndNext: { previous: IPostFrontmatter; next: IPostFrontmatter };
     frontmatter: any;
     content: string;
-    ogImage: string;
+    ogImage: {
+        src: string;
+        alt: string;
+    };
     excerpt: string;
 }) {
     if (!frontmatter) return <></>;
@@ -46,7 +50,7 @@ export default function Gallery({
             pageTitle={`${siteProps.title} | ${frontmatter.title}`}
             description={excerpt || siteProps.description}
             url={`${siteProps.url}/gallery/${slug}`}
-            image={`${siteProps.url}/${ogImage || siteProps.image}`}
+            image={ogImage}
         >
             <article className={styles.container}>
                 <div className={styles.meta}>
@@ -106,7 +110,9 @@ export default function Gallery({
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { galleryname } = ctx.params;
 
-    const config = await import(`../../siteconfig.json`);
+    const { default: siteProps }: { default: ISiteProps } = await import(
+        `../../siteconfig.json`
+    );
 
     const galleryData = getSinglePost(
         galleryname as string,
@@ -115,7 +121,8 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
             transformation: ImageTransformations.Fit,
             w: 920,
             h: null,
-        }
+        },
+        siteProps
     );
 
     const previousAndNextPosts = getPreviousAndNextFrontmatter(
@@ -128,7 +135,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     return {
         props: {
             slug: galleryname,
-            siteProps: config.default,
+            siteProps,
             previousAndNext: previousAndNextPosts,
             ...galleryData,
         },

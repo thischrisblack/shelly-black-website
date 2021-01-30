@@ -25,7 +25,10 @@ const Galleries = ({
             pageTitle={`${siteProps.title} | Gallery`}
             description="Photography by Shelly Black."
             url={`${siteProps.url}/galleries`}
-            image={`${siteProps.url}/images/FoodCity10.jpg?nf_resize=smartcrop&w=1200&h=627`}
+            image={{
+                src: `${siteProps.url}/images/FoodCity10.jpg?nf_resize=smartcrop&w=1200&h=627`,
+                alt: "Shelly Black's photo gallery.",
+            }}
         >
             <article className={styles.container}>
                 <div className={styles.meta}>

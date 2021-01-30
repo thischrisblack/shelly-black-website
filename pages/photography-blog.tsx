@@ -23,7 +23,10 @@ const PhotographyBlog = ({
             pageTitle={`${siteProps.title} | Photography Blog`}
             description="Shelly Black's blog about photography."
             url={`${siteProps.url}/photography-blog`}
-            image={`${siteProps.url}/images/FoodCity10.jpg?nf_resize=smartcrop&w=1200&h=627`}
+            image={{
+                src: `${siteProps.url}/images/FoodCity10.jpg?nf_resize=smartcrop&w=1200&h=627`,
+                alt: 'Black and white photo of a carnival.',
+            }}
         >
             <article className={styles.container}>
                 <div className={styles.meta}>

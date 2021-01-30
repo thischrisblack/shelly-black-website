@@ -22,7 +22,20 @@ export interface IPost {
     content: string;
     excerpt?: string;
     frontmatter: IPostFrontmatter;
-    ogImage?: string;
+    ogImage?: {
+        src: string;
+        alt: string;
+    };
+}
+
+export interface ISiteProps {
+    title: string;
+    description: string;
+    url: string;
+    image: {
+        src: string;
+        alt: string;
+    };
 }
 
 export interface IPostFrontmatter {
@@ -159,7 +172,8 @@ export const getPreviousAndNextFrontmatter = (
 export const getSinglePost = (
     id: string,
     directoryPath: string,
-    imageTransformation?: IImageTransformation
+    imageTransformation?: IImageTransformation,
+    siteProps?: ISiteProps
 ): IPost => {
     const fullPath = path.join(directoryPath, `${id}.md`);
     const fileContent = fs.readFileSync(fullPath, 'utf8');
@@ -189,12 +203,23 @@ export const getSinglePost = (
     return {
         frontmatter: dataWithRootImageUrlAndTransformation as IPostFrontmatter,
         content: contentWithCorrectedImgPath,
-        ogImage: getNetlifyEnhancedImage(
-            data.image?.src?.replace('../', ''),
-            ImageTransformations.Smartcrop,
-            1200,
-            627
-        ),
+        ogImage: siteProps ? getOgImageData(siteProps, data.image) : null,
         excerpt: content.split('.')[0].replace(/(\r\n|\n|\r)/gm, '') + '.',
+    };
+};
+
+export const getOgImageData = (
+    siteProps: ISiteProps,
+    image: { src: string; alt: string }
+): any => {
+    const ogImageSrc = getNetlifyEnhancedImage(
+        image?.src ? image.src.replace('../', '') : siteProps.image.src,
+        ImageTransformations.Smartcrop,
+        1200,
+        627
+    );
+    return {
+        src: `${siteProps.url}/${ogImageSrc}`,
+        alt: image?.alt || siteProps.image.alt,
     };
 };

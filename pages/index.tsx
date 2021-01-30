@@ -20,7 +20,10 @@ const Index = ({ siteProps }: { siteProps: any }) => {
             pageTitle={siteProps.title}
             description="Hello! I'm Shelly, a Japanese Mexican American librarian and photographer in Raleigh, NC."
             url={siteProps.url}
-            image={`${siteProps.url}/images/radio-telescope.jpg?nf_resize=smartcrop&w=1200&h=627`}
+            image={{
+                src: `${siteProps.url}/images/radio-telescope.jpg?nf_resize=smartcrop&w=1200&h=627`,
+                alt: 'Shelly Black with a radio telescope.',
+            }}
         >
             <article className={styles.content}>
                 <div className={styles.left}>

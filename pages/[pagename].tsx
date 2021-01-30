@@ -8,6 +8,7 @@ import {
     getAllIds,
     getSinglePost,
     IPostFrontmatter,
+    ISiteProps,
 } from '../utils/content-retrieval';
 import { ImageTransformations } from '../utils/image-path-helpers';
 import styles from '../styles/Content.module.scss';
@@ -18,14 +19,15 @@ export default function PageContainer({
     frontmatter,
     content,
     ogImage,
-    excerpt,
 }: {
     slug: string;
     siteProps: any;
     frontmatter: IPostFrontmatter;
     content: string;
-    ogImage: string;
-    excerpt: string;
+    ogImage: {
+        src: string;
+        alt: string;
+    };
 }) {
     if (!frontmatter) return <></>;
 
@@ -34,7 +36,7 @@ export default function PageContainer({
             pageTitle={`${siteProps.title} | ${frontmatter.title}`}
             description={frontmatter.description || siteProps.description}
             url={`${siteProps.url}/${slug}`}
-            image={`${siteProps.url}/${ogImage || siteProps.image}`}
+            image={ogImage}
         >
             <article className={styles.container}>
                 <div className={styles.meta}>
@@ -57,16 +59,26 @@ export default function PageContainer({
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { pagename } = ctx.params;
-    const config = await import(`../siteconfig.json`);
-    const pageData = getSinglePost(pagename as string, contentPaths.pages, {
-        transformation: ImageTransformations.Fit,
-        w: 350,
-        h: null,
-    });
+
+    const { default: siteProps }: { default: ISiteProps } = await import(
+        `../siteconfig.json`
+    );
+
+    const pageData = getSinglePost(
+        pagename as string,
+        contentPaths.pages,
+        {
+            transformation: ImageTransformations.Fit,
+            w: 350,
+            h: null,
+        },
+        siteProps
+    );
+
     return {
         props: {
             slug: pagename,
-            siteProps: config.default,
+            siteProps,
             ...pageData,
         },
     };
