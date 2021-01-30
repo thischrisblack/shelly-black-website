@@ -65,9 +65,9 @@ const Index = ({ siteProps }: { siteProps: any }) => {
                                 Center for Creative Photography
                             </a>
                             , and my work has appeared on wine labels and in
-                            alt-weekly music columns. I’ve also been a
-                            professional jewelry photographer and taught
-                            photography to refugees.
+                            alt-weekly music columns. I’ve also photographed
+                            jewelry professionally and taught photography to
+                            refugees.
                         </p>
                     </div>
                 </div>
