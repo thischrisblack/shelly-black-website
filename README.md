@@ -1,6 +1,6 @@
 # shelly-black.com
 
-![screenshot](./shelly-black-website-screenshot.jpg)
+![screenshot](https://www.shelly-black.com/images/shelly-black-website-screenshot.jpg)
 
 This is the public website for librarian and photographer Shelly Black.
 
