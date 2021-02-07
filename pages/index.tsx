@@ -37,7 +37,7 @@ const Index = ({ siteProps }: { siteProps: any }) => {
                                     aria-label="Read more about Shelly Black"
                                     onClick={() => setShown(!isShown)}
                                 >
-                                    {isShown ? '' : 'more'}
+                                    MORE
                                 </a>
                             </div>
                         )}

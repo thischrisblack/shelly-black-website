@@ -1,3 +1,5 @@
+@import '../styles/variables.scss';
+
 html {
     font-size: 62.5%;
 }
@@ -22,11 +24,6 @@ h1 {
     font-weight: 700;
     font-size: 4.8rem;
     text-transform: uppercase;
-
-    a {
-        color: $text-color;
-        cursor: pointer;
-    }
 }
 
 h2 {
@@ -35,11 +32,6 @@ h2 {
     font-size: 3.2rem;
     text-transform: uppercase;
     margin: 1.6rem 0;
-
-    a {
-        color: $text-color;
-        cursor: pointer;
-    }
 }
 
 h3 {
@@ -48,23 +40,13 @@ h3 {
     font-size: 2.2rem;
     text-transform: uppercase;
     margin: 1.6rem 0 0.8rem 0;
-
-    a {
-        color: $text-color;
-        cursor: pointer;
-    }
 }
 
 h4 {
-    font-family: $title-text;
-    font-weight: 600;
-    font-size: 1.8rem;
-    margin: 1.6rem 0 0.8rem 0;
-
-    a {
-        color: $text-color;
-        cursor: pointer;
-    }
+    font-family: $body-text;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 1.2rem 0 0.8rem 0;
 }
 
 h5 {
@@ -73,20 +55,45 @@ h5 {
     font-size: 1.6rem;
     text-transform: uppercase;
     margin: 1.6rem 0 0.8rem 0;
-
-    a {
-        color: $text-color;
-        cursor: pointer;
-    }
 }
 
 a {
     text-decoration: none;
-    color: $link-color;
     font-weight: 700;
     cursor: pointer;
+    background-color: $link-color;
+    background-image: -webkit-linear-gradient(
+        left,
+        blue 0%,
+        cyan 10%,
+        green 20%,
+        yellow 30%,
+        red 40%,
+        magenta 50%,
+        transparent
+    );
+    background-position: 100% 0;
+    background-size: 0%;
+    color: transparent;
+    -webkit-transition: 0.1s 0.2s;
+    -webkit-background-clip: text;
 
     &:hover {
-        text-decoration: underline;
+        background-position: 0 0;
+        background-size: 200%, 200%;
+        color: transparent;
+        transition: 0.4s 0;
     }
+}
+
+/* for image caption */
+img + br + em {
+    // Caption styles here.
+    font-family: $title-text;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-style: normal;
+    display: block;
+    text-align: center;
 }
