@@ -8,6 +8,6 @@ image:
   alt: Green and red APALA t-shirts
 private: false
 ---
-Solidarity by Design: APALA @ Home T-shirt Design Contest
+The Asian-Pacific American Librarians Association is currently running a Bonfire t-shirt campaign. I'm very honored for the shirts to feature my design, which I submitted through their contest and members voted for.
 
 [Purchase a t-shirt](https://www.bonfire.com/store/apala/)
