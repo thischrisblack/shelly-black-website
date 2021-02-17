@@ -79,6 +79,7 @@ a {
     -webkit-background-clip: text;
 
     &:hover {
+        background-color: transparent;
         background-position: 0 0;
         background-size: 200%, 200%;
         color: transparent;
