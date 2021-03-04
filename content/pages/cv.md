@@ -1,6 +1,9 @@
 ---
 title: Curriculum Vitae
 description: Shelly Black's CV.
+image:
+  src: images/archive-boxes.jpg
+  alt: Special collections stacks
 ---
 ## Education
 
@@ -86,6 +89,10 @@ Diversity, Social Justice, and Equity Council, University of Arizona Libraries (
 
 ## Awards
 
+APALA @ Home T-shirt Design Contest winner (2021)
+
+Digital Library Federation Forum Community Journalist (2020)
+
 ALA Emerging Leader (2020)
 
 Dr. Arnulfo D. Trejo Memorial Scholarship (2019-20)
@@ -122,21 +129,19 @@ University of Arizona Knowledge River Cohort 17
 
 ## Skills
 
-#### Web
+#### Archival software and tools
 
-HTML/CSS\
-Drupal, WordPress
-
-#### Archival software
-
-MINISIS, Bepress Digital Commons
+BitCurator, ArchivesSpace, Bepress Digital Commons, MINISIS
 
 #### Graphic and video software
 
-Adobe Photoshop, Illustrator, Premiere Pro\
-Final Cut Pro
+Adobe Creative Suite (Photoshop, Illustrator, Premiere Pro), Final Cut Pro
 
-#### Languages
+#### Programming and markup languages
+
+HTML, XML, CSS, some knowledge of Python and Bash
+
+#### Natural languages
 
 Limited working proficiency in Japanese\
 Elementary proficiency in Spanish
