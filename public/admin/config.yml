@@ -92,6 +92,11 @@ collections:
         widget: "object"
         required: false
         fields:
-          - { label: "File", name: "src", widget: "image", required: true }
-          - { label: "Alt Text", name: "alt", widget: "string", required: true }
+          - { label: "File", name: "src", widget: "image", required: false }
+          - {
+              label: "Alt Text",
+              name: "alt",
+              widget: "string",
+              required: false,
+            }
       - { label: "Body", name: "body", widget: "markdown" }
