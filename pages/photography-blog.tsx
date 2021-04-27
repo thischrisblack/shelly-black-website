@@ -2,22 +2,11 @@ import { GetStaticProps } from 'next';
 
 import Layout from '../components/Layout';
 import PostList from '../components/PostList';
-import {
-    BlogCategories,
-    contentPaths,
-    getAllPostFrontmatter,
-    IPostFrontmatter,
-} from '../utils/content-retrieval';
+import { BlogCategories, contentPaths, getAllPostFrontmatter, IPostFrontmatter } from '../utils/content-retrieval';
 import { ImageTransformations } from '../utils/image-path-helpers';
 import styles from '../styles/Content.module.scss';
 
-const PhotographyBlog = ({
-    siteProps,
-    posts,
-}: {
-    siteProps: any;
-    posts: Array<IPostFrontmatter>;
-}) => {
+const PhotographyBlog = ({ siteProps, posts }: { siteProps: any; posts: Array<IPostFrontmatter> }) => {
     return (
         <Layout
             pageTitle={`${siteProps.title} | Photography Blog`}

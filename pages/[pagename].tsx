@@ -3,13 +3,7 @@ import { GetStaticProps, GetStaticPaths } from 'next';
 import ContactForm from '../components/ContactForm';
 
 import Layout from '../components/Layout';
-import {
-    contentPaths,
-    getAllIds,
-    getSinglePost,
-    IPostFrontmatter,
-    ISiteProps,
-} from '../utils/content-retrieval';
+import { contentPaths, getAllIds, getSinglePost, IPostFrontmatter, ISiteProps } from '../utils/content-retrieval';
 import { ImageTransformations } from '../utils/image-path-helpers';
 import styles from '../styles/Content.module.scss';
 
@@ -41,12 +35,7 @@ export default function PageContainer({
             <article className={styles.container}>
                 <div className={styles.meta}>
                     <h2>{frontmatter.title}</h2>
-                    {frontmatter.image && (
-                        <img
-                            src={`/${frontmatter.image.src}`}
-                            alt={frontmatter.image.alt}
-                        />
-                    )}
+                    {frontmatter.image && <img src={`/${frontmatter.image.src}`} alt={frontmatter.image.alt} />}
                 </div>
                 <div className={styles.content}>
                     <ReactMarkdown source={content} escapeHtml={false} />
@@ -60,9 +49,7 @@ export default function PageContainer({
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { pagename } = ctx.params;
 
-    const { default: siteProps }: { default: ISiteProps } = await import(
-        `../siteconfig.json`
-    );
+    const { default: siteProps }: { default: ISiteProps } = await import(`../siteconfig.json`);
 
     const pageData = getSinglePost(
         pagename as string,

@@ -1,10 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import {
-    getNetlifyEnhancedImage,
-    ImageTransformations,
-} from './image-path-helpers';
+import { getNetlifyEnhancedImage, ImageTransformations } from './image-path-helpers';
 
 export enum BlogCategories {
     Gallery = 'Gallery',
@@ -85,11 +82,7 @@ export const getAllPostFrontmatter = (
     const allPostFrontmatter: Array<IPostFrontmatter> = fileNames.map(
         (fileName): IPostFrontmatter => {
             const id = fileName.replace(/\.md$/, '');
-            const { frontmatter }: IPost = getSinglePost(
-                id,
-                directoryPath,
-                imageTransformation
-            );
+            const { frontmatter }: IPost = getSinglePost(id, directoryPath, imageTransformation);
 
             return {
                 id,
@@ -101,18 +94,10 @@ export const getAllPostFrontmatter = (
     // Return post frontmatter array filtered by category and sorted by date or title
     return allPostFrontmatter
         .filter((post) => {
-            return (
-                !post.private &&
-                (!categoryFilter ||
-                    !post.category ||
-                    post.category.includes(categoryFilter))
-            );
+            return !post.private && (!categoryFilter || !post.category || post.category.includes(categoryFilter));
         })
         .sort((a, b) => {
-            if (
-                (a.date || b.sortOrder || a.title) <
-                (b.date || a.sortOrder || b.title)
-            ) {
+            if ((a.date || b.sortOrder || a.title) < (b.date || a.sortOrder || b.title)) {
                 return 1;
             } else {
                 return -1;
@@ -132,11 +117,7 @@ export const getPreviousAndNextFrontmatter = (
         .map(
             (fileName): IPostFrontmatter => {
                 const id = fileName.replace(/\.md$/, '');
-                const { frontmatter }: IPost = getSinglePost(
-                    id,
-                    directoryPath,
-                    imageTransformation
-                );
+                const { frontmatter }: IPost = getSinglePost(id, directoryPath, imageTransformation);
                 return {
                     id,
                     ...frontmatter,
@@ -144,12 +125,7 @@ export const getPreviousAndNextFrontmatter = (
             }
         )
         .filter((post) => {
-            return (
-                !post.private &&
-                (!categoryFilter ||
-                    !post.category ||
-                    post.category.includes(categoryFilter))
-            );
+            return !post.private && (!categoryFilter || !post.category || post.category.includes(categoryFilter));
         })
         .sort((a, b) => {
             if ((a.date || a.title) < (b.date || b.title)) {
@@ -159,9 +135,7 @@ export const getPreviousAndNextFrontmatter = (
             }
         });
 
-    const currentIndex = allPostFrontmatter.findIndex(
-        (post) => post.id === currentPost
-    );
+    const currentIndex = allPostFrontmatter.findIndex((post) => post.id === currentPost);
 
     return {
         previous: allPostFrontmatter[currentIndex + 1] || null,
@@ -196,10 +170,7 @@ export const getSinglePost = (
               }
             : data;
 
-    const contentWithCorrectedImgPath = content.replace(
-        /images\//g,
-        '/images/'
-    );
+    const contentWithCorrectedImgPath = content.replace(/images\//g, '/images/');
     return {
         frontmatter: dataWithRootImageUrlAndTransformation as IPostFrontmatter,
         content: contentWithCorrectedImgPath,
@@ -208,10 +179,7 @@ export const getSinglePost = (
     };
 };
 
-export const getOgImageData = (
-    siteProps: ISiteProps,
-    image: { src: string; alt: string }
-): any => {
+export const getOgImageData = (siteProps: ISiteProps, image: { src: string; alt: string }): any => {
     const ogImageSrc = getNetlifyEnhancedImage(
         image?.src ? image.src.replace('../', '') : siteProps.image.src,
         ImageTransformations.Smartcrop,

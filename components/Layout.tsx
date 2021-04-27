@@ -22,10 +22,7 @@ export default function Layout({
     return (
         <>
             <Head>
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1"
-                />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <title>{pageTitle}</title>
                 <meta property="og:title" content={pageTitle} />
                 <meta property="og:description" content={description} />
@@ -38,10 +35,7 @@ export default function Layout({
                 <meta name="twitter:image" content={image.src} />
                 <meta property="twitter:image:alt" content={image.alt} />
                 <meta name="twitter:card" content="summary_large_image" />
-                <script
-                    src="https://kit.fontawesome.com/a3d3e90f49.js"
-                    crossOrigin="anonymous"
-                ></script>
+                <script src="https://kit.fontawesome.com/a3d3e90f49.js" crossOrigin="anonymous"></script>
                 <style type="text/css">{dom.css()}</style>
             </Head>
             <Navigation />

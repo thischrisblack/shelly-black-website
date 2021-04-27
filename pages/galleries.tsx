@@ -2,12 +2,7 @@ import { GetStaticProps } from 'next';
 
 import Layout from '../components/Layout';
 import PostList from '../components/PostList';
-import {
-    contentPaths,
-    GalleryCategories,
-    getAllPostFrontmatter,
-    IPostFrontmatter,
-} from '../utils/content-retrieval';
+import { contentPaths, GalleryCategories, getAllPostFrontmatter, IPostFrontmatter } from '../utils/content-retrieval';
 import { ImageTransformations } from '../utils/image-path-helpers';
 import styles from '../styles/Content.module.scss';
 
@@ -56,12 +51,8 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
             h: 450,
         }) || [];
 
-    const personalProjects = allPostsFrontmatter.filter(
-        (post) => post.category === GalleryCategories.Personal
-    );
-    const otherWork = allPostsFrontmatter.filter(
-        (post) => post.category === GalleryCategories.Other
-    );
+    const personalProjects = allPostsFrontmatter.filter((post) => post.category === GalleryCategories.Personal);
+    const otherWork = allPostsFrontmatter.filter((post) => post.category === GalleryCategories.Other);
 
     return {
         props: {

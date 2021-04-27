@@ -2,13 +2,7 @@ import Link from 'next/link';
 import { IPostFrontmatter } from '../utils/content-retrieval';
 import styles from './PostList.module.scss';
 
-export default function PostList({
-    posts,
-    postType,
-}: {
-    posts: Array<IPostFrontmatter>;
-    postType: string;
-}) {
+export default function PostList({ posts, postType }: { posts: Array<IPostFrontmatter>; postType: string }) {
     return (
         <div className={styles.postList}>
             {(!posts || posts.length === 0) && <div>No posts to display.</div>}
@@ -24,10 +18,7 @@ export default function PostList({
                                         }}
                                     >
                                         <a>
-                                            <img
-                                                src={post.image.src}
-                                                alt={post.image.alt}
-                                            />
+                                            <img src={post.image.src} alt={post.image.alt} />
                                         </a>
                                     </Link>
                                 </div>
@@ -42,9 +33,7 @@ export default function PostList({
                                         </h3>
                                     </Link>
                                 </div>
-                                <div className={styles.postDate}>
-                                    {post.date}
-                                </div>
+                                <div className={styles.postDate}>{post.date}</div>
                             </li>
                         );
                     })}

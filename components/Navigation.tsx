@@ -22,9 +22,7 @@ export default function Navigation() {
         <>
             <header>
                 <nav className={styles.nav}>
-                    <div
-                        className={`${styles.name} ${styles.navLink} ${styles.homeLink}`}
-                    >
+                    <div className={`${styles.name} ${styles.navLink} ${styles.homeLink}`}>
                         <Link href={{ pathname: '/' }}>
                             <a>
                                 <h1>Shelly Black</h1>
@@ -44,9 +42,7 @@ export default function Navigation() {
                                     <a>CV</a>
                                 </Link>
                             </li>
-                            <li
-                                className={`${styles.navLink} ${styles.portfolio}`}
-                            >
+                            <li className={`${styles.navLink} ${styles.portfolio}`}>
                                 <Link href={{ pathname: '/portfolio' }}>
                                     <a>Portfolio</a>
                                 </Link>
@@ -61,16 +57,12 @@ export default function Navigation() {
                     <div className={styles.navSection} ref={photoNav}>
                         <h3>Photography</h3>
                         <ul onClick={() => setOpen(false)}>
-                            <li
-                                className={`${styles.navLink} ${styles.gallery}`}
-                            >
+                            <li className={`${styles.navLink} ${styles.gallery}`}>
                                 <Link href={{ pathname: '/galleries' }}>
                                     <a>Gallery</a>
                                 </Link>
                             </li>
-                            <li
-                                className={`${styles.navLink} ${styles.exhibits}`}
-                            >
+                            <li className={`${styles.navLink} ${styles.exhibits}`}>
                                 <Link href={{ pathname: '/exhibits' }}>
                                     <a>Exhibits</a>
                                 </Link>

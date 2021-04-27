@@ -11,18 +11,10 @@ export default function PreviousAndNext({
     return (
         <>
             {previousAndNext.previous && (
-                <SidebarPost
-                    post={previousAndNext.previous}
-                    previousOrNext="Previous"
-                    postType={postType}
-                />
+                <SidebarPost post={previousAndNext.previous} previousOrNext="Previous" postType={postType} />
             )}
             {previousAndNext.next && (
-                <SidebarPost
-                    post={previousAndNext.next}
-                    previousOrNext="Next"
-                    postType={postType}
-                />
+                <SidebarPost post={previousAndNext.next} previousOrNext="Next" postType={postType} />
             )}
         </>
     );

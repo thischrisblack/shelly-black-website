@@ -46,9 +46,7 @@ export default function BlogPost({
 
     useEffect(() => {
         // Find embedded Twitter elements and append the script tag.
-        const twitterEmbedElement = document.getElementsByClassName(
-            'twitter-embed'
-        )[0];
+        const twitterEmbedElement = document.getElementsByClassName('twitter-embed')[0];
         if (twitterEmbedElement) {
             const script = document.createElement('script');
             script.src = 'https://platform.twitter.com/widgets.js';
@@ -75,18 +73,13 @@ export default function BlogPost({
                     </p>
                     <h2>{frontmatter.title}</h2>
                     <p>
-                        {(frontmatter.category as Array<string>).map(
-                            (category: string) => (
-                                <div key={category}>{category}</div>
-                            )
-                        )}
+                        {(frontmatter.category as Array<string>).map((category: string) => (
+                            <div key={category}>{category}</div>
+                        ))}
                     </p>
                 </div>
                 <div className={styles.content}>
-                    <img
-                        src={`/${frontmatter.image.src}`}
-                        alt={frontmatter.image.alt}
-                    />
+                    <img src={`/${frontmatter.image.src}`} alt={frontmatter.image.alt} />
 
                     <ReactMarkdown source={content} escapeHtml={false} />
 
@@ -111,37 +104,20 @@ export default function BlogPost({
                     {isOpen && (
                         <Lightbox
                             mainSrc={`/${galleryImages[photoIndex]}`}
-                            nextSrc={`/${
-                                galleryImages[
-                                    (photoIndex + 1) % galleryImages.length
-                                ]
-                            }`}
+                            nextSrc={`/${galleryImages[(photoIndex + 1) % galleryImages.length]}`}
                             prevSrc={`/${
-                                galleryImages[
-                                    (photoIndex + galleryImages.length - 1) %
-                                        galleryImages.length
-                                ]
+                                galleryImages[(photoIndex + galleryImages.length - 1) % galleryImages.length]
                             }`}
                             onCloseRequest={() => setOpen(false)}
                             onMovePrevRequest={() =>
-                                setPhotoIndex(
-                                    (photoIndex + galleryImages.length - 1) %
-                                        galleryImages.length
-                                )
+                                setPhotoIndex((photoIndex + galleryImages.length - 1) % galleryImages.length)
                             }
-                            onMoveNextRequest={() =>
-                                setPhotoIndex(
-                                    (photoIndex + 1) % galleryImages.length
-                                )
-                            }
+                            onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % galleryImages.length)}
                         />
                     )}
                 </div>
                 <div className={styles.postNav}>
-                    <PreviousAndNext
-                        previousAndNext={previousAndNext}
-                        postType="blog"
-                    />
+                    <PreviousAndNext previousAndNext={previousAndNext} postType="blog" />
                 </div>
             </article>
         </Layout>
@@ -151,9 +127,7 @@ export default function BlogPost({
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { postname } = ctx.params;
 
-    const { default: siteProps }: { default: ISiteProps } = await import(
-        `../../siteconfig.json`
-    );
+    const { default: siteProps }: { default: ISiteProps } = await import(`../../siteconfig.json`);
 
     const postData = getSinglePost(
         postname as string,

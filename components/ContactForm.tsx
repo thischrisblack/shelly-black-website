@@ -50,10 +50,7 @@ export default function ContactForm() {
                             <label>
                                 Message:
                                 <br />
-                                <textarea
-                                    name="message"
-                                    id="message"
-                                ></textarea>
+                                <textarea name="message" id="message"></textarea>
                             </label>
                         </p>
                         <p>
@@ -64,10 +61,7 @@ export default function ContactForm() {
             )}
             {message === 'sent' && (
                 <>
-                    <p>
-                        Thank you! Your message has been sent and I'll get back
-                        to you soon.
-                    </p>
+                    <p>Thank you! Your message has been sent and I'll get back to you soon.</p>
                 </>
             )}
         </div>

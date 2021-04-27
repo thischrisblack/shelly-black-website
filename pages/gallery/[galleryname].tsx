@@ -80,25 +80,11 @@ export default function Gallery({
                     {isOpen && (
                         <Lightbox
                             mainSrc={`/${images[photoIndex]}`}
-                            nextSrc={`/${
-                                images[(photoIndex + 1) % images.length]
-                            }`}
-                            prevSrc={`/${
-                                images[
-                                    (photoIndex + images.length - 1) %
-                                        images.length
-                                ]
-                            }`}
+                            nextSrc={`/${images[(photoIndex + 1) % images.length]}`}
+                            prevSrc={`/${images[(photoIndex + images.length - 1) % images.length]}`}
                             onCloseRequest={() => setOpen(false)}
-                            onMovePrevRequest={() =>
-                                setPhotoIndex(
-                                    (photoIndex + images.length - 1) %
-                                        images.length
-                                )
-                            }
-                            onMoveNextRequest={() =>
-                                setPhotoIndex((photoIndex + 1) % images.length)
-                            }
+                            onMovePrevRequest={() => setPhotoIndex((photoIndex + images.length - 1) % images.length)}
+                            onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % images.length)}
                         />
                     )}
                 </div>
@@ -110,9 +96,7 @@ export default function Gallery({
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { galleryname } = ctx.params;
 
-    const { default: siteProps }: { default: ISiteProps } = await import(
-        `../../siteconfig.json`
-    );
+    const { default: siteProps }: { default: ISiteProps } = await import(`../../siteconfig.json`);
 
     const galleryData = getSinglePost(
         galleryname as string,
@@ -143,9 +127,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const paths = getAllIds(contentPaths.galleries).map(
-        (id) => `/gallery/${id}`
-    );
+    const paths = getAllIds(contentPaths.galleries).map((id) => `/gallery/${id}`);
     return {
         paths,
         fallback: false,
