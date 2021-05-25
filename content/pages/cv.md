@@ -70,7 +70,7 @@ Black, S., & Prescott-Smith, J. (2017, September). *Special Collections: Shining
 
 #### National
 
-Lighting the Way Working Meeting on Archival Discovery and Delivery participant
+Lighting the Way Working Meeting on Archival Discovery and Delivery participant (2021)
 
 Privacy and Confidentiality Section Steering Committee, Society of American Archivists (2020-Present)
 
