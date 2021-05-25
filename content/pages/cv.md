@@ -2,7 +2,6 @@
 title: Curriculum Vitae
 description: Shelly Black's CV.
 ---
-
 ## Education
 
 **MA in Library and Information Science**, 2020\
@@ -43,33 +42,35 @@ Wingspan: Southern Arizona’s LGBT Community Center, Tucson, AZ
 
 ### Peer-Reviewed
 
-Black, S. (2020). The implications of digital collection takedown requests on archival appraisal. _Archival Science, 20_(1), 91-101. doi:10.1007/s10502-019-09322-y
+Black, S. (2020). The implications of digital collection takedown requests on archival appraisal. *Archival Science, 20*(1), 91-101. doi:10.1007/s10502-019-09322-y
 
-Black, S. (2019). Diversity and inclusion: How to avoid bias and social media blunders. In Joe, J., & Knight, E. (Eds.), _Social Media for Communication and Instruction in Academic Libraries_ (pp. 100-118). Hershey, PA: IGI Global. doi:10.4018/978-1-5225-8097-3.ch007
+Black, S. (2019). Diversity and inclusion: How to avoid bias and social media blunders. In Joe, J., & Knight, E. (Eds.), *Social Media for Communication and Instruction in Academic Libraries* (pp. 100-118). Hershey, PA: IGI Global. doi:10.4018/978-1-5225-8097-3.ch007
 
 ### Other
 
-Black, S. (2020, December 2). DLF Forum Community Journalist Reflection: Shelly Black. _DLF_. https://www.diglib.org/dlf-forum-community-journalist-reflection-shelly-black/
+Black, S. (2020, December 2). DLF Forum Community Journalist Reflection: Shelly Black. *DLF*. https://www.diglib.org/dlf-forum-community-journalist-reflection-shelly-black/
 
 ## Presentations
 
-Black, S. (2019, August). _Stop the thumb scroll: Creating inclusive and accessible social media content_. IDEAL ’19: Advancing Inclusion, Diversity, Equity, and Accessibility in Libraries & Archives, Columbus, OH.
+Black, S. (2019, August). *Stop the thumb scroll: Creating inclusive and accessible social media content*. IDEAL ’19: Advancing Inclusion, Diversity, Equity, and Accessibility in Libraries & Archives, Columbus, OH.
 
-Black, S., & Johnson, K. (2019, June). _Be disruptive, make some noise: Building a diversity & inclusivity strategy into your marketing_. American Library Association Annual Conference, Washington, DC.
+Black, S., & Johnson, K. (2019, June). *Be disruptive, make some noise: Building a diversity & inclusivity strategy into your marketing*. American Library Association Annual Conference, Washington, DC.
 
-Black, S. (2019, April). _What about me? Bringing diversity and inclusion in your library marketing_. Arizona Library Association Virtual Conference.
+Black, S. (2019, April). *What about me? Bringing diversity and inclusion in your library marketing*. Arizona Library Association Virtual Conference.
 
-Black, S., & Johnson, K. (2018, November). _Designing marketing for everyone_. Inclusive and Accessible Design Series, University of Arizona, Tucson, AZ.
+Black, S., & Johnson, K. (2018, November). *Designing marketing for everyone*. Inclusive and Accessible Design Series, University of Arizona, Tucson, AZ.
 
-Black, S., & Johnson, K. (2018, November). _What about me? Bringing diversity and inclusion in your library marketing_. Library Marketing and Communications Conference, St. Louis, MO.
+Black, S., & Johnson, K. (2018, November). *What about me? Bringing diversity and inclusion in your library marketing*. Library Marketing and Communications Conference, St. Louis, MO.
 
-Black, S., Nichols, J., Nugent, R., & Thompson, S. (2018, April). _Taking the lead: The library’s role in fostering diversity and inclusion for the academic community_. Arizona Library Association Regional Forum, Tucson, AZ.
+Black, S., Nichols, J., Nugent, R., & Thompson, S. (2018, April). *Taking the lead: The library’s role in fostering diversity and inclusion for the academic community*. Arizona Library Association Regional Forum, Tucson, AZ.
 
-Black, S., & Prescott-Smith, J. (2017, September). _Special Collections: Shining the Light on a Hidden Treasure_ \[Guest lecture]. LIS559 Marketing of Library and Information Services to Communities, University of Arizona School of Information, Gina Macaluso.
+Black, S., & Prescott-Smith, J. (2017, September). *Special Collections: Shining the Light on a Hidden Treasure* \[Guest lecture]. LIS559 Marketing of Library and Information Services to Communities, University of Arizona School of Information, Gina Macaluso.
 
 ## Service
 
 #### National
+
+Lighting the Way Working Meeting on Archival Discovery and Delivery participant (2021)
 
 Privacy and Confidentiality Section Steering Committee, Society of American Archivists (2020-Present)
 
@@ -85,7 +86,11 @@ Director of Special Collections Search Committee, University of Arizona Librarie
 
 Diversity, Social Justice, and Equity Council, University of Arizona Libraries (2016–18)
 
-## Awards
+## Awards & Honors
+
+Society of American Archivists Brenda S. Banks Travel Award (2021)
+
+IDEA Institute on Artificial Intelligence fellow (2021)
 
 APALA @ Home T-shirt Design Contest winner (2021)
 
@@ -104,8 +109,6 @@ Society of Human Resource Management of Greater Tucson Diversity & Inclusion Awa
 University of Arizona College of Fine Arts Small Grant (2009)
 
 University of Arizona Asian American Faculty, Staff, and Alumni Association Grant (2009)
-
-University of Arizona Student Affairs Student/Faculty Interaction Program Grant (2009)
 
 ## Affiliations
 
