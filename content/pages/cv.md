@@ -38,8 +38,7 @@ Center for Creative Photography, Tucson, AZ
 **Library Volunteer**, 2008\
 Wingspan: Southern Arizona’s LGBT Community Center, Tucson, AZ
 
-[](#publications)
-## Publications
+## [Publications](#publications)
 
 ### Peer-Reviewed
 
@@ -59,7 +58,7 @@ Black, S. (2021, March 4). Migrating BitCurator VirtualBox VM to Hyper-V. BitCur
 
 Black, S. (2020, December 2). DLF Forum Community Journalist Reflection: Shelly Black. Digital Library Federation. <https://www.diglib.org/dlf-forum-community-journalist-reflection-shelly-black/>
 
-## Presentations
+## [Presentations](#presentations)
 
 Betts, V., & Black, S. (2022, February 24). *Breaking down monoracial barriers to library and historical research.* Critical Mixed Race Studies Conference, virtual.
 
@@ -69,15 +68,15 @@ Black, S., Glidden-Lyon, S., Handel, D., Matienzo, M., & Philipson, K. (2021). *
 
 Black, S., Green, P., Harris, E., Maracle, P., Roper, A., Roper, E., & Soto-Luna, I. (2021, June). *ACRL Instruction Section and Membership Engagement of Diversity and Inclusion*. ALA Annual Conference, virtual.
 
-Black, S. (2019, August). *Stop the thumb scroll: Creating inclusive and accessible social media content*. IDEAL ’19: Advancing Inclusion, Diversity, Equity, and Accessibility in Libraries & Archives, Columbus, OH.
+Black, S. (2019, August). *Stop the thumb scroll: Creating inclusive and accessible social media content*. IDEAL ’19: Advancing Inclusion, Diversity, Equity, and Accessibility in Libraries & Archives, Columbus, OH. <https://www.shelly-black.com/files/Shelly_Black_Stop_the_Thumb_Scroll.pptx>
 
-Black, S., & Johnson, K. (2019, June). *Be disruptive, make some noise: Building a diversity & inclusivity strategy into your marketing*. American Library Association Annual Conference, Washington, DC.
+Black, S., & Johnson, K. (2019, June). *Be disruptive, make some noise: Building a diversity & inclusivity strategy into your marketing*. American Library Association Annual Conference, Washington, DC. <https://www.shelly-black.com/files/Black_Johnson_ALA_2019_poster.pdf>
 
 Black, S. (2019, April). *What about me? Bringing diversity and inclusion in your library marketing*. Arizona Library Association Virtual Conference.
 
 Black, S., & Johnson, K. (2018, November). *Designing marketing for everyone*. Inclusive and Accessible Design Series, University of Arizona, Tucson, AZ.
 
-Black, S., & Johnson, K. (2018, November). *What about me? Bringing diversity and inclusion in your library marketing*. Library Marketing and Communications Conference, St. Louis, MO.
+Black, S., & Johnson, K. (2018, November). *What about me? Bringing diversity and inclusion in your library marketing*. Library Marketing and Communications Conference, St. Louis, MO. <https://www.shelly-black.com/files/LMCC18_What_About_Me_Johnson_Black.pdf>
 
 Black, S., Nichols, J., Nugent, R., & Thompson, S. (2018, April). *Taking the lead: The library’s role in fostering diversity and inclusion for the academic community*. Arizona Library Association Regional Forum, Tucson, AZ.
 
