@@ -38,7 +38,7 @@ Center for Creative Photography, Tucson, AZ
 **Library Volunteer**, 2008\
 Wingspan: Southern Arizona’s LGBT Community Center, Tucson, AZ
 
-## [Publications](#publications)
+## Publications
 
 ### Peer-Reviewed
 
@@ -58,7 +58,7 @@ Black, S. (2021, March 4). Migrating BitCurator VirtualBox VM to Hyper-V. BitCur
 
 Black, S. (2020, December 2). DLF Forum Community Journalist Reflection: Shelly Black. Digital Library Federation. <https://www.diglib.org/dlf-forum-community-journalist-reflection-shelly-black/>
 
-## [Presentations](#presentations)
+## Presentations
 
 Betts, V., & Black, S. (2022, February 24). *Breaking down monoracial barriers to library and historical research.* Critical Mixed Race Studies Conference, virtual.
 
