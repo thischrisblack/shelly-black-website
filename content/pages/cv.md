@@ -38,6 +38,7 @@ Center for Creative Photography, Tucson, AZ
 **Library Volunteer**, 2008\
 Wingspan: Southern Arizona’s LGBT Community Center, Tucson, AZ
 
+[](#publications)
 ## Publications
 
 ### Peer-Reviewed
