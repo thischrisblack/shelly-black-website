@@ -5,9 +5,7 @@ description: Links to articles, presentations, and other projects.
 
 ### Publications
 
-[Black, S. (2019). The implications of digital collection takedown requests on archival appraisal. _Archival Science_. doi:10.1007/s10502-019-09322-y](http://links.springernature.com/f/a/8VCrcV1PGYEv7OEvztI_0Q~~/AABE5gA~/RgRfY1tzP0QwaHR0cDovL3d3dy5zcHJpbmdlci5jb20vLS8yL0FXMUViQXNlRGZ4blZWYnpYS18wVwNzcGNCCgAA8yeCXWpVTWFSGXNmbG9yZXNAZW1haWwuYXJpem9uYS5lZHVYBAAABuc~)
-
-[Black, S. (2019). Diversity and Inclusion: How to avoid bias and social media blunders. In Joe, J., & Knight, E. (Eds.), _Social Media for Communication and Instruction in Academic_ _Libraries_ (pp. 100-118). Hershey, PA: IGI Global. doi: 10.4018/978-1-5225-8097-3.ch007](https://repository.arizona.edu/handle/10150/631799)
+See [CV](https://www.shelly-black.com/cv#Publications).
 
 ### Presentations
 
