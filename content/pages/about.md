@@ -3,7 +3,7 @@ title: About Shelly Black
 description: Shelly Black's professional bio.
 image:
   src: ""
-  alt: Shelly Black portrait
+  alt: ""
 ---
 
 Shelly Black is the Cyma Rubin Library Fellow at North Carolina State University Libraries where she supports digital preservation in the Special Collections Research Center. She also leads a strategic project involving immersive technology spaces and digital scholarship workflows. Previously she was a marketing specialist at the University of Arizona Libraries and promoted library services and programs through social media, news stories, and newsletters.
