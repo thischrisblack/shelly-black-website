@@ -1,5 +1,5 @@
 ---
-title: Professional Portfolio
+title: Portfolio
 description: Links to articles, presentations, and other projects.
 ---
 
