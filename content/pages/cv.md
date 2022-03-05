@@ -42,21 +42,21 @@ Wingspan: Southern Arizona’s LGBT Community Center, Tucson, AZ
 
 ### Peer-Reviewed
 
-Black, S. (2020). The implications of digital collection takedown requests on archival appraisal. *Archival Science, 20*(1), 91-101. doi:10.1007/s10502-019-09322-y
+Black, S. (2020). The implications of digital collection takedown requests on archival appraisal. *Archival Science, 20*(1), 91-101. <https://doi.org/10.1007/s10502-019-09322-y>
 
-Black, S. (2019). Diversity and inclusion: How to avoid bias and social media blunders. In Joe, J., & Knight, E. (Eds.), *Social Media for Communication and Instruction in Academic Libraries* (pp. 100-118). Hershey, PA: IGI Global. doi:10.4018/978-1-5225-8097-3.ch007
+Black, S. (2019). Diversity and inclusion: How to avoid bias and social media blunders. In Joe, J., & Knight, E. (Eds.), *Social Media for Communication and Instruction in Academic Libraries* (pp. 100-118). Hershey, PA: IGI Global. <https://doi.org/10.4018/978-1-5225-8097-3.ch007>
 
 ### Other
 
-Arroyo-Ramírez, E., Berdini, A., Black, S., Cram, G., Gronsbell, K., Krabbenhoeft, N., Lynch, K., Preston, G., & Smedberg, H. (2021, October). *Speeding Towards Remote Access: Developing Shared Recommendations for Virtual Reading Rooms.* In M. A. Matienzo, & D. Handel (Eds.), The Lighting the Way Handbook: Case Studies, Guidelines, and Emergent Futures for Archival Discovery and Delivery (pp. 141-167). Stanford, CA: Stanford University Libraries. https://doi.org/10.25740/gg453cv6438.
+Arroyo-Ramírez, E., Berdini, A., Black, S., Cram, G., Gronsbell, K., Krabbenhoeft, N., Lynch, K., Preston, G., & Smedberg, H. (2021, October). *Speeding Towards Remote Access: Developing Shared Recommendations for Virtual Reading Rooms.* In M. A. Matienzo, & D. Handel (Eds.), The Lighting the Way Handbook: Case Studies, Guidelines, and Emergent Futures for Archival Discovery and Delivery (pp. 141-167). Stanford, CA: Stanford University Libraries. <https://doi.org/10.25740/gg453cv6438>.
 
-Black, S. (2021, July 15). Automating born-digital archival description ethically and sustainably. IDEA Institute on Artificial Intelligence. https://idea.infosci.utk.edu/2021/07/15/automating-born-digital-archival-description/
+Black, S. (2021, July 15). Automating born-digital archival description ethically and sustainably. IDEA Institute on Artificial Intelligence. <https://idea.infosci.utk.edu/2021/07/15/automating-born-digital-archival-description/>
 
-Black, S., Chiu, A., & Lew, S. (2021, April). APALA Inclusive Language Guidelines. Asian Pacific American Librarians Association. https://www.apalaweb.org/wp-content/uploads/2022/02/APALA-Inclusive-Language.pdf
+Black, S., Chiu, A., & Lew, S. (2021, April). APALA Inclusive Language Guidelines. Asian Pacific American Librarians Association. <https://www.apalaweb.org/wp-content/uploads/2022/02/APALA-Inclusive-Language.pdf>
 
-Black, S. (2021, March 4). Migrating BitCurator VirtualBox VM to Hyper-V. BitCurator Environment. https://confluence.educopia.org/display/BC/Migrating+Bitcurator+Virtualbox+VM+to+Hyper-VBlack, S. (2020, December 2).
+Black, S. (2021, March 4). Migrating BitCurator VirtualBox VM to Hyper-V. BitCurator Environment. <https://confluence.educopia.org/display/BC/Migrating+Bitcurator+Virtualbox+VM+to+Hyper-V>
 
-Black, S. (2020, December 2). DLF Forum Community Journalist Reflection: Shelly Black. Digital Library Federation. https://www.diglib.org/dlf-forum-community-journalist-reflection-shelly-black/
+Black, S. (2020, December 2). DLF Forum Community Journalist Reflection: Shelly Black. Digital Library Federation. <https://www.diglib.org/dlf-forum-community-journalist-reflection-shelly-black/>
 
 ## Presentations
 
@@ -64,7 +64,7 @@ Betts, V., & Black, S. (2022, February 24). *Breaking down monoracial barriers t
 
 Black, S., Berdini, A., & Cram, G. (2021, October). *Virtual reading rooms: Remote access in ethical and responsible ways*. BitCurator Users Forum, virtual.
 
-Black, S., Glidden-Lyon, S., Handel, D., Matienzo, M., & Philipson, K. (2021). *Works in progress webinar: Lighting the Way—improving discovery and delivery for archives and special collections* \[Webinar]. OCLC Research. https://www.oclc.org/research/events/2021/072721-improving-discovery-delivery-archives-special-collections.html
+Black, S., Glidden-Lyon, S., Handel, D., Matienzo, M., & Philipson, K. (2021). *Works in progress webinar: Lighting the Way—improving discovery and delivery for archives and special collections* \[Webinar]. OCLC Research. <https://www.oclc.org/research/events/2021/072721-improving-discovery-delivery-archives-special-collections.html>
 
 Black, S., Green, P., Harris, E., Maracle, P., Roper, A., Roper, E., & Soto-Luna, I. (2021, June). *ACRL Instruction Section and Membership Engagement of Diversity and Inclusion*. ALA Annual Conference, virtual.
 
@@ -104,6 +104,7 @@ Black, S., & Prescott-Smith, J. (2017, September). *Special Collections: Shining
 * Information Technology Advisory Committee, North Carolina State University Libraries (2020-2021)
 * Director of Special Collections search committee, University of Arizona Libraries (2019)
 * Diversity, Social Justice, and Equity Council, University of Arizona Libraries (2016–18)
+
 ## Awards & Honors
 
 * Society of American Archivists Brenda S. Banks Travel Award (2021)
