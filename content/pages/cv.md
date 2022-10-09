@@ -14,7 +14,10 @@ University of Arizona, Tucson, AZ
 
 ## Experience
 
-**Cyma Rubin Library Fellow,** 2020-Present\
+**Digital Archivist,** 2022-Present\
+North Carolina State University Libraries, Raleigh, NC
+
+**Cyma Rubin Library Fellow,** 2020-2022\
 North Carolina State University Libraries, Raleigh, NC
 
 **Digital Marketing Specialist**, 2015-2020\
