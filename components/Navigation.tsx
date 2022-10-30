@@ -16,7 +16,9 @@ export default function Navigation() {
         if (typeof window !== 'undefined' && window.innerWidth < 1050) {
             photoNav.current.style.display = isOpen ? 'block' : 'none';
             libraryNav.current.style.display = isOpen ? 'block' : 'none';
-            designNav.current.style.display = isOpen ? 'block' : 'none';
+            if (designNav?.current != null) {
+                designNav.current.style.display = isOpen ? 'block' : 'none';
+            }
         }
     });
 
@@ -84,7 +86,7 @@ export default function Navigation() {
                             </li>
                         </ul>
                     </div>
-                    <div className={styles.navSection} ref={designNav}>
+                    {/* <div className={styles.navSection} ref={designNav}>
                         <h3>Design</h3>
                         <ul onClick={() => setOpen(false)}>
                             <li className={`${styles.navLink} ${styles.shop}`}>
@@ -93,7 +95,7 @@ export default function Navigation() {
                                 </Link>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div className={styles.burger}>
                         <Hamburger toggled={isOpen} toggle={setOpen} />
                     </div>
