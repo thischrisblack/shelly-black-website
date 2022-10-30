@@ -1,0 +1,46 @@
+.containerShop {
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-columns: auto;
+    grid-template-areas:
+        'image'
+        'details'
+        'button';
+
+    .image {
+        grid-area: image;
+    }
+
+    .details {
+        grid-area: details;
+    }
+
+    .button {
+        text-align: center;
+        padding: 1rem;
+        grid-area: button;
+
+        .price {
+            font-family: 'Raleway', sans-serif;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        .shipping {
+            font-style: italic;
+            font-family: 'Raleway', sans-serif;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .containerShop {
+        display: grid;
+        grid-template-rows: min-content 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            'image image image'
+            'details details button';
+    }
+}
