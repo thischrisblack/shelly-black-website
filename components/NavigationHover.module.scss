@@ -39,6 +39,15 @@
     }
 }
 
+.shop {
+    &:before {
+        content: 'Shop';
+    }
+    &:after {
+        content: 'Shop';
+    }
+}
+
 .about {
     &:before {
         content: 'About';

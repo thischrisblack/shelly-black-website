@@ -72,11 +72,11 @@ export default function BlogPost({
                         })}
                     </p>
                     <h2>{frontmatter.title}</h2>
-                    <p>
+                    <div>
                         {(frontmatter.category as Array<string>).map((category: string) => (
                             <div key={category}>{category}</div>
                         ))}
-                    </p>
+                    </div>
                 </div>
                 <div className={styles.content}>
                     <img src={`/${frontmatter.image.src}`} alt={frontmatter.image.alt} />

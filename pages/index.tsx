@@ -31,17 +31,17 @@ const Index = ({ siteProps }: { siteProps: any }) => {
                         Hello! I’m Shelly, a Japanese Mexican American
                         librarian, archivist, and photographer on the unceded
                         land of the Tuscarora and the Catawba.{' '}
-                        {!isShown && (
-                            <div className={styles.moreLink}>
-                                <a
-                                    aria-label="Read more about Shelly Black"
-                                    onClick={() => setShown(!isShown)}
-                                >
-                                    MORE
-                                </a>
-                            </div>
-                        )}
                     </p>
+                    {!isShown && (
+                        <div className={styles.moreLink}>
+                            <a
+                                aria-label="Read more about Shelly Black"
+                                onClick={() => setShown(!isShown)}
+                            >
+                                MORE
+                            </a>
+                        </div>
+                    )}
                     <div className={styles.more} ref={moreDiv}>
                         <p>
                             I’m a digital archivist at North Carolina State
