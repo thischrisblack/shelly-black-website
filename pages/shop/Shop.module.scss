@@ -4,33 +4,38 @@
     grid-template-columns: auto;
     grid-template-areas:
         'image'
-        'details'
+        'description'
         'button';
 
     .image {
         grid-area: image;
     }
 
+    .description {
+        grid-area: description;
+    }
+
     .details {
-        grid-area: details;
+        margin-top: 2rem;
+        text-align: left;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .price {
+        font-family: 'Raleway', sans-serif;
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    .shipping {
+        font-family: 'Raleway', sans-serif;
+        margin-top: 0.5rem;
     }
 
     .button {
         text-align: center;
-        padding: 1rem;
         grid-area: button;
-
-        .price {
-            font-family: 'Raleway', sans-serif;
-            font-size: 3rem;
-            font-weight: bold;
-            margin-bottom: 0;
-        }
-
-        .shipping {
-            font-style: italic;
-            font-family: 'Raleway', sans-serif;
-        }
     }
 }
 
@@ -38,9 +43,9 @@
     .containerShop {
         display: grid;
         grid-template-rows: min-content 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
-            'image image image'
-            'details details button';
+            'image image image button'
+            'description description description button';
     }
 }

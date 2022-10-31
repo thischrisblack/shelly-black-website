@@ -86,7 +86,7 @@ export default function Navigation() {
                             </li>
                         </ul>
                     </div>
-                    {/* <div className={styles.navSection} ref={designNav}>
+                    <div className={styles.navSection} ref={designNav}>
                         <h3>Design</h3>
                         <ul onClick={() => setOpen(false)}>
                             <li className={`${styles.navLink} ${styles.shop}`}>
@@ -95,7 +95,7 @@ export default function Navigation() {
                                 </Link>
                             </li>
                         </ul>
-                    </div> */}
+                    </div>
                     <div className={styles.burger}>
                         <Hamburger toggled={isOpen} toggle={setOpen} />
                     </div>
