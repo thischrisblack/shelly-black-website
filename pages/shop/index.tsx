@@ -2,6 +2,7 @@ import Layout from '../../components/Layout';
 import styles from '../../styles/Content.module.scss';
 import shopStyles from './Shop.module.scss';
 import * as siteProps from '../../siteconfig.json';
+import Link from 'next/link';
 
 const Shop = () => {
     return (
@@ -28,22 +29,39 @@ const Shop = () => {
                         </div>
                         <div className={shopStyles.description}>
                             <p>
-                                Are you a purrrocessing archivist? If so, you'll want to get your paws on this enamel
-                                pin of a kitty in an archival storage box.
+                                Are you a purrrocessing archivist? If so, you'll
+                                want to get your paws on this enamel pin of a
+                                kitty in an archival storage box.
                             </p>
                             <p>
-                                This is also the purrfect gift for the archivist, librarian, or historian in your life
+                                This is also the purrfect gift for the
+                                archivist, librarian, or historian in your life
                                 who loves cats.
                             </p>
                             <p>Available for purrchase while supplies last!</p>
+                            <p>
+                                🐶 Dog version coming soon!{' '}
+                                <Link href={{ pathname: '/about' }}>
+                                    <a>Contact me</a>
+                                </Link>{' '}
+                                if you'd like to know when they're available.
+                            </p>
                         </div>
                         <div className={shopStyles.button}>
                             <p className={shopStyles.price}>$14.99</p>
                             <p className={shopStyles.shipping}>
                                 <i>free shipping</i>
                             </p>
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                <input type="hidden" name="cmd" value="_s-xclick" />
+                            <form
+                                action="https://www.paypal.com/cgi-bin/webscr"
+                                method="post"
+                                target="_top"
+                            >
+                                <input
+                                    type="hidden"
+                                    name="cmd"
+                                    value="_s-xclick"
+                                />
                                 <input
                                     type="hidden"
                                     name="encrypted"
