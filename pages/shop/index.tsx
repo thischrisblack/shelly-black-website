@@ -1,7 +1,7 @@
 import Layout from '../../components/Layout';
 import styles from '../../styles/Content.module.scss';
 import shopStyles from './Shop.module.scss';
-import * as siteProps from '../../siteconfig.json';
+import siteProps from '../../siteconfig.json';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
