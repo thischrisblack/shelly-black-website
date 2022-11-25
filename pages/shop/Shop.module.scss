@@ -6,6 +6,7 @@
         'image'
         'description'
         'button';
+    grid-column-gap: 2rem;
 
     .image {
         grid-area: image;
@@ -51,6 +52,10 @@
     .disabled {
         opacity: 0.25;
         pointer-events: none;
+    }
+
+    ul {
+        margin-left: 2rem;
     }
 }
 

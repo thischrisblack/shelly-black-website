@@ -7,6 +7,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { ISiteProps } from '../../utils/content-retrieval';
 import { IShopItem } from '../../utils/shopping-cart';
 import { IIndex } from '../../utils/types';
+import CartControls from '../../components/CartControls';
 
 const ShopItem = ({
     slug,
@@ -62,6 +63,8 @@ const ShopItem = ({
                         <div className={shopStyles.button}>
                             <p className={shopStyles.price}>${item.price}</p>
 
+                            <CartControls item={item} />
+
                             <div className={shopStyles.details}>
                                 <ul>
                                     {item.details.map((detail) => (
@@ -69,10 +72,6 @@ const ShopItem = ({
                                     ))}
                                 </ul>
                             </div>
-
-                            <p>- 2 +</p>
-
-                            <p>CHECK OUT</p>
                         </div>
                     </div>
                 </div>

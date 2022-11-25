@@ -1,0 +1,22 @@
+.cartControls {
+    margin: 2rem 0 0 0;
+
+    button {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .quantityControls {
+        display: flex;
+        margin-bottom: 1rem;
+
+        span {
+            display: inline-block;
+            padding: 0 3rem;
+        }
+    }
+
+    .subTotal {
+        font-size: 1.2rem;
+    }
+}
