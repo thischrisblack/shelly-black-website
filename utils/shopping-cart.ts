@@ -5,6 +5,7 @@ export interface IShopItem {
     quantity: number;
     title: string;
     description: string;
+    shortDescription: string;
     price: number;
     details: Array<string>;
     image: string;
@@ -26,6 +27,12 @@ export const inventory: IIndex<IShopItem> = {
                 who loves cats.
             </p>
             <p>Available for purrchase while supplies last!</p>
+        `,
+        shortDescription: `
+            <p>
+                Are you a purrrocessing archivist? If so, you'll want to get your paws on this enamel
+                pin of a kitty in an archival storage box.
+            </p>
         `,
         price: 14.99,
         details: ['1 x 1.25 inches', 'black metal finish', 'black rubber clutch'],

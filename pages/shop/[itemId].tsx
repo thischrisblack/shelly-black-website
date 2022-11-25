@@ -1,14 +1,24 @@
 import Layout from '../../components/Layout';
 import styles from '../../styles/Content.module.scss';
 import shopStyles from './Shop.module.scss';
-import siteProps from '../../siteconfig.json';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ISiteProps } from '../../utils/content-retrieval';
-import { inventory, IShopItem } from '../../utils/shopping-cart';
+import { IShopItem } from '../../utils/shopping-cart';
+import { IIndex } from '../../utils/types';
 
-const Shop = ({ slug, siteProps, item }: { slug: string; siteProps: any; item: IShopItem }) => {
+const ShopItem = ({
+    slug,
+    siteProps,
+    item,
+    inventory,
+}: {
+    slug: string;
+    siteProps: any;
+    item: IShopItem;
+    inventory: IIndex<IShopItem>;
+}) => {
     const [destination, setDestination] = useState(null);
 
     useEffect(() => {
@@ -52,8 +62,6 @@ const Shop = ({ slug, siteProps, item }: { slug: string; siteProps: any; item: I
                         <div className={shopStyles.button}>
                             <p className={shopStyles.price}>${item.price}</p>
 
-                            <p>Cart stuff here</p>
-
                             <div className={shopStyles.details}>
                                 <ul>
                                     {item.details.map((detail) => (
@@ -61,6 +69,10 @@ const Shop = ({ slug, siteProps, item }: { slug: string; siteProps: any; item: I
                                     ))}
                                 </ul>
                             </div>
+
+                            <p>- 2 +</p>
+
+                            <p>CHECK OUT</p>
                         </div>
                     </div>
                 </div>
@@ -69,12 +81,13 @@ const Shop = ({ slug, siteProps, item }: { slug: string; siteProps: any; item: I
     );
 };
 
-export default Shop;
+export default ShopItem;
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const { itemId } = ctx.params;
 
     const { default: siteProps }: { default: ISiteProps } = await import(`../../siteconfig.json`);
+    const { inventory } = await import('../../utils/shopping-cart');
 
     const item = inventory[itemId as string];
 
@@ -83,11 +96,13 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
             slug: itemId,
             siteProps,
             item,
+            inventory,
         },
     };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
+    const { inventory } = await import('../../utils/shopping-cart');
     const paths = Object.keys(inventory).map((id) => `/shop/${id}`);
     return {
         paths,
