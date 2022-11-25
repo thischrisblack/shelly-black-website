@@ -1,0 +1,13 @@
+.quantityControls {
+    display: flex;
+    margin-bottom: 1rem;
+
+    span {
+        display: inline-block;
+        padding: 0 2rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}

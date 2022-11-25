@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useSelector } from 'react-redux';
 import { IShopItem } from '../utils/shopping-cart';
 import styles from './CheckOutButton.module.scss';
@@ -11,7 +12,9 @@ export default function CheckOutButton() {
     return (
         cart.length > 0 && (
             <div className={styles.checkOutButton}>
-                <button>Checkout ${cartTotal}</button>
+                <Link href="/shop/cart" passHref>
+                    <button>Checkout ${cartTotal}</button>
+                </Link>
             </div>
         )
     );
