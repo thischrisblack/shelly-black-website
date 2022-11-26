@@ -74,9 +74,7 @@ export default function ContactForm({
                             <label>
                                 Message:
                                 <br />
-                                <textarea name="message" id="message">
-                                    {prefilledMessage}
-                                </textarea>
+                                <textarea name="message" id="message" defaultValue={prefilledMessage}></textarea>
                             </label>
                         </p>
                         <p>

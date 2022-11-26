@@ -2,7 +2,6 @@ import Layout from '../../components/Layout';
 import styles from '../../styles/Content.module.scss';
 import shopStyles from './Shop.module.scss';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ISiteProps } from '../../utils/content-retrieval';
 import { IShopItem } from '../../utils/shopping-cart';

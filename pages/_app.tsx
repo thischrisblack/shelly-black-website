@@ -6,11 +6,14 @@ import '@fortawesome/fontawesome-free/js/regular';
 import '@fortawesome/fontawesome-free/js/brands';
 import { Provider } from 'react-redux';
 import store from '../redux/store';
+import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
         <Provider store={store}>
-            <Component {...pageProps} />
+            <PayPalScriptProvider options={{ 'client-id': 'test' }}>
+                <Component {...pageProps} />
+            </PayPalScriptProvider>
         </Provider>
     );
 }

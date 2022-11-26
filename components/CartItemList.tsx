@@ -10,7 +10,7 @@ export default function CartItemList({ items, siteProps }: { items: Array<IShopI
                 {items &&
                     items.map((item) => {
                         return (
-                            <li className={styles.cartItem}>
+                            <li className={styles.cartItem} key={item.id}>
                                 <div className={styles.cartItemImage}>
                                     <img
                                         src={`${siteProps.url}/images/${item.image}?nf_resize=fit&w=840`}
@@ -27,7 +27,7 @@ export default function CartItemList({ items, siteProps }: { items: Array<IShopI
                                 <div className={styles.cartItemQuantity}>
                                     <QuantityControls item={item} />
                                 </div>
-                                <div className={styles.cartItemPrice}>${item.quantity * item.price}</div>
+                                <div className={styles.cartItemPrice}>${(item.quantity * item.price).toFixed(2)}</div>
                             </li>
                         );
                     })}

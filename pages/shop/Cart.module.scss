@@ -1,0 +1,66 @@
+.destinationControls {
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    line-height: 2rem;
+    margin: 0 0 4rem 0;
+
+    div {
+        padding-right: 2rem;
+    }
+}
+
+.orderBox {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-template-areas:
+        'totals'
+        'buttons';
+}
+
+.totals {
+    grid-area: totals;
+    margin-bottom: 2rem;
+
+    h2 {
+        margin-top: 0;
+    }
+}
+
+.buttons {
+    grid-area: buttons;
+}
+
+.lineItem {
+    display: flex;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    padding: 1.5rem 0;
+
+    .lineItemDetail {
+        flex: 1 1 auto;
+    }
+
+    .lineItemAmount {
+    }
+
+    &:not(:last-child) {
+        border-bottom: 1px dotted #555;
+    }
+}
+
+.b {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 700px) {
+    .destinationControls {
+        display: flex;
+    }
+
+    .orderBox {
+        display: grid;
+        grid-template-columns: 1.25fr 0.75fr;
+        grid-template-areas: 'buttons totals';
+        grid-column-gap: 6rem;
+    }
+}
