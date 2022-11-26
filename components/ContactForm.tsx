@@ -2,20 +2,35 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import styles from './ContactForm.module.scss';
 
-export default function ContactForm() {
+export default function ContactForm({
+    showAddress = false,
+    showSocial = true,
+    title = 'Contact Shelly Black',
+    prefilledMessage = '',
+}: {
+    showAddress?: boolean;
+    showSocial?: boolean;
+    title?: string;
+    prefilledMessage?: string;
+}) {
     const {
         query: { message },
     } = useRouter();
 
     return (
         <div className={styles.contactForm}>
-            <h3>Contact Shelly Black</h3>
-            <a href="https://twitter.com/shellyyblack">
-                <i className="fab fa-twitter fa-lg"></i>
-            </a>{' '}
-            <a href="https://www.linkedin.com/in/shellyyblack/">
-                <i className="fab fa-linkedin fa-lg"></i>
-            </a>
+            <h3>{title}</h3>
+            {showSocial && (
+                <>
+                    <a href="https://twitter.com/shellyyblack">
+                        <i className="fab fa-twitter fa-lg"></i>
+                    </a>{' '}
+                    <a href="https://www.linkedin.com/in/shellyyblack/">
+                        <i className="fab fa-linkedin fa-lg"></i>
+                    </a>
+                </>
+            )}
+
             {message !== 'sent' && (
                 <>
                     <form
@@ -46,11 +61,22 @@ export default function ContactForm() {
                                 <input type="email" name="email" id="email" />
                             </label>
                         </p>
+                        {showAddress && (
+                            <p>
+                                <label>
+                                    Shipping Address:
+                                    <br />
+                                    <textarea name="address" id="address"></textarea>
+                                </label>
+                            </p>
+                        )}
                         <p>
                             <label>
                                 Message:
                                 <br />
-                                <textarea name="message" id="message"></textarea>
+                                <textarea name="message" id="message">
+                                    {prefilledMessage}
+                                </textarea>
                             </label>
                         </p>
                         <p>

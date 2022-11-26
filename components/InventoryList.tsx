@@ -30,7 +30,7 @@ export default function InventoryList({ items, siteProps }: { items: Array<IShop
                                             <a>{item.title}</a>
                                         </h3>
                                         <div
-                                            className={styles.postDate}
+                                            className={styles.inventoryDescription}
                                             dangerouslySetInnerHTML={{ __html: `${item.shortDescription}` }}
                                         ></div>
                                     </div>

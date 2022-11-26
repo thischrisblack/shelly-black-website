@@ -20,12 +20,6 @@ const ShopItem = ({
     item: IShopItem;
     inventory: IIndex<IShopItem>;
 }) => {
-    const [destination, setDestination] = useState(null);
-
-    useEffect(() => {
-        setDestination(null);
-    }, []);
-
     return (
         <Layout
             pageTitle={`${item.title} | Shop`}
