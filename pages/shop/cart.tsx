@@ -10,6 +10,16 @@ import cartStyles from './Cart.module.scss';
 import ContactForm from '../../components/ContactForm';
 import { PayPalButtons } from '@paypal/react-paypal-js';
 
+/**
+ * CHRIS LOOK
+ *
+ * Clean up cart page after order.
+ * Style buttons.
+ * Place checkout/cart buttons where needed.
+ * Clean up stuyles and text.
+ *
+ */
+
 const Cart = ({ siteProps }: { siteProps: any }) => {
     const cart = useSelector((state: { cart: Array<IShopItem> }) => state.cart ?? []);
 
@@ -33,6 +43,38 @@ const Cart = ({ siteProps }: { siteProps: any }) => {
     useEffect(() => {
         setDestination(null);
     }, []);
+
+    const paypalCreateOrder = (data, actions) => {
+        return actions.order.create({
+            purchase_units: [
+                {
+                    amount: {
+                        value: (shipping + itemTotal).toFixed(2),
+                        breakdown: {
+                            item_total: {
+                                currency_code: 'USD',
+                                value: itemTotal.toFixed(2),
+                            },
+                            shipping: {
+                                currency_code: 'USD',
+                                value: shipping.toFixed(2),
+                            },
+                        },
+                    },
+                    items: cart.map((item) => {
+                        return {
+                            name: item.title,
+                            quantity: item.quantity,
+                            unit_amount: {
+                                currency_code: 'USD',
+                                value: item.price.toFixed(2),
+                            },
+                        };
+                    }),
+                },
+            ],
+        });
+    };
 
     return (
         <Layout
@@ -105,7 +147,7 @@ const Cart = ({ siteProps }: { siteProps: any }) => {
                                         <div className={cartStyles.totals}>
                                             <h2>Your Order</h2>
                                             <div className={cartStyles.lineItem}>
-                                                <div className={cartStyles.lineItemDetail}>Items total</div>
+                                                <div className={cartStyles.lineItemDetail}>Item total</div>
                                                 <div className={cartStyles.lineItemAmount}>${itemTotal.toFixed(2)}</div>
                                             </div>
                                             <div className={cartStyles.lineItem}>
@@ -120,7 +162,10 @@ const Cart = ({ siteProps }: { siteProps: any }) => {
                                             </div>
                                         </div>
                                         <div className={cartStyles.buttons}>
-                                            <PayPalButtons />
+                                            <PayPalButtons
+                                                createOrder={paypalCreateOrder}
+                                                forceReRender={[itemTotal, shipping]}
+                                            />
                                         </div>
                                     </div>
                                 </>
