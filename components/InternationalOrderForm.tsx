@@ -10,7 +10,7 @@ export default function InternationalOrderForm({ orderInfo = '' }: { orderInfo?:
                 name="internationalorderinfo"
                 method="POST"
                 data-netlify="true"
-                action="/shop/cart?message=sent"
+                action="/thanks-international-order"
                 netlify-honeypot="bot-field"
             >
                 <input type="hidden" name="form-name" value="internationalorderinfo" />
