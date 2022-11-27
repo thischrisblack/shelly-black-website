@@ -7,11 +7,11 @@ import { useSelector } from 'react-redux';
 import CartItemList from '../../components/CartItemList';
 import { useEffect, useState } from 'react';
 import cartStyles from './Cart.module.scss';
-import ContactForm from '../../components/ContactForm';
 import { PayPalButtons } from '@paypal/react-paypal-js';
 import { useDispatch } from 'react-redux';
 import { resetCart } from '../../redux/cart.slice';
 import { useRouter } from 'next/router';
+import InternationalOrderForm from '../../components/InternationalOrderForm';
 
 const Cart = ({ siteProps }: { siteProps: any }) => {
     const dispatch = useDispatch();
@@ -162,10 +162,7 @@ const Cart = ({ siteProps }: { siteProps: any }) => {
                                                 Orders outside the U.S. require special shipping. Please send me a
                                                 message about your order and I'll get back to you shortly.
                                             </p>
-                                            <ContactForm
-                                                title={'International Shipping Contact Form'}
-                                                showAddress={true}
-                                                showSocial={false}
+                                            <InternationalOrderForm
                                                 orderInfo={cart
                                                     .map((item) => `${item.title} (Qty ${item.quantity})\n`)
                                                     .join()}

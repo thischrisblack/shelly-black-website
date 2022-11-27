@@ -2,42 +2,27 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import styles from './ContactForm.module.scss';
 
-export default function ContactForm({
-    showAddress = false,
-    showSocial = true,
-    title = 'Contact Shelly Black',
-    orderInfo = '',
-}: {
-    showAddress?: boolean;
-    showSocial?: boolean;
-    title?: string;
-    orderInfo?: string;
-}) {
+export default function ContactForm() {
     const {
         query: { message },
     } = useRouter();
 
     return (
         <div className={styles.contactForm}>
-            <h3>{title}</h3>
-            {showSocial && (
-                <>
-                    <a href="https://twitter.com/shellyyblack">
-                        <i className="fab fa-twitter fa-lg"></i>
-                    </a>{' '}
-                    <a href="https://www.linkedin.com/in/shellyyblack/">
-                        <i className="fab fa-linkedin fa-lg"></i>
-                    </a>
-                </>
-            )}
-
+            <h3>Contact Shelly Black</h3>
+            <a href="https://twitter.com/shellyyblack">
+                <i className="fab fa-twitter fa-lg"></i>
+            </a>{' '}
+            <a href="https://www.linkedin.com/in/shellyyblack/">
+                <i className="fab fa-linkedin fa-lg"></i>
+            </a>
             {message !== 'sent' && (
                 <>
                     <form
                         name="contact"
                         method="POST"
                         data-netlify="true"
-                        action={orderInfo.length > 0 ? '/shop/cart?message=sent' : '/about?message=sent'}
+                        action="/about?message=sent"
                         netlify-honeypot="bot-field"
                     >
                         <input type="hidden" name="form-name" value="contact" />
@@ -61,33 +46,13 @@ export default function ContactForm({
                                 <input type="email" name="email" id="email" />
                             </label>
                         </p>
-                        {showAddress && (
-                            <p>
-                                <label>
-                                    Shipping Address:
-                                    <br />
-                                    <textarea name="address" id="address"></textarea>
-                                </label>
-                            </p>
-                        )}
-                        <div key={orderInfo}>
-                            <p>
-                                <label>
-                                    Message:
-                                    <br />
-                                    <textarea name="message" id="message"></textarea>
-                                </label>
-                            </p>
-                        </div>
-                        {orderInfo.length > 0 && (
-                            <p>
-                                <label>
-                                    Your Order:
-                                    <br />
-                                    <textarea name="order" id="order" value={orderInfo} disabled></textarea>
-                                </label>
-                            </p>
-                        )}
+                        <p>
+                            <label>
+                                Message:
+                                <br />
+                                <textarea name="message" id="message"></textarea>
+                            </label>
+                        </p>
                         <p>
                             <button type="submit">Send</button>
                         </p>
