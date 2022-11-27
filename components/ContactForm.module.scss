@@ -27,4 +27,8 @@
         -moz-box-sizing: border-box; /* Firefox, other Gecko */
         box-sizing: border-box;
     }
+
+    .pointerEventsNone {
+        pointer-events: none;
+    }
 }
