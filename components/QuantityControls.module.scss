@@ -4,10 +4,24 @@
 
     span {
         display: inline-block;
-        padding: 0 2rem;
+        padding: 0.5rem 2rem;
     }
 
     button {
         width: 100%;
+    }
+
+    .addToCart {
+        width: 100%;
+        font-size: 1.6rem;
+        padding: 0.25rem 0;
+    }
+
+    .quantity {
+        padding: 0.25rem 1rem;
+
+        svg {
+            color: black;
+        }
     }
 }

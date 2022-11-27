@@ -3,6 +3,8 @@ import Hamburger from 'hamburger-react';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Navigation.module.scss';
 import ColorBar from './ColorBar';
+import { useSelector } from 'react-redux';
+import { IShopItem } from '../utils/shopping-cart';
 
 export default function Navigation() {
     const [isOpen, setOpen] = useState(false);
@@ -10,6 +12,7 @@ export default function Navigation() {
     const photoNav = useRef(null);
     const libraryNav = useRef(null);
     const designNav = useRef(null);
+    const cart = useSelector((state: { cart: Array<IShopItem> }) => state.cart ?? []);
 
     // Open/close nav items.
     useEffect(() => {
@@ -26,9 +29,7 @@ export default function Navigation() {
         <>
             <header>
                 <nav className={styles.nav}>
-                    <div
-                        className={`${styles.name} ${styles.navLink} ${styles.homeLink}`}
-                    >
+                    <div className={`${styles.name} ${styles.navLink} ${styles.homeLink}`}>
                         <Link href={{ pathname: '/' }}>
                             <a>
                                 <h1>Shelly Black</h1>
@@ -48,9 +49,7 @@ export default function Navigation() {
                                     <a>CV</a>
                                 </Link>
                             </li>
-                            <li
-                                className={`${styles.navLink} ${styles.portfolio}`}
-                            >
+                            <li className={`${styles.navLink} ${styles.portfolio}`}>
                                 <Link href={{ pathname: '/portfolio' }}>
                                     <a>Portfolio</a>
                                 </Link>
@@ -65,16 +64,12 @@ export default function Navigation() {
                     <div className={styles.navSection} ref={photoNav}>
                         <h3>Photography</h3>
                         <ul onClick={() => setOpen(false)}>
-                            <li
-                                className={`${styles.navLink} ${styles.gallery}`}
-                            >
+                            <li className={`${styles.navLink} ${styles.gallery}`}>
                                 <Link href={{ pathname: '/galleries' }}>
                                     <a>Gallery</a>
                                 </Link>
                             </li>
-                            <li
-                                className={`${styles.navLink} ${styles.exhibits}`}
-                            >
+                            <li className={`${styles.navLink} ${styles.exhibits}`}>
                                 <Link href={{ pathname: '/exhibits' }}>
                                     <a>Exhibits</a>
                                 </Link>
@@ -94,6 +89,16 @@ export default function Navigation() {
                                     <a>Shop</a>
                                 </Link>
                             </li>
+                            {cart.length > 0 && (
+                                <li className={`${styles.navLink} ${styles.cart}`}>
+                                    <Link href={{ pathname: '/shop/cart' }}>
+                                        <a>
+                                            <i className="fas fa-shopping-cart"></i> (
+                                            {cart.reduce((acc, item) => item.quantity + acc, 0)})
+                                        </a>
+                                    </Link>
+                                </li>
+                            )}
                         </ul>
                     </div>
                     <div className={styles.burger}>

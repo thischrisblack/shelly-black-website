@@ -39,7 +39,7 @@ export default function PageContainer({
                 </div>
                 <div className={styles.content}>
                     <ReactMarkdown source={content} escapeHtml={false} />
-                    {slug === 'about' && <ContactForm />}
+                    {slug === 'about' && <ContactForm showSocial={false} />}
                 </div>
             </article>
         </Layout>

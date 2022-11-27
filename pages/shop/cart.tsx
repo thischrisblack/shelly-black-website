@@ -9,19 +9,17 @@ import { useEffect, useState } from 'react';
 import cartStyles from './Cart.module.scss';
 import ContactForm from '../../components/ContactForm';
 import { PayPalButtons } from '@paypal/react-paypal-js';
+import { useDispatch } from 'react-redux';
+import { resetCart } from '../../redux/cart.slice';
 
-/**
- * CHRIS LOOK
- *
- * Clean up cart page after order.
- * Style buttons.
- * Place checkout/cart buttons where needed.
- * Clean up stuyles and text.
- *
- */
+// Chris look!
+// Fix international message qty bug.
+// Get venmo back.
 
 const Cart = ({ siteProps }: { siteProps: any }) => {
     const cart = useSelector((state: { cart: Array<IShopItem> }) => state.cart ?? []);
+
+    const dispatch = useDispatch();
 
     const itemTotal = useSelector((state: { cart: Array<IShopItem> }) =>
         (state.cart ?? []).reduce((acc, item) => {
@@ -39,6 +37,8 @@ const Cart = ({ siteProps }: { siteProps: any }) => {
     );
 
     const [destination, setDestination] = useState(null);
+    const [paymentCompleted, setPaymentCompleted] = useState(false);
+    const [paymentCompletedMessage, setPaymentCompletedMessage] = useState(null);
 
     useEffect(() => {
         setDestination(null);
@@ -76,6 +76,22 @@ const Cart = ({ siteProps }: { siteProps: any }) => {
         });
     };
 
+    const paypalOnApprove = (data, actions) => {
+        return actions.order.capture().then(function () {
+            // Your code here after capture the order
+            console.log(data);
+            const orderString = cart
+                .map((item) => {
+                    return `${item.quantity} ${item.title}${item.quantity > 1 ? 's' : ''}`;
+                })
+                .join(', ');
+            const message = `You ordered ${orderString} and your order ID is ${data.orderID}. If you have any questions please contact me at <a href="mailto:shop@shelly-black.com">shop@shelly-black.com</a>.`;
+            setPaymentCompletedMessage(message);
+            dispatch(resetCart());
+            setPaymentCompleted(true);
+        });
+    };
+
     return (
         <Layout
             pageTitle={`${siteProps.title} | Your Order`}
@@ -91,83 +107,99 @@ const Cart = ({ siteProps }: { siteProps: any }) => {
                     <h2>Cart</h2>
                 </div>
                 <div className={styles.content}>
-                    <h3>Your items</h3>
-                    <CartItemList items={cart} siteProps={siteProps} />
-
-                    {cart.length > 0 && (
+                    {paymentCompleted && (
                         <>
-                            <h3>Destination</h3>
+                            <h3>Thank you!</h3>
+                            <p dangerouslySetInnerHTML={{ __html: paymentCompletedMessage }}></p>
+                        </>
+                    )}
 
-                            <div className={cartStyles.destinationControls}>
-                                <div>
-                                    <input
-                                        type="radio"
-                                        id="us"
-                                        checked={destination === 'us'}
-                                        name="destination"
-                                        value="us"
-                                        onChange={() => setDestination('us')}
-                                    />
-                                    <label htmlFor="us">Ship within the U.S.</label>
-                                </div>
-                                <div>
-                                    <input
-                                        type="radio"
-                                        id="international"
-                                        checked={destination === 'international'}
-                                        name="destination"
-                                        value="international"
-                                        onChange={() => setDestination('international')}
-                                    />
-                                    <label htmlFor="international">Ship outside the U.S.</label>
-                                </div>
-                            </div>
+                    {!paymentCompleted && (
+                        <>
+                            <h3>Your items</h3>
+                            <CartItemList items={cart} siteProps={siteProps} />
 
-                            {destination === 'international' && (
+                            {cart.length > 0 && (
                                 <>
-                                    <p>
-                                        Orders outside the U.S. require special shipping. Please send me a message about
-                                        your order and I'll get back to you shortly.
-                                    </p>
-                                    <ContactForm
-                                        title={'International Shipping Contact Form'}
-                                        showAddress={true}
-                                        showSocial={false}
-                                        prefilledMessage={
-                                            'My order: \n' +
-                                            cart.map((item) => `${item.title} (Qty ${item.quantity})\n`).join()
-                                        }
-                                    />
-                                </>
-                            )}
+                                    <h3>Destination</h3>
 
-                            {destination === 'us' && (
-                                <>
-                                    <div className={cartStyles.orderBox}>
-                                        <div className={cartStyles.totals}>
-                                            <h2>Your Order</h2>
-                                            <div className={cartStyles.lineItem}>
-                                                <div className={cartStyles.lineItemDetail}>Item total</div>
-                                                <div className={cartStyles.lineItemAmount}>${itemTotal.toFixed(2)}</div>
-                                            </div>
-                                            <div className={cartStyles.lineItem}>
-                                                <div className={cartStyles.lineItemDetail}>Shipping</div>
-                                                <div className={cartStyles.lineItemAmount}>${shipping.toFixed(2)}</div>
-                                            </div>
-                                            <div className={`${cartStyles.lineItem} ${cartStyles.b}`}>
-                                                <div className={cartStyles.lineItemDetail}>ORDER TOTAL</div>
-                                                <div className={cartStyles.lineItemAmount}>
-                                                    ${(itemTotal + shipping).toFixed(2)}
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className={cartStyles.buttons}>
-                                            <PayPalButtons
-                                                createOrder={paypalCreateOrder}
-                                                forceReRender={[itemTotal, shipping]}
+                                    <div className={cartStyles.destinationControls}>
+                                        <div>
+                                            <input
+                                                type="radio"
+                                                id="us"
+                                                checked={destination === 'us'}
+                                                name="destination"
+                                                value="us"
+                                                onChange={() => setDestination('us')}
                                             />
+                                            <label htmlFor="us">Ship within the U.S.</label>
+                                        </div>
+                                        <div>
+                                            <input
+                                                type="radio"
+                                                id="international"
+                                                checked={destination === 'international'}
+                                                name="destination"
+                                                value="international"
+                                                onChange={() => setDestination('international')}
+                                            />
+                                            <label htmlFor="international">Ship outside the U.S.</label>
                                         </div>
                                     </div>
+
+                                    {destination === 'international' && (
+                                        <>
+                                            <p>
+                                                Orders outside the U.S. require special shipping. Please send me a
+                                                message about your order and I'll get back to you shortly.
+                                            </p>
+                                            <ContactForm
+                                                title={'International Shipping Contact Form'}
+                                                showAddress={true}
+                                                showSocial={false}
+                                                prefilledMessage={
+                                                    'My order: \n' +
+                                                    cart.map((item) => `${item.title} (Qty ${item.quantity})\n`).join()
+                                                }
+                                            />
+                                        </>
+                                    )}
+
+                                    {destination === 'us' && (
+                                        <>
+                                            <div className={cartStyles.orderBox}>
+                                                <div className={cartStyles.totals}>
+                                                    <h2>Your Order</h2>
+                                                    <div className={cartStyles.lineItem}>
+                                                        <div className={cartStyles.lineItemDetail}>Item total</div>
+                                                        <div className={cartStyles.lineItemAmount}>
+                                                            ${itemTotal.toFixed(2)}
+                                                        </div>
+                                                    </div>
+                                                    <div className={cartStyles.lineItem}>
+                                                        <div className={cartStyles.lineItemDetail}>Shipping</div>
+                                                        <div className={cartStyles.lineItemAmount}>
+                                                            ${shipping.toFixed(2)}
+                                                        </div>
+                                                    </div>
+                                                    <div className={`${cartStyles.lineItem} ${cartStyles.b}`}>
+                                                        <div className={cartStyles.lineItemDetail}>ORDER TOTAL</div>
+                                                        <div className={cartStyles.lineItemAmount}>
+                                                            ${(itemTotal + shipping).toFixed(2)}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className={cartStyles.buttons}>
+                                                    <PayPalButtons
+                                                        createOrder={paypalCreateOrder}
+                                                        forceReRender={[itemTotal, shipping]}
+                                                        onApprove={paypalOnApprove}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </>
+                                    )}
                                 </>
                             )}
                         </>

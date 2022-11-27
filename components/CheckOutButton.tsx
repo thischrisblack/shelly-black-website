@@ -13,7 +13,7 @@ export default function CheckOutButton() {
         cart.length > 0 && (
             <div className={styles.checkOutButton}>
                 <Link href="/shop/cart" passHref>
-                    <button>Checkout ${cartTotal}</button>
+                    <button>Check Out</button>
                 </Link>
             </div>
         )

@@ -7,16 +7,26 @@ export default function CartControls({ item }: { item: IShopItem }) {
     const dispatch = useDispatch();
 
     return (
-        <div>
-            {(item?.quantity ?? 0) < 1 && <button onClick={() => dispatch(addToCart(item))}>Add to Cart</button>}
+        <>
+            {(item?.quantity ?? 0) < 1 && (
+                <div className={styles.quantityControls}>
+                    <button className={styles.addToCart} onClick={() => dispatch(addToCart(item))}>
+                        Add to Cart
+                    </button>
+                </div>
+            )}
 
             {(item?.quantity ?? 0) >= 1 && (
                 <div className={styles.quantityControls}>
-                    <button onClick={() => dispatch(decrementQuantity(item.id))}>-</button>
+                    <button className={styles.quantity} onClick={() => dispatch(decrementQuantity(item.id))}>
+                        <i className="fas fa-minus"></i>
+                    </button>
                     <span>{item.quantity}</span>
-                    <button onClick={() => dispatch(incrementQuantity(item.id))}>+</button>
+                    <button className={styles.quantity} onClick={() => dispatch(incrementQuantity(item.id))}>
+                        <i className="fas fa-plus"></i>
+                    </button>
                 </div>
             )}
-        </div>
+        </>
     );
 }

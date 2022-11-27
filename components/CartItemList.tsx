@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { IShopItem } from '../utils/shopping-cart';
 import styles from './CartItemList.module.scss';
 import QuantityControls from './QuantityControls';
@@ -12,10 +13,16 @@ export default function CartItemList({ items, siteProps }: { items: Array<IShopI
                         return (
                             <li className={styles.cartItem} key={item.id}>
                                 <div className={styles.cartItemImage}>
-                                    <img
-                                        src={`${siteProps.url}/images/${item.image}?nf_resize=fit&w=840`}
-                                        alt={item.imageAlt}
-                                    />
+                                    <Link
+                                        href={{
+                                            pathname: `/shop/${item.id}`,
+                                        }}
+                                    >
+                                        <img
+                                            src={`${siteProps.url}/images/${item.image}?nf_resize=fit&w=840`}
+                                            alt={item.imageAlt}
+                                        />
+                                    </Link>
                                 </div>
                                 <div className={styles.cartItemTitle}>
                                     <h3>{item.title}</h3>
