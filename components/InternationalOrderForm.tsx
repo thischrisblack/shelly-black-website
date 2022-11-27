@@ -1,7 +1,29 @@
 import React from 'react';
 import styles from './ContactForm.module.scss';
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+        .join('&');
+};
+
 export default function InternationalOrderForm({ orderInfo = '' }: { orderInfo?: string }) {
+    const handleSubmit = (e) => {
+        const botField = (document.getElementById('bot-field') as HTMLInputElement).value;
+        const name = (document.getElementById('name') as HTMLInputElement).value;
+        const email = (document.getElementById('email') as HTMLInputElement).value;
+        const address = (document.getElementById('address') as HTMLTextAreaElement).value;
+        const message = (document.getElementById('message') as HTMLTextAreaElement).value;
+        const order = orderInfo;
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: encode({ 'form-name': 'contact', botField, name, email, address, message, order }),
+        }).catch((error) => console.error(error));
+
+        e.preventDefault();
+    };
+
     return (
         <div className={styles.contactForm}>
             <h3>International Shipping Contact Form</h3>
@@ -12,6 +34,7 @@ export default function InternationalOrderForm({ orderInfo = '' }: { orderInfo?:
                 data-netlify="true"
                 action="/shop/cart?message=sent"
                 netlify-honeypot="bot-field"
+                onSubmit={handleSubmit}
             >
                 <input type="hidden" name="form-name" value="internationalorderinfo" />
                 <div hidden aria-hidden="true">
@@ -42,15 +65,13 @@ export default function InternationalOrderForm({ orderInfo = '' }: { orderInfo?:
                         <textarea name="address" id="address"></textarea>
                     </label>
                 </p>
-                <div key={orderInfo}>
-                    <p>
-                        <label>
-                            Message:
-                            <br />
-                            <textarea name="message" id="message"></textarea>
-                        </label>
-                    </p>
-                </div>
+                <p>
+                    <label>
+                        Message:
+                        <br />
+                        <textarea name="message" id="message"></textarea>
+                    </label>
+                </p>
                 <p>
                     <label>
                         Your Order:
