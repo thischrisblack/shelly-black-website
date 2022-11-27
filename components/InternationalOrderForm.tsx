@@ -13,7 +13,6 @@ export default function InternationalOrderForm({ orderInfo = '' }: { orderInfo?:
                 action="/thanks-international-order"
                 netlify-honeypot="bot-field"
             >
-                <input type="hidden" name="form-name" value="internationalorderinfo" />
                 <div hidden aria-hidden="true">
                     <label>
                         Don’t fill this out if you're human:
