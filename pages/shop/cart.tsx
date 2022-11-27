@@ -10,15 +10,11 @@ import cartStyles from './Cart.module.scss';
 import { PayPalButtons } from '@paypal/react-paypal-js';
 import { useDispatch } from 'react-redux';
 import { resetCart } from '../../redux/cart.slice';
-import { useRouter } from 'next/router';
 import InternationalOrderForm from '../../components/InternationalOrderForm';
+import Link from 'next/link';
 
 const Cart = ({ siteProps }: { siteProps: any }) => {
     const dispatch = useDispatch();
-
-    const {
-        query: { message },
-    } = useRouter();
 
     const cart = useSelector((state: { cart: Array<IShopItem> }) => state.cart ?? []);
 
@@ -80,7 +76,6 @@ const Cart = ({ siteProps }: { siteProps: any }) => {
     const paypalOnApprove = (data, actions) => {
         return actions.order.capture().then(function () {
             // Your code here after capture the order
-            console.log(data);
             const orderString = cart
                 .map((item) => {
                     return `${item.quantity} ${item.title}${item.quantity > 1 ? 's' : ''}`;
@@ -108,13 +103,6 @@ const Cart = ({ siteProps }: { siteProps: any }) => {
                     <h2>Cart</h2>
                 </div>
                 <div className={styles.content}>
-                    {message === 'sent' && (
-                        <>
-                            <h3>Thank you!</h3>
-                            <p>Your message has been sent and I'll get back to you soon with the shipping cost.</p>
-                        </>
-                    )}
-
                     {paymentCompleted && (
                         <>
                             <h3>Thank you!</h3>
@@ -122,7 +110,7 @@ const Cart = ({ siteProps }: { siteProps: any }) => {
                         </>
                     )}
 
-                    {!paymentCompleted && !message && (
+                    {!paymentCompleted && (
                         <>
                             <h3>Your items</h3>
                             <CartItemList items={cart} siteProps={siteProps} />
@@ -159,14 +147,18 @@ const Cart = ({ siteProps }: { siteProps: any }) => {
                                     {destination === 'international' && (
                                         <>
                                             <p>
-                                                Orders outside the U.S. require special shipping. Please send me a
-                                                message about your order and I'll get back to you shortly.
+                                                Please{' '}
+                                                <Link href={{ pathname: '/about' }}>
+                                                    <a>contact me</a>
+                                                </Link>{' '}
+                                                for orders outside the U.S. Let me know what you'd like to order and
+                                                your shipping address, and I'll get back to you soon. Thanks!
                                             </p>
-                                            <InternationalOrderForm
+                                            {/* <InternationalOrderForm
                                                 orderInfo={cart
                                                     .map((item) => `${item.title} (Qty ${item.quantity})\n`)
                                                     .join()}
-                                            />
+                                            /> */}
                                         </>
                                     )}
 
