@@ -7,13 +7,13 @@ export default function InternationalOrderForm({ orderInfo = '' }: { orderInfo?:
             <h3>International Shipping Contact Form</h3>
 
             <form
-                name="international-order-info"
+                name="internationalorderinfo"
                 method="POST"
                 data-netlify="true"
                 action="/shop/cart?message=sent"
                 netlify-honeypot="bot-field"
             >
-                <input type="hidden" name="form-name" value="international-order-info" />
+                <input type="hidden" name="form-name" value="internationalorderinfo" />
                 <div hidden aria-hidden="true">
                     <label>
                         Don’t fill this out if you're human:
