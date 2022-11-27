@@ -8,6 +8,8 @@ import { IShopItem } from '../../utils/shopping-cart';
 import { IIndex } from '../../utils/types';
 import CartControls from '../../components/CartControls';
 
+// TODO: Implement sold out contact stuff like https://shop.bubblesort.io/products/cache-cats-dot-biz-zine?variant=1196004949
+
 const ShopItem = ({
     slug,
     siteProps,

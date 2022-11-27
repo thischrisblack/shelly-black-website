@@ -12,10 +12,6 @@ import { PayPalButtons } from '@paypal/react-paypal-js';
 import { useDispatch } from 'react-redux';
 import { resetCart } from '../../redux/cart.slice';
 
-// Chris look!
-// Fix international message qty bug.
-// Get venmo back.
-
 const Cart = ({ siteProps }: { siteProps: any }) => {
     const cart = useSelector((state: { cart: Array<IShopItem> }) => state.cart ?? []);
 
@@ -121,7 +117,7 @@ const Cart = ({ siteProps }: { siteProps: any }) => {
 
                             {cart.length > 0 && (
                                 <>
-                                    <h3>Destination</h3>
+                                    <h3>Check Out</h3>
 
                                     <div className={cartStyles.destinationControls}>
                                         <div>
@@ -158,10 +154,9 @@ const Cart = ({ siteProps }: { siteProps: any }) => {
                                                 title={'International Shipping Contact Form'}
                                                 showAddress={true}
                                                 showSocial={false}
-                                                prefilledMessage={
-                                                    'My order: \n' +
-                                                    cart.map((item) => `${item.title} (Qty ${item.quantity})\n`).join()
-                                                }
+                                                orderInfo={cart
+                                                    .map((item) => `${item.title} (Qty ${item.quantity})\n`)
+                                                    .join()}
                                             />
                                         </>
                                     )}

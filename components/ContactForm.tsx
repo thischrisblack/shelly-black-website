@@ -6,12 +6,12 @@ export default function ContactForm({
     showAddress = false,
     showSocial = true,
     title = 'Contact Shelly Black',
-    prefilledMessage = '',
+    orderInfo = '',
 }: {
     showAddress?: boolean;
     showSocial?: boolean;
     title?: string;
-    prefilledMessage?: string;
+    orderInfo?: string;
 }) {
     const {
         query: { message },
@@ -70,13 +70,24 @@ export default function ContactForm({
                                 </label>
                             </p>
                         )}
-                        <p>
-                            <label>
-                                Message:
-                                <br />
-                                <textarea name="message" id="message" defaultValue={prefilledMessage}></textarea>
-                            </label>
-                        </p>
+                        <div key={orderInfo}>
+                            <p>
+                                <label>
+                                    Message:
+                                    <br />
+                                    <textarea name="message" id="message"></textarea>
+                                </label>
+                            </p>
+                        </div>
+                        {orderInfo.length > 0 && (
+                            <p>
+                                <label>
+                                    Your Order:
+                                    <br />
+                                    <textarea name="order" id="order" value={orderInfo} disabled></textarea>
+                                </label>
+                            </p>
+                        )}
                         <p>
                             <button type="submit">Send</button>
                         </p>
@@ -85,7 +96,10 @@ export default function ContactForm({
             )}
             {message === 'sent' && (
                 <>
-                    <p>Thank you! Your message has been sent and I'll get back to you soon.</p>
+                    <p>
+                        Thank you! Your message has been sent and I'll get back to you soon
+                        {orderInfo.length > 0 ? ' with the shipping cost' : ''}.
+                    </p>
                 </>
             )}
         </div>

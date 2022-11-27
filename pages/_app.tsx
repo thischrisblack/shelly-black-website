@@ -11,7 +11,11 @@ import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 export default function App({ Component, pageProps }: AppProps) {
     return (
         <Provider store={store}>
-            <PayPalScriptProvider options={{ 'client-id': 'ASLj7PXWA7t7H3kNBMzEx-UkLTVzfrTksByBN2evzBR39A2k6p--Jwm2zGd2HbVN3r6U8_BYIFmCprRQ' }}>
+            <PayPalScriptProvider
+                options={{
+                    'client-id': 'AfWPvRg5-ElGsZA9Tmjo7-PBNdcdlz5sEarBQ77N4nGEe5Pl6GiKOtaHj6LEEl8yQDIhL0GhnELJVvf7',
+                }}
+            >
                 <Component {...pageProps} />
             </PayPalScriptProvider>
         </Provider>
