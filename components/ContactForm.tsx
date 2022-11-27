@@ -37,7 +37,7 @@ export default function ContactForm({
                         name="contact"
                         method="POST"
                         data-netlify="true"
-                        action="/about?message=sent"
+                        action={orderInfo.length > 0 ? '/shop/cart?message=sent' : '/about?message=sent'}
                         netlify-honeypot="bot-field"
                     >
                         <input type="hidden" name="form-name" value="contact" />
@@ -96,10 +96,7 @@ export default function ContactForm({
             )}
             {message === 'sent' && (
                 <>
-                    <p>
-                        Thank you! Your message has been sent and I'll get back to you soon
-                        {orderInfo.length > 0 ? ' with the shipping cost' : ''}.
-                    </p>
+                    <p>Thank you! Your message has been sent and I'll get back to you soon.</p>
                 </>
             )}
         </div>

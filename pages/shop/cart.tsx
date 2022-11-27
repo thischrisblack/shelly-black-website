@@ -11,11 +11,16 @@ import ContactForm from '../../components/ContactForm';
 import { PayPalButtons } from '@paypal/react-paypal-js';
 import { useDispatch } from 'react-redux';
 import { resetCart } from '../../redux/cart.slice';
+import { useRouter } from 'next/router';
 
 const Cart = ({ siteProps }: { siteProps: any }) => {
-    const cart = useSelector((state: { cart: Array<IShopItem> }) => state.cart ?? []);
-
     const dispatch = useDispatch();
+
+    const {
+        query: { message },
+    } = useRouter();
+
+    const cart = useSelector((state: { cart: Array<IShopItem> }) => state.cart ?? []);
 
     const itemTotal = useSelector((state: { cart: Array<IShopItem> }) =>
         (state.cart ?? []).reduce((acc, item) => {
@@ -103,6 +108,13 @@ const Cart = ({ siteProps }: { siteProps: any }) => {
                     <h2>Cart</h2>
                 </div>
                 <div className={styles.content}>
+                    {message === 'sent' && (
+                        <>
+                            <h3>Thank you!</h3>
+                            <p>Your message has been sent and I'll get back to you soon with the shipping cost.</p>
+                        </>
+                    )}
+
                     {paymentCompleted && (
                         <>
                             <h3>Thank you!</h3>
@@ -110,7 +122,7 @@ const Cart = ({ siteProps }: { siteProps: any }) => {
                         </>
                     )}
 
-                    {!paymentCompleted && (
+                    {!paymentCompleted && !message && (
                         <>
                             <h3>Your items</h3>
                             <CartItemList items={cart} siteProps={siteProps} />
