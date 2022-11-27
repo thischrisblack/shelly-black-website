@@ -39,6 +39,18 @@
     }
 }
 
+.cart {
+    a {
+        svg {
+            color: black;
+        }
+
+        &:hover {
+            font-weight: 400 !important;
+        }
+    }
+}
+
 .name {
     padding-left: 1rem;
 
