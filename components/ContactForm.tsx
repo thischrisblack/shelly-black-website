@@ -36,21 +36,21 @@ export default function ContactForm() {
                             <label>
                                 Your Name:
                                 <br />
-                                <input type="text" name="name" id="name" />
+                                <input type="text" name="name" id="name" required />
                             </label>
                         </p>
                         <p>
                             <label>
                                 Your Email:
                                 <br />
-                                <input type="email" name="email" id="email" />
+                                <input type="email" name="email" id="email" required />
                             </label>
                         </p>
                         <p>
                             <label>
                                 Message:
                                 <br />
-                                <textarea name="message" id="message"></textarea>
+                                <textarea name="message" id="message" required></textarea>
                             </label>
                         </p>
                         <p>

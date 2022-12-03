@@ -36,6 +36,23 @@ const ShopItem = ({
                     <h2>{item.title}</h2>
                 </div>
                 <div className={styles.content}>
+                    {item.estimatedInStockDate != null && (
+                        <div className={shopStyles.outOfStock}>
+                            <h3>Out of Stock</h3>
+                            <p>
+                                The {item.title} is currently out of stock, but more are on the way. I expect to be able
+                                to ship new orders by <strong>{item.estimatedInStockDate}</strong>. If that works for
+                                you, feel free to order now.
+                            </p>
+                            <p>
+                                Otherwise,{' '}
+                                <Link href={{ pathname: '/about' }}>
+                                    <a>contact me</a>
+                                </Link>{' '}
+                                and I'll let you know when they're available again.
+                            </p>
+                        </div>
+                    )}
                     <div className={shopStyles.containerShop}>
                         <div className={shopStyles.image}>
                             <img
@@ -62,6 +79,11 @@ const ShopItem = ({
 
                             <div className={shopStyles.details}>
                                 <ul>
+                                    {item.estimatedInStockDate != null && (
+                                        <li className={shopStyles.alert} key={0}>
+                                            Estimated in-stock date: {item.estimatedInStockDate}
+                                        </li>
+                                    )}
                                     {item.details.map((detail) => (
                                         <li key={detail}>{detail}</li>
                                     ))}

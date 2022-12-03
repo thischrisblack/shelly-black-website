@@ -48,6 +48,31 @@
 
     ul {
         margin-left: 2rem;
+
+        li.alert {
+            font-weight: 700;
+            color: maroon;
+        }
+    }
+}
+
+.outOfStock {
+    background: lightyellow;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    font-family: 'Raleway', sans-serif;
+
+    strong {
+        font-weight: 700;
+    }
+
+    h3 {
+        color: maroon;
+
+        svg {
+            color: maroon;
+        }
     }
 }
 

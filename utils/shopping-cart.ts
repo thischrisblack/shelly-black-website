@@ -1,15 +1,16 @@
 import { IIndex } from './types';
 
 export interface IShopItem {
-    id: string;
-    quantity: number;
-    title: string;
     description: string;
-    shortDescription: string;
-    price: number;
     details: Array<string>;
+    id: string;
     image: string;
     imageAlt: string;
+    estimatedInStockDate: string;
+    price: number;
+    quantity: number;
+    shortDescription: string;
+    title: string;
 }
 
 export const inventory: IIndex<IShopItem> = {
@@ -38,5 +39,6 @@ export const inventory: IIndex<IShopItem> = {
         details: ['1 x 1.25 inches', 'black metal finish', 'black rubber clutch'],
         image: 'cat_pin_pencil_1.jpg',
         imageAlt: 'Enamel pin with smiling gray kitty sitting in an archival box with the lid open.',
+        estimatedInStockDate: '12/17/2022',
     },
 };
