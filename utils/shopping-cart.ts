@@ -41,4 +41,30 @@ export const inventory: IIndex<IShopItem> = {
         imageAlt: 'Enamel pin with smiling gray kitty sitting in an archival box with the lid open.',
         estimatedInStockDate: null,
     },
+    'dog-archivist-pin': {
+        id: 'dog-archivist-pin',
+        quantity: 0,
+        title: 'Dog Archivist Pin',
+        description: `
+            <p>
+                Do you work in barkives and are a dog parent? If so, treat yourself to this enamel pin of a dog in an archival storage box.
+            </p>
+            <p>
+                Not only is this a fetching gift idea for an archivist, but librarians or historians, too.
+            </p>
+            <p>
+                Limited supply available. Order before they're doggone!
+            </p>        
+        `,
+        shortDescription: `
+        <p>
+            Do you work in barkives and are a dog parent? If so, treat yourself to this enamel pin of a dog in an archival storage box.
+        </p>
+        `,
+        price: 14.99,
+        details: ['1 x 1.25 inches', 'black metal finish', 'black rubber clutch'],
+        image: 'dog_pin_pencil_1.jpg',
+        imageAlt: 'Enamel pin with smiling doggy sitting in an archival box with the lid open.',
+        estimatedInStockDate: null,
+    },
 };
