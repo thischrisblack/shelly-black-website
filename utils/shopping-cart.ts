@@ -11,6 +11,10 @@ export interface IShopItem {
     quantity: number;
     shortDescription: string;
     title: string;
+    shipping: {
+        divisor: number;
+        price: number;
+    };
 }
 
 export const inventory: IIndex<IShopItem> = {
@@ -40,6 +44,10 @@ export const inventory: IIndex<IShopItem> = {
         image: 'cat_pin_pencil_1.jpg',
         imageAlt: 'Enamel pin with smiling gray kitty sitting in an archival box with the lid open.',
         estimatedInStockDate: null,
+        shipping: {
+            divisor: 4,
+            price: 5,
+        },
     },
     'dog-archivist-pin': {
         id: 'dog-archivist-pin',
@@ -66,5 +74,9 @@ export const inventory: IIndex<IShopItem> = {
         image: 'dog_pin_pencil_1.jpg',
         imageAlt: 'Enamel pin with smiling doggy sitting in an archival box with the lid open.',
         estimatedInStockDate: null,
+        shipping: {
+            divisor: 4,
+            price: 5,
+        },
     },
 };

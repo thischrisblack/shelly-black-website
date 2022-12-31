@@ -10,7 +10,6 @@ import cartStyles from './Cart.module.scss';
 import { PayPalButtons } from '@paypal/react-paypal-js';
 import { useDispatch } from 'react-redux';
 import { resetCart } from '../../redux/cart.slice';
-import InternationalOrderForm from '../../components/InternationalOrderForm';
 import Link from 'next/link';
 
 const Cart = ({ siteProps }: { siteProps: any }) => {
@@ -24,14 +23,24 @@ const Cart = ({ siteProps }: { siteProps: any }) => {
         }, 0.0)
     );
 
-    const shipping = useSelector(
-        (state: { cart: Array<IShopItem> }) =>
-            Math.ceil(
-                (state.cart ?? []).reduce((acc, item) => {
-                    return acc + item.quantity;
-                }, 0) / 4
-            ) * 5
-    );
+    const shipping = useSelector((state: { cart: Array<IShopItem> }) => {
+        // Create index with key 'divisor#price' and value quantity.
+        const shippingIndex: Record<string, number> = {};
+        state.cart.forEach((item) => {
+            const key = `${item.shipping.divisor}#${item.shipping.price}`;
+            shippingIndex[key] = (shippingIndex[key] ?? 0) + item.quantity;
+        });
+
+        // Add up shipping. Items with same divisor/price will have their quantities added together before multiplying by price.
+        // In this way, say 5 of two different pins will be calculated together since they have the same shipping price structure,
+        // and then different items like stickers will be handled together as well.
+        const shippingTotal = Object.entries(shippingIndex).reduce((acc, [key, quantity]) => {
+            const [divisor, price] = key.split('#');
+            return acc + Math.ceil((quantity as number) / +divisor) * +price;
+        }, 0);
+
+        return shippingTotal;
+    });
 
     const [destination, setDestination] = useState(null);
     const [paymentCompleted, setPaymentCompleted] = useState(false);
