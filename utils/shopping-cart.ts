@@ -11,6 +11,10 @@ export interface IShopItem {
     quantity: number;
     shortDescription: string;
     title: string;
+    shipping: {
+        divisor: number; // Divide item quantity by this, and then ...
+        price: number; // ... multiply by price.
+    };
 }
 
 export const inventory: IIndex<IShopItem> = {
@@ -40,6 +44,10 @@ export const inventory: IIndex<IShopItem> = {
         image: 'cat_pin_pencil_1.jpg',
         imageAlt: 'Enamel pin with smiling gray kitty sitting in an archival box with the lid open.',
         estimatedInStockDate: null,
+        shipping: {
+            divisor: 4,
+            price: 5,
+        },
     },
     'dog-archivist-pin': {
         id: 'dog-archivist-pin',
@@ -57,14 +65,74 @@ export const inventory: IIndex<IShopItem> = {
             </p>        
         `,
         shortDescription: `
-        <p>
-            Do you work in barkives and are a dog parent? If so, treat yourself to this enamel pin of a dog in an archival storage box.
-        </p>
+            <p>
+                Do you work in barkives and are a dog parent? If so, treat yourself to this enamel pin of a dog in an archival storage box.
+            </p>
         `,
         price: 14.99,
         details: ['1 x 1.25 inches', 'black metal finish', 'black rubber clutch'],
         image: 'dog_pin_pencil_1.jpg',
         imageAlt: 'Enamel pin with smiling doggy sitting in an archival box with the lid open.',
         estimatedInStockDate: null,
+        shipping: {
+            divisor: 4,
+            price: 5,
+        },
+    },
+    'cat-archivist-sticker': {
+        id: 'cat-archivist-sticker',
+        quantity: 0,
+        title: 'Cat Archivist Sticker',
+        description: `
+            <p>
+                If you enjoy archival purrrocessing and love cats, this sticker is just fur you! It features a kitty in an archival storage box.
+            </p>
+            <p>
+                Limited quantity available. Purrchase while supplies last.
+            </p>     
+        `,
+        shortDescription: `
+            <p>
+                If you enjoy archival purrrocessing and love cats, this sticker is just fur you! It features a kitty in an archival storage box.
+            </p>
+        `,
+        price: 4.99,
+        details: ['Weather-proof vinyl', '3 inches wide'],
+        image: 'cat_archivist_sticker.jpg',
+        imageAlt:
+            'Vinyl sticker with smiling kitty sitting in an archival box with the lid open. The caption says Purrrrocessing.',
+        estimatedInStockDate: null,
+        shipping: {
+            divisor: 1,
+            price: 0,
+        },
+    },
+    'dog-archivist-sticker': {
+        id: 'dog-archivist-sticker',
+        quantity: 0,
+        title: 'Dog Archivist Sticker',
+        description: `
+            <p>
+                Do you work in barkives? Show your fellow archivists, librarians, or conservators howl much you love dogs with this sticker. It features a puppy in an archival storage box.
+            </p>
+            <p>
+                Limited quantity available. Purchase before they're doggone!
+            </p>     
+        `,
+        shortDescription: `
+            <p>
+                Do you work in barkives? Show your fellow archivists, librarians, or conservators howl much you love dogs with this sticker.
+            </p>
+        `,
+        price: 4.99,
+        details: ['Weather-proof vinyl', '3 inches wide'],
+        image: 'dog_archivist_sticker.jpg',
+        imageAlt:
+            'Vinyl sticker with smiling doggy sitting in an archival box with the lid open. The caption says In the barkives.',
+        estimatedInStockDate: null,
+        shipping: {
+            divisor: 1,
+            price: 0,
+        },
     },
 };

@@ -12,7 +12,10 @@ export default function CartControls({ item }: { item: IShopItem }) {
             <QuantityControls item={stateItem ?? item} />
 
             {(stateItem?.quantity ?? 0) >= 1 && (
-                <div className={styles.subTotal}>${stateItem.quantity * item.price} + shipping</div>
+                <div className={styles.subTotal}>
+                    ${(stateItem.quantity * item.price).toFixed(2)}
+                    {item.shipping.price > 0 && ' + shipping'}
+                </div>
             )}
 
             <CheckOutButton />
