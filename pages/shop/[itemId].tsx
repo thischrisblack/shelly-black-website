@@ -62,15 +62,6 @@ const ShopItem = ({
                         </div>
                         <div className={shopStyles.description}>
                             <div dangerouslySetInnerHTML={{ __html: `${item.description}` }}></div>
-                            {slug === 'cat-archivist-pin' && inventory['dog-archivist-pin'] == null && (
-                                <p>
-                                    🐶 Dog version coming soon!{' '}
-                                    <Link href={{ pathname: '/about' }}>
-                                        <a>Contact me</a>
-                                    </Link>{' '}
-                                    if you'd like to know when they're available.
-                                </p>
-                            )}
                         </div>
                         <div className={shopStyles.button}>
                             <p className={shopStyles.price}>${item.price}</p>
@@ -84,6 +75,7 @@ const ShopItem = ({
                                             Estimated in-stock date: {item.estimatedInStockDate}
                                         </li>
                                     )}
+                                    {item.shipping.price === 0 && <li>Free shipping!</li>}
                                     {item.details.map((detail) => (
                                         <li key={detail}>{detail}</li>
                                     ))}
