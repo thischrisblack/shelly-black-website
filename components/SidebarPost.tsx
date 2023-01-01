@@ -17,7 +17,7 @@ export default function SidebarPost({
             <div className={styles.postImage}>
                 <Link href={{ pathname: `/${postType}/${post.id}` }}>
                     <a>
-                        <img src={`/${post.image.src}`} alt={post.image.alt} />
+                        <img src={`/${post.image.src}?nf_resize=fit&w=300`} alt={post.image.alt} />
                     </a>
                 </Link>
             </div>
