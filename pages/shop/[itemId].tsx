@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ISiteProps } from '../../utils/content-retrieval';
 import { IShopItem } from '../../utils/shopping-cart';
-import { IIndex } from '../../utils/types';
 import CartControls from '../../components/CartControls';
+import AlsoLike from '../../components/AlsoLike';
 
 // TODO: Implement sold out contact stuff like https://shop.bubblesort.io/products/cache-cats-dot-biz-zine?variant=1196004949
 
@@ -14,12 +14,12 @@ const ShopItem = ({
     slug,
     siteProps,
     item,
-    inventory,
+    alsoLikeItemSet,
 }: {
     slug: string;
     siteProps: any;
     item: IShopItem;
-    inventory: IIndex<IShopItem>;
+    alsoLikeItemSet: Array<IShopItem>;
 }) => {
     return (
         <Layout
@@ -35,6 +35,7 @@ const ShopItem = ({
                 <div className={styles.meta}>
                     <h2>{item.title}</h2>
                 </div>
+
                 <div className={styles.content}>
                     {item.estimatedInStockDate != null && (
                         <div className={shopStyles.outOfStock}>
@@ -84,6 +85,10 @@ const ShopItem = ({
                         </div>
                     </div>
                 </div>
+
+                <div className={styles.postNav}>
+                    <AlsoLike alsoLikeItemSet={alsoLikeItemSet} siteProps={siteProps} />
+                </div>
             </article>
         </Layout>
     );
@@ -97,6 +102,10 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     const { default: siteProps }: { default: ISiteProps } = await import(`../../siteconfig.json`);
     const { inventory } = await import('../../utils/shopping-cart');
 
+    const alsoLikeItemSet = Object.values(inventory)
+        .filter((item) => item.id !== itemId)
+        .sort((a, b) => a.title.localeCompare(b.title));
+
     const item = inventory[itemId as string];
 
     return {
@@ -104,7 +113,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
             slug: itemId,
             siteProps,
             item,
-            inventory,
+            alsoLikeItemSet,
         },
     };
 };
