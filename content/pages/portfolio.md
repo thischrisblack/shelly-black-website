@@ -4,7 +4,7 @@ description: Links to articles, presentations, and other projects.
 ---
 Visit my CV to find links to [publications](https://www.shelly-black.com/cv#publications) and [presentations](https://www.shelly-black.com/cv#presentations).
 
-### Digital Preservation Scripts
+### Digital Curation Scripts
 
 [G﻿itHub](https://github.com/ShellyYBlack)
 
