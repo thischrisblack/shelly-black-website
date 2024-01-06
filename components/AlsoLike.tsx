@@ -13,7 +13,7 @@ export default function AlsoLike({
         <>
             <h3>Also in the shop:</h3>
             {alsoLikeItemSet.map((item) => (
-                <div className={styles.singlePost}>
+                <div className={styles.singlePost} key={item.id}>
                     <div className={styles.postImage}>
                         <Link href={{ pathname: `/shop/${item.id}` }}>
                             <a>
