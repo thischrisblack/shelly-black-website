@@ -49,6 +49,34 @@ export const inventory: IIndex<IShopItem> = {
             price: 5,
         },
     },
+    'cat-archivist-sticker': {
+        id: 'cat-archivist-sticker',
+        quantity: 0,
+        title: 'Cat Archivist Sticker',
+        description: `
+            <p>
+                If you enjoy archival purrrocessing and love cats, this sticker is just fur you! It features a kitty in an archival storage box.
+            </p>
+            <p>
+                Limited quantity available. Purrchase while supplies last.
+            </p>     
+        `,
+        shortDescription: `
+            <p>
+                If you enjoy archival purrrocessing and love cats, this sticker is just fur you! It features a kitty in an archival storage box.
+            </p>
+        `,
+        price: 4.99,
+        details: ['Weather-proof vinyl', '3 inches wide'],
+        image: 'cat_archivist_sticker.jpg',
+        imageAlt:
+            'Vinyl sticker with smiling kitty sitting in an archival box with the lid open. The caption says Purrrrocessing.',
+        estimatedInStockDate: null,
+        shipping: {
+            divisor: 1,
+            price: 0,
+        },
+    },
     'dog-archivist-pin': {
         id: 'dog-archivist-pin',
         quantity: 0,
@@ -79,34 +107,6 @@ export const inventory: IIndex<IShopItem> = {
             price: 5,
         },
     },
-    'cat-archivist-sticker': {
-        id: 'cat-archivist-sticker',
-        quantity: 0,
-        title: 'Cat Archivist Sticker',
-        description: `
-            <p>
-                If you enjoy archival purrrocessing and love cats, this sticker is just fur you! It features a kitty in an archival storage box.
-            </p>
-            <p>
-                Limited quantity available. Purrchase while supplies last.
-            </p>     
-        `,
-        shortDescription: `
-            <p>
-                If you enjoy archival purrrocessing and love cats, this sticker is just fur you! It features a kitty in an archival storage box.
-            </p>
-        `,
-        price: 4.99,
-        details: ['Weather-proof vinyl', '3 inches wide'],
-        image: 'cat_archivist_sticker.jpg',
-        imageAlt:
-            'Vinyl sticker with smiling kitty sitting in an archival box with the lid open. The caption says Purrrrocessing.',
-        estimatedInStockDate: null,
-        shipping: {
-            divisor: 1,
-            price: 0,
-        },
-    },
     'dog-archivist-sticker': {
         id: 'dog-archivist-sticker',
         quantity: 0,
@@ -129,6 +129,62 @@ export const inventory: IIndex<IShopItem> = {
         image: 'dog_archivist_sticker.jpg',
         imageAlt:
             'Vinyl sticker with smiling doggy sitting in an archival box with the lid open. The caption says In the barkives.',
+        estimatedInStockDate: null,
+        shipping: {
+            divisor: 1,
+            price: 0,
+        },
+    },
+    'cat-floppy-pin': {
+        id: 'cat-floppy-pin',
+        quantity: 0,
+        title: 'Cat & Floppy Disk Pin',
+        description: `
+            <p>
+                Feeling nostalgic for floppy disks? This enamel pin features a cat holding a 1.44 megabite floppy disk 
+                furmatted as FAT12. The purrfect gift for a digital archivist, software developer, or technologist.
+            </p>
+            <p>Available for purrchase while supplies last!</p>
+        `,
+        shortDescription: `
+            <p>
+                Feeling nostalgic for floppy disks? This enamel pin features a cat holding a 1.44 megabite floppy disk 
+                furmatted as FAT12. The purrfect gift for a digital archivist, software developer, or technologist.
+            </p>
+        `,
+        price: 14.99,
+        details: ['0.625 x 1.25 inches', 'black metal finish', 'black rubber clutch'],
+        image: 'cat_floppy_disk_pin.jpg',
+        imageAlt: 'Enamel pin with smiling orange tabby kitty sitting holding a floppy disk in its mouth.',
+        estimatedInStockDate: null,
+        shipping: {
+            divisor: 4,
+            price: 5,
+        },
+    },
+    'cat-floppy-sticker': {
+        id: 'cat-floppy-sticker',
+        quantity: 0,
+        title: 'Cat & Floppy Disk Sticker',
+        description: `
+            <p>
+                This sticker features a cat holding a 1.44 megabite floppy disk furmatted as FAT12. The purrfect gift 
+                for a digital archivist, software developer, or technologist.
+            </p>
+            <p>
+                Limited quantity available. Purrchase while supplies last.
+            </p>     
+        `,
+        shortDescription: `
+            <p>
+                This sticker features a cat holding a 1.44 megabite floppy disk furmatted as FAT12. The purrfect gift 
+                for a digital archivist, software developer, or technologist.
+            </p>
+        `,
+        price: 4.99,
+        details: ['Weather-proof vinyl', '3 inches wide'],
+        image: 'cat_floppy_disk_sticker_photo.jpg',
+        imageAlt: 'Vinyl sticker with smiling orange tabby kitty sitting holding a floppy disk in its mouth.',
         estimatedInStockDate: null,
         shipping: {
             divisor: 1,
