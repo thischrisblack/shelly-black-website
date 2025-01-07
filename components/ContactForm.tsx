@@ -10,12 +10,6 @@ export default function ContactForm() {
     return (
         <div className={styles.contactForm}>
             <h3>Contact Shelly Black</h3>
-            <a href="https://twitter.com/shellyyblack">
-                <i className="fab fa-twitter fa-lg"></i>
-            </a>{' '}
-            <a href="https://www.linkedin.com/in/shellyyblack/">
-                <i className="fab fa-linkedin fa-lg"></i>
-            </a>
             {message !== 'sent' && (
                 <>
                     <form

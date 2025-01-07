@@ -84,6 +84,11 @@ export default function Navigation() {
                     <div className={styles.navSection} ref={designNav}>
                         <h3>Design</h3>
                         <ul onClick={() => setOpen(false)}>
+                            <li className={`${styles.navLink} ${styles.services}`}>
+                                <Link href={{ pathname: '/services' }}>
+                                    <a>Services</a>
+                                </Link>
+                            </li>
                             <li className={`${styles.navLink} ${styles.shop}`}>
                                 <Link href={{ pathname: '/shop' }}>
                                     <a>Shop</a>

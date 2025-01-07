@@ -2,6 +2,7 @@
 
 .navLink {
     position: relative;
+
     &:before {
         position: absolute;
         top: -35px;
@@ -43,8 +44,19 @@
     &:before {
         content: 'Shop';
     }
+
     &:after {
         content: 'Shop';
+    }
+}
+
+.services {
+    &:before {
+        content: 'Services';
+    }
+
+    &:after {
+        content: 'Services';
     }
 }
 
@@ -52,6 +64,7 @@
     &:before {
         content: 'About';
     }
+
     &:after {
         content: 'About';
     }
@@ -61,6 +74,7 @@
     &:before {
         content: 'CV';
     }
+
     &:after {
         content: 'CV';
     }
@@ -70,6 +84,7 @@
     &:before {
         content: 'Portfolio';
     }
+
     &:after {
         content: 'Portfolio';
     }
@@ -79,6 +94,7 @@
     &:before {
         content: 'Blog';
     }
+
     &:after {
         content: 'Blog';
     }
@@ -88,6 +104,7 @@
     &:before {
         content: 'Gallery';
     }
+
     &:after {
         content: 'Gallery';
     }
@@ -97,6 +114,7 @@
     &:before {
         content: 'Exhibits';
     }
+
     &:after {
         content: 'Exhibits';
     }
@@ -106,6 +124,7 @@
     &:before {
         content: 'SHELLY BLACK';
     }
+
     &:after {
         content: 'SHELLY BLACK';
     }
