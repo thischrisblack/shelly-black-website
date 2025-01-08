@@ -42,7 +42,7 @@ Wingspan: Southern Arizona’s LGBT Community Center, Tucson, AZ
 
 ### Peer-Reviewed
 
-Black, S., Dietz, B., & Thornton, T. (2024, September). Scaling up digital preservation workflows with homegrown tools and automation. *iPRES 2024 Conference Proceedings*.
+Black, S., Dietz, B., & Thornton, T. (2024, September). Scaling up digital preservation workflows with homegrown tools and automation. *iPRES 2024 Conference Proceedings*. <https://doi.org/10.21428/5676bf2d.89f79037>
 
 Black, S. (2024). \[Review of the book Resurrecting the Black body: Race and the digital afterlife, by T. Sutherland]. *International Journal of Information, Diversity, & Inclusion, 8*(2), 159-161. https://doi.org/10.33137/ijidi.v8i2.43543
 
