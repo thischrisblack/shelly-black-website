@@ -18,7 +18,7 @@ const Index = ({ siteProps }: { siteProps: any }) => {
     return (
         <Layout
             pageTitle={siteProps.title}
-            description="Hello! I'm Shelly, a Japanese Mexican American librarian and photographer in Raleigh, NC."
+            description="Hello! I’m Shelly, a Japanese Mexican American digital archivist. I also do freelance graphic design and photography."
             url={siteProps.url}
             image={{
                 src: `${siteProps.url}/images/radio-telescope.jpg?nf_resize=smartcrop&w=1200&h=627`,
@@ -28,8 +28,7 @@ const Index = ({ siteProps }: { siteProps: any }) => {
             <article className={styles.content}>
                 <div className={styles.left}>
                     <p>
-                        Hello! I’m Shelly, a Japanese Mexican American digital archivist and photographer on the unceded
-                        land of the Tuscarora and the Catawba.{' '}
+                        Hello! I’m Shelly, a Japanese Mexican American digital archivist. I also do freelance graphic design and photography.{' '}
                     </p>
                     {/* {!isShown && (
                         <div className={styles.moreLink}>

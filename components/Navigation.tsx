@@ -6,13 +6,16 @@ import ColorBar from './ColorBar';
 import { useSelector } from 'react-redux';
 import { IShopItem } from '../utils/shopping-cart';
 
-export default function Navigation() {
+export default function Navigation({ path }) {
     const [isOpen, setOpen] = useState(false);
 
     const photoNav = useRef(null);
     const libraryNav = useRef(null);
     const designNav = useRef(null);
     const cart = useSelector((state: { cart: Array<IShopItem> }) => state.cart ?? []);
+
+    const pathParts = path.split('/');
+    const location = pathParts[pathParts.length - 1];
 
     // Open/close nav items.
     useEffect(() => {
@@ -41,22 +44,17 @@ export default function Navigation() {
                         <ul onClick={() => setOpen(false)}>
                             <li className={`${styles.navLink} ${styles.about}`}>
                                 <Link href={{ pathname: '/about' }}>
-                                    <a>About</a>
+                                    <a className={`${location === 'about' ? styles.active : ''}`}>About</a>
                                 </Link>
                             </li>
                             <li className={`${styles.navLink} ${styles.cv}`}>
                                 <Link href={{ pathname: '/cv' }}>
-                                    <a>CV</a>
-                                </Link>
-                            </li>
-                            <li className={`${styles.navLink} ${styles.portfolio}`}>
-                                <Link href={{ pathname: '/portfolio' }}>
-                                    <a>Portfolio</a>
+                                    <a className={`${location === 'cv' ? styles.active : ''}`}>CV</a>
                                 </Link>
                             </li>
                             <li className={`${styles.navLink} ${styles.blog}`}>
                                 <Link href={{ pathname: '/library-blog' }}>
-                                    <a>Blog</a>
+                                    <a className={`${location === 'library-blog' ? styles.active : ''}`}>Blog</a>
                                 </Link>
                             </li>
                         </ul>
@@ -66,17 +64,17 @@ export default function Navigation() {
                         <ul onClick={() => setOpen(false)}>
                             <li className={`${styles.navLink} ${styles.gallery}`}>
                                 <Link href={{ pathname: '/galleries' }}>
-                                    <a>Gallery</a>
+                                    <a className={`${location === 'galleries' ? styles.active : ''}`}>Gallery</a>
                                 </Link>
                             </li>
                             <li className={`${styles.navLink} ${styles.exhibits}`}>
                                 <Link href={{ pathname: '/exhibits' }}>
-                                    <a>Exhibits</a>
+                                    <a className={`${location === 'exhibits' ? styles.active : ''}`}>Exhibits</a>
                                 </Link>
                             </li>
                             <li className={`${styles.navLink} ${styles.blog}`}>
                                 <Link href={{ pathname: '/photography-blog' }}>
-                                    <a>Blog</a>
+                                    <a className={`${location === 'photography-blog' ? styles.active : ''}`}>Blog</a>
                                 </Link>
                             </li>
                         </ul>
@@ -84,15 +82,25 @@ export default function Navigation() {
                     <div className={styles.navSection} ref={designNav}>
                         <h3>Design</h3>
                         <ul onClick={() => setOpen(false)}>
+                            <li className={`${styles.navLink} ${styles.portfolio}`}>
+                                <Link href={{ pathname: '/portfolio' }}>
+                                    <a className={`${location === 'portfolio' ? styles.active : ''}`}>Portfolio</a>
+                                </Link>
+                            </li>
+                            <li className={`${styles.navLink} ${styles.services}`}>
+                                <Link href={{ pathname: '/services' }}>
+                                    <a className={`${location === 'services' ? styles.active : ''}`}>Services</a>
+                                </Link>
+                            </li>
                             <li className={`${styles.navLink} ${styles.shop}`}>
                                 <Link href={{ pathname: '/shop' }}>
-                                    <a>Shop</a>
+                                    <a className={`${location === 'shop' ? styles.active : ''}`}>Shop</a>
                                 </Link>
                             </li>
                             {cart.length > 0 && (
                                 <li className={`${styles.navLink} ${styles.cart}`}>
                                     <Link href={{ pathname: '/shop/cart' }}>
-                                        <a>
+                                        <a className={`${location === 'cart' ? styles.active : ''}`}>
                                             <i className="fas fa-shopping-cart"></i> (
                                             {cart.reduce((acc, item) => item.quantity + acc, 0)})
                                         </a>
