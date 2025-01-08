@@ -157,17 +157,17 @@ export const getSinglePost = (
     const dataWithRootImageUrlAndTransformation =
         data.image && !data.image.src.includes('gif')
             ? {
-                  ...data,
-                  image: {
-                      ...data.image,
-                      src: getNetlifyEnhancedImage(
-                          data.image.src,
-                          imageTransformation?.transformation,
-                          imageTransformation?.w,
-                          imageTransformation?.h
-                      ),
-                  },
-              }
+                ...data,
+                image: {
+                    ...data.image,
+                    src: getNetlifyEnhancedImage(
+                        data.image.src,
+                        imageTransformation?.transformation,
+                        imageTransformation?.w,
+                        imageTransformation?.h
+                    ),
+                },
+            }
             : data;
 
     const contentWithCorrectedImgPath = content.replace(/images\//g, '/images/');

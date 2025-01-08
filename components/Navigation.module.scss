@@ -29,6 +29,7 @@
             a {
                 font-weight: 400;
                 color: $text-color;
+                background-color: $link-color;
 
                 &:hover {
                     font-weight: 700;
@@ -37,6 +38,46 @@
             }
         }
     }
+}
+
+.active {
+    // &:before {
+    //     position: absolute;
+    //     top: 6px;
+    //     left: -6px;
+    //     opacity: 0.4;
+    //     color: #03f2ea;
+    //     z-index: -10;
+    //     filter: drop-shadow(0 0 6px rgba(3, 242, 234, 0.5));
+    //     transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    // }
+
+    // &:after {
+    //     position: absolute;
+    //     top: -3px;
+    //     left: 6px;
+    //     opacity: 0.4 !important;
+    //     color: #ff0050;
+    //     z-index: -10;
+    //     filter: drop-shadow(0 0 6px rgba(255, 0, 80, 0.51));
+    //     transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    // }
+
+    // &:hover {
+    //     &:before {
+    //         top: 6px;
+    //         left: -6px;
+    //         opacity: 0.4;
+    //     }
+
+    //     &:after {
+    //         top: -3px;
+    //         left: 6px;
+    //         opacity: 0.4;
+    //     }
+    // }
+
+    font-weight: bold !important;
 }
 
 .cart {

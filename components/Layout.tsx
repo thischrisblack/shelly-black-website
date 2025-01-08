@@ -38,7 +38,7 @@ export default function Layout({
                 <script src="https://kit.fontawesome.com/a3d3e90f49.js" crossOrigin="anonymous"></script>
                 <style type="text/css">{dom.css()}</style>
             </Head>
-            <Navigation />
+            <Navigation path={url} />
             <section>{children}</section>
         </>
     );

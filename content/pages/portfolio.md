@@ -1,21 +1,23 @@
 ---
 title: Portfolio
-description: Links to articles, presentations, and other projects.
+image:
+  src: ""
+  alt: ""
+galleryImages:
+    - images/portfolio/lets_talk_race.jpg
+    - images/portfolio/2023_augusta_baker_lecture_series.png
+    - images/portfolio/spectrum.jpg
+    - images/portfolio/APALA_t-shirt.jpg
+    - images/portfolio/design_portfolio_Page_1.jpg
+    - images/portfolio/design_portfolio_Page_3.jpg
+    - images/portfolio/design_portfolio_Page_2.jpg
+    - images/portfolio/design_portfolio_Page_4.jpg
+    - images/portfolio/chamberlab-string-quartets-2017-animation.gif
+    - images/portfolio/chamberlab-vexations.jpg
+    - images/portfolio/burning-palms-lathe-04.jpg
+    - images/portfolio/burning-palms-poster_Color.jpg
+    - images/portfolio/2012-zocalo-may.jpg
+    - images/portfolio/2014-zocalo-mar.jpg
 ---
-Visit my CV to find links to [publications](https://www.shelly-black.com/cv#publications) and [presentations](https://www.shelly-black.com/cv#presentations).
 
-### Digital Curation Scripts
-
-[G﻿itHub](https://github.com/ShellyYBlack)
-
-### Graphic Design
-
-[University of Arizona Libraries graphic design portfolio](/files/design_portfolio.pdf)
-
-### Social Media
-
-[University of Arizona Libraries Social Media Guidelines and Best Practices](/files/UA_Libraries_Social_Media_Guidelines.pdf)
-
-### Graduate Coursework
-
-[LIS 693 internship blog](/internship-blog/)
+Examples of my graphic design and illustration work.
