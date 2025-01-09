@@ -32,24 +32,33 @@ Azusa Pacific University Libraries, Azusa, CA
 **Volunteer English Instructor**, 2014\
 Pima County Public Library, Tucson, AZ
 
-**Digital Imaging Assistant**, 2011\
-WWII Living History Project, Tucson, AZ
-
 **Digital Imaging Intern**, 2009\
 Center for Creative Photography, Tucson, AZ
 
 **Library Volunteer**, 2008\
 Wingspan: Southern Arizona’s LGBT Community Center, Tucson, AZ
 
-## [Publications](#publications)
+## Publications
 
 ### Peer-Reviewed
+
+Black, S., Dietz, B., & Thornton, T. (2024, September). Scaling up digital preservation workflows with homegrown tools and automation. *iPRES 2024 Conference Proceedings*. <https://doi.org/10.21428/5676bf2d.89f79037>
+
+Black, S. (2024). \[Review of the book Resurrecting the Black body: Race and the digital afterlife, by T. Sutherland]. *International Journal of Information, Diversity, & Inclusion, 8*(2), 159-161. https://doi.org/10.33137/ijidi.v8i2.43543
+
+Black, S., Dietz, B., & Farrell. (2023). Virtualization for processing and accessing digital archives. *iPRES 2023 Conference Proceedings*. <https://hdl.handle.net/2142/121116>
 
 Black, S. (2020). The implications of digital collection takedown requests on archival appraisal. *Archival Science, 20*(1), 91-101. <https://doi.org/10.1007/s10502-019-09322-y>
 
 Black, S. (2019). Diversity and inclusion: How to avoid bias and social media blunders. In Joe, J., & Knight, E. (Eds.), *Social Media for Communication and Instruction in Academic Libraries* (pp. 100-118). Hershey, PA: IGI Global. <https://doi.org/10.4018/978-1-5225-8097-3.ch007>
 
 ### Other
+
+Black, S. (2024, April 8) Born-Digital Reboot: DAEV 2 Launches. North Carolina State University Libraries. https://www.lib.ncsu.edu/news/special-collections/born-digital-reboot-daev-2-launches
+
+Black, S. (2023, July 19). Detecting and Protecting Sensitive Information in Born Digital Collections. North Carolina State University Libraries. https://www.lib.ncsu.edu/news/special-collections/detecting-and-protecting-sensitive-information-born-digital-collections
+
+Black, S. (2022, March 11). Introducing the Virtual Reading Room. North Carolina State University Libraries. https://www.lib.ncsu.edu/news/special-collections/introducing-virtual-reading-room
 
 Arroyo-Ramírez, E., Berdini, A., Black, S., Cram, G., Gronsbell, K., Krabbenhoeft, N., Lynch, K., Preston, G., & Smedberg, H. (2021, October). *Speeding Towards Remote Access: Developing Shared Recommendations for Virtual Reading Rooms.* In M. A. Matienzo, & D. Handel (Eds.), The Lighting the Way Handbook: Case Studies, Guidelines, and Emergent Futures for Archival Discovery and Delivery (pp. 141-167). Stanford, CA: Stanford University Libraries. <https://doi.org/10.25740/gg453cv6438>.
 
@@ -61,7 +70,29 @@ Black, S. (2021, March 4). Migrating BitCurator VirtualBox VM to Hyper-V. BitCur
 
 Black, S. (2020, December 2). DLF Forum Community Journalist Reflection: Shelly Black. Digital Library Federation. <https://www.diglib.org/dlf-forum-community-journalist-reflection-shelly-black/>
 
-## [Presentations](#presentations)
+## Presentations
+
+### Invited
+
+Black, S., Dietz, B., & Farrell. (2024, February 1). *Virtualization for processing and accessing digital archives.* Digital Preservation Virtual Gathering for 2023 Conference, virtual.
+
+Black, S. (2023, November 2). *Deploying a virtual reading room using desktop virtualization.* Penn State University Libraries World Digital Preservation Day, virtual.
+
+### Other
+
+Black, S., Dietz, B., & Thornton, T. (2024, September). *Scaling up digital preservation workflows with homegrown tools and automation.* International Conference on Digital Preservation (iPres), Ghent, Belgium. 
+
+Black, S., Dietz, B., & Farrell. (2023, November 16). *Virtualization for processing and accessing digital archives.* NDSA’s Digital Preservation (DigiPres), St. Louis, MO. https://osf.io/76ejw/
+
+Black, S., Dietz, B., & Farrell. (2023, September 21). *Virtualization for processing and accessing digital archives.* International Conference on Digital Preservation (iPres), Urbana-Champaign, IL. https://hdl.handle.net/2142/121116
+
+Ahn, H., Black, S., Pun, R., Tang, L., Wong Smith, H., & Yakabu, K. (2023, July 26-29). *Path to leadership: Reflecting on the national forum on advancing Asian/Pacific Islander American librarianship: Perspectives from AAPI archival workers* \[poster]. Society of American Archivists Annual Meeting, virtual.
+
+Adolpho, K., Black, S., Huang, J., & Williams, A. (2023, July 7). *Professional impact and sustainability as trans and gender diverse archivists of color.* Society of American Archivists Archivists & Archives of Color Section Annual Meeting, virtual.
+
+Black, S., Gabiola, J., Mizota, S., & Ramirez, Y. (2023, February 20). *Writing and publishing for archivists.* SAA Archivists & Archives of Color and Students & New Professionals Sections, virtual.
+
+Ahn, H., Black, S., Pun, R., Tang, L., & Wong Smith, H. (2023, January 26). *Path to Leadership: Reflecting on the National Forum on Advancing Asian and Pacific Islander American Librarianship: Perspectives from AAPI Archival Workers.* Archivists Round Table of Metropolitan New York, virtual.
 
 Betts, V., & Black, S. (2022, February 24). *Breaking down monoracial barriers to library and historical research.* Critical Mixed Race Studies Conference, virtual.
 
@@ -89,17 +120,22 @@ Black, S., & Prescott-Smith, J. (2017, September). *Special Collections: Shining
 
 #### National
 
+* ARL Kaleidoscope Program mentor (2024-Present) 
+* BitCurator Consortium Executive Council, co-treasurer (2023-Present)
+* NEH Preservation and Access Education and Training grant reviewer (2023)
 * Society of American Archivists:\
   Archivists and Archives of Color Section Steering Committee vice chair (2021-Present)\
   Privacy and Confidentiality Section Steering Committee member (2020-Present)\
   BIPOC Mentoring Cohort member (2021)
 * IMLS Path to Leadership: National Forum on Advancing Asian/Pacific Islander American Librarianship participant (2022)
 * IMLS Lighting the Way Working Meeting on Archival Discovery and Delivery participant (2021)
-* Historical Nikkei American Missions Friends Foundation advisory committee member (2020-Present)
 * Asian Pacific American Librarians Association Media and Publicity Committee member (2019-20)
 
 #### Local
 
+* Triangle Research Libraries Network Born Digital Special Collections Interest Group member (2022-Present)
+* Safety & Sustainability Committee, North Carolina State University Libraries (2022-Present)
+* Libraries Fellows nomination committee, North Carolina State University Libraries (2024)
 * Data & Visualization Librarian nomination committee, North Carolina State University Libraries (2022)
 * Associate Head, Access Services nomination committee, North Carolina State University Libraries (2021)
 * Staff Development & Recognition Committee, North Carolina State University Libraries (2021-Present)
@@ -110,6 +146,8 @@ Black, S., & Prescott-Smith, J. (2017, September). *Special Collections: Shining
 
 ## Awards & Honors
 
+* Digital Preservation Outreach & Education Network microgrant recipient (2024)
+* Minnesota Institute for Early Career Librarians participant (2022)
 * Society of American Archivists Brenda S. Banks Travel Award (2021)
 * IDEA Institute on Artificial Intelligence fellow (2021)
 * APALA @ Home T-shirt Design Contest winner (2021)
@@ -122,13 +160,10 @@ Black, S., & Prescott-Smith, J. (2017, September). *Special Collections: Shining
 
 ## Affiliations
 
-* Academy of Certified Archivists (2020-Present, provisional member)
-* Society of American Archivists (2020-Present)
-* Asian Pacific American Librarians Association (2018-Present)
-* REFORMA (National Association to Promote Library and Information Services to Latinos and the Spanish-Speaking) (2019-Present)
-* International Council on Archives (2020-2021)
-* American Library Association (2018-20)
-* Arizona Library Association (2018-20)
+* Academy of Certified Archivists
+* Society of American Archivists
+* Asian Pacific American Librarians Association
+* REFORMA (National Association to Promote Library and Information Services to Latinos and the Spanish-Speaking)
 * University of Arizona Knowledge River Cohort 17
 
 ## Skills
@@ -143,9 +178,9 @@ Adobe Creative Suite (Photoshop, Illustrator, Premiere Pro), Final Cut Pro
 
 #### Programming and markup languages
 
-HTML, XML, CSS, some knowledge of Python and Bash
+Python, Bash, HTML, XML, CSS
 
 #### Natural languages
 
-Limited working proficiency in Japanese\
-Elementary proficiency in Spanish
+* Limited working proficiency in Japanese
+* Elementary proficiency in Spanish
