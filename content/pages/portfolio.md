@@ -7,6 +7,11 @@ galleryImages:
     - images/portfolio/lets_talk_race.jpg
     - images/portfolio/2023_augusta_baker_lecture_series.png
     - images/portfolio/spectrum.jpg
+    - images/portfolio/cat_archivist_sticker.jpg
+    - images/portfolio/cat_floppy_sticker.jpg
+    - images/portfolio/acquire_data.jpg
+    - images/portfolio/fixity.jpg
+    - images/portfolio/virus_scan.jpg
     - images/portfolio/APALA_t-shirt.jpg
     - images/portfolio/design_portfolio_Page_1.jpg
     - images/portfolio/design_portfolio_Page_3.jpg
