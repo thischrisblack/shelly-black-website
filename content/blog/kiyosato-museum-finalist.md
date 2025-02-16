@@ -14,6 +14,4 @@ Kiyosato Museum of Photographic Arts
 
 55 people from 15 countries passed the first selection
 
-
-
-https://www.kmopa.com/yp_entry/firstpasser/
+https://web.archive.org/web/20210417135104/https://www.kmopa.com/yp_entry/firstpasser/
