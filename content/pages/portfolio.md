@@ -4,6 +4,7 @@ image:
   src: ""
   alt: ""
 galleryImages:
+    - images/portfolio/ap_trust_white_background.png
     - images/portfolio/lets_talk_race.jpg
     - images/portfolio/2023_augusta_baker_lecture_series.png
     - images/portfolio/spectrum.jpg
